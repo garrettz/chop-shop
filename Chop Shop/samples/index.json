@@ -1,0 +1,3821 @@
+{
+ "files": [
+  {
+   "name": "ChopShop_kick_one_shots.wav",
+   "size": 264644
+  },
+  {
+   "name": "ChopShop_snare_hat_clap_kit.wav",
+   "size": 264644
+  },
+  {
+   "name": "ChopShop_reese_bass_120_Am.wav",
+   "size": 264644
+  },
+  {
+   "name": "ChopShop_dusty_keys_chords_120_Am.wav",
+   "size": 264644
+  },
+  {
+   "name": "ChopShop_ghost_vocal_chop_120_Am.wav",
+   "size": 264644
+  },
+  {
+   "name": "ChopShop_trap_808_bass_Am.wav",
+   "size": 264644
+  },
+  {
+   "name": "ChopShop_trap_hi_hats.wav",
+   "size": 264644
+  },
+  {
+   "name": "ChopShop_warm_pad_chords_120_Am.wav",
+   "size": 264644
+  },
+  {
+   "name": "ChopShop_pluck_lead_melody_120_Am.wav",
+   "size": 264644
+  },
+  {
+   "name": "ChopShop_afro_percussion_kit.wav",
+   "size": 264644
+  },
+  {
+   "name": "ChopShop_EDM_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "edm"
+  },
+  {
+   "name": "ChopShop_EDM_snare_clap_kit.wav",
+   "size": 176444,
+   "pack": "edm"
+  },
+  {
+   "name": "ChopShop_EDM_hi_hats.wav",
+   "size": 176444,
+   "pack": "edm"
+  },
+  {
+   "name": "ChopShop_EDM_perc_kit.wav",
+   "size": 176444,
+   "pack": "edm"
+  },
+  {
+   "name": "ChopShop_EDM_sub_bass_128_Fm.wav",
+   "size": 366076,
+   "pack": "edm"
+  },
+  {
+   "name": "ChopShop_EDM_supersaw_chords_128_Fm.wav",
+   "size": 696824,
+   "pack": "edm"
+  },
+  {
+   "name": "ChopShop_EDM_pluck_lead_128_Fm.wav",
+   "size": 366076,
+   "pack": "edm"
+  },
+  {
+   "name": "ChopShop_EDM_vocal_adlibs.wav",
+   "size": 613442,
+   "pack": "edm"
+  },
+  {
+   "name": "ChopShop_EDM_vocal_chops_128_Fm.wav",
+   "size": 1167370,
+   "pack": "edm",
+   "vocal": true
+  },
+  {
+   "name": "ChopShop_EDM_gen_downlifter_fx.wav",
+   "size": 529244,
+   "pack": "edm",
+   "sound": true
+  },
+  {
+   "name": "ChopShop_EDM_gen_hi_hats.wav",
+   "size": 137658,
+   "pack": "edm",
+   "sound": true
+  },
+  {
+   "name": "ChopShop_EDM_gen_impact_fx.wav",
+   "size": 705644,
+   "pack": "edm",
+   "sound": true
+  },
+  {
+   "name": "ChopShop_EDM_gen_kick_one_shots.wav",
+   "size": 264644,
+   "pack": "edm",
+   "sound": true
+  },
+  {
+   "name": "ChopShop_EDM_gen_perc_kit.wav",
+   "size": 137658,
+   "pack": "edm",
+   "sound": true
+  },
+  {
+   "name": "ChopShop_EDM_gen_reverse_cymbal_fx.wav",
+   "size": 243692,
+   "pack": "edm",
+   "sound": true
+  },
+  {
+   "name": "ChopShop_EDM_gen_riser_fx.wav",
+   "size": 924188,
+   "pack": "edm",
+   "sound": true
+  },
+  {
+   "name": "ChopShop_EDM_gen_snare_clap_kit.wav",
+   "size": 254060,
+   "pack": "edm",
+   "sound": true
+  },
+  {
+   "name": "ChopShop_EDM_gen_sub_drop_fx.wav",
+   "size": 529244,
+   "pack": "edm",
+   "sound": true
+  },
+  {
+   "name": "ChopShop_EDM_gen_sweep_fx.wav",
+   "size": 573436,
+   "pack": "edm",
+   "sound": true
+  },
+  {
+   "name": "ChopShop_EDM_drum_loop_EDM_Beat_1_100.mp3",
+   "size": 232010,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_riser_EDM_Build_Up_4.mp3",
+   "size": 124503,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_riser_EDM_Build_Up_2.mp3",
+   "size": 82559,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_riser_EDM_Riser_1_128.mp3",
+   "size": 210694,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_impact_EDM_Hit_120.mp3",
+   "size": 285927,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_riser_EDM_Riser_1_128_2.mp3",
+   "size": 215083,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_riser_EDM_Build_Up_3.mp3",
+   "size": 135546,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_riser_EDM_Build_Up_1.mp3",
+   "size": 105995,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_cymbal_EDM_Crash_Impact.mp3",
+   "size": 77783,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_synth_Melodyloop_EDM_128_Cmaj.mp3",
+   "size": 181855,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_brass_Horn_Sound_For_Hip_G#m.mp3",
+   "size": 193767,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_top_loop_Hihat_Loop_128.mp3",
+   "size": 46436,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_drum_loop_Drumloop_Edm_Drum_Loop_120.mp3",
+   "size": 56154,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_synth_Enemy_Gates_F#maj.mp3",
+   "size": 193767,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_bass_Deep_Sub_Bass_Melody_Cm.mp3",
+   "size": 47063,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_pad_Ambient_Melody_73_Am.mp3",
+   "size": 298831,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_melody_Christmas_Melody_Loop_125_Cm.mp3",
+   "size": 178356,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_keys_Piano_Melody_2_109_Em.mp3",
+   "size": 101136,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_synth_Girl_Singing_Random_Melody_163.mp3",
+   "size": 142985,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_guitar_New_Sad_Guitar_Melody_Cm.mp3",
+   "size": 193767,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_synth_Simple_Hardstyle_Melody_Em.mp3",
+   "size": 193767,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_synth_Trap_Melody_3_80_A#maj.mp3",
+   "size": 289688,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_bassline_Piano_Bass_Melody_Loop_130_Am.mp3",
+   "size": 178720,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_keys_Melancolic_Melody_Piano_3_110_Dmaj.mp3",
+   "size": 205268,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_keys_Deep_Piano_Melody_128_Gm.mp3",
+   "size": 181855,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_synth_Short_Melody_Made_In_Am.mp3",
+   "size": 193767,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_melody_Genesis_Piano_Chord_Loop_98_Am.mp3",
+   "size": 236399,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_chord_Piano_Chord_D#m.mp3",
+   "size": 148925,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_chord_Piano_Chord_Am.mp3",
+   "size": 115572,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_bassline_Happy_Trance_Bass_Chord_120_Cmaj.mp3",
+   "size": 193767,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_bass_Future_Bass_Chord_Progression_139_Cm.mp3",
+   "size": 162894,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_bassline_Happy_Trance_Bass_Chord_120_Cmaj_2.mp3",
+   "size": 193767,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_melody_Deep_Reversed_Chord_Progression_120_Cm.mp3",
+   "size": 186893,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_chord_Dream_Pop_SoulGaze_Chord_Emaj.mp3",
+   "size": 193767,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_top_loop_HiTech_Bassline_With_Hats.mp3",
+   "size": 38208,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_bassline_Bassline_Dance_A2_F2_128_A#m.mp3",
+   "size": 39840,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_arp_Trance_Arp_Tr4ck3r_75_Cm.mp3",
+   "size": 309672,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_arp_Arp_Line_120_Fm.mp3",
+   "size": 193767,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_bassline_Arp_Bass_Loop_128_D#m.mp3",
+   "size": 181855,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_kick_TTSH_ARP_2600_Clone.mp3",
+   "size": 14350,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_melody_Bright_Piano_ARP_128_Bmaj.mp3",
+   "size": 181855,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_arp_Arp_120_Bm.mp3",
+   "size": 193767,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_bass_Moog_Martriarch_Heavy_Bass_Emaj.mp3",
+   "size": 193767,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_synth_MOOG_2_Dmaj.mp3",
+   "size": 83520,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_hat_High_Hat_Compartment.mp3",
+   "size": 12836,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_top_loop_Bongo_Loop_With_Hats_130.mp3",
+   "size": 47070,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_top_loop_Washboard_Perc_Drum_Loop.mp3",
+   "size": 193767,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_hat_HH.mp3",
+   "size": 193767,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_hat_High_Hat_Farm.mp3",
+   "size": 10906,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_snare_Snare_DnB_1.mp3",
+   "size": 12581,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_snare_Dubstep_Snare_Drum.mp3",
+   "size": 26142,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_snare_Dubstep_Snare_4.mp3",
+   "size": 13835,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_snare_Heavy_Snare_8.mp3",
+   "size": 14092,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_snare_Electro_Flanged_Snare.mp3",
+   "size": 15840,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_snare_Clap_Snare.mp3",
+   "size": 11376,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_snare_WHITE_NOISE_SNARE_2.mp3",
+   "size": 9992,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_vocal_chop_Chopped_Vocal_Loop_1_140_A#m.mp3",
+   "size": 42658,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_vocal_Vocal_Letter_G#maj.mp3",
+   "size": 47616,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_vocal_Female_Vocal_Long_Gmaj.mp3",
+   "size": 193767,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_vocal_Corrupt_Robotic_Vocals.mp3",
+   "size": 193767,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_keys_Roland_Juno_6_PW7SubNoiseRhodes_Fmaj.mp3",
+   "size": 193767,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_keys_Roland_Juno_6_PW7SubNoiseRhodes_Em.mp3",
+   "size": 193767,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_keys_Roland_Juno_6_PW7SubNoiseRhodes_Am.mp3",
+   "size": 193767,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_keys_Roland_Juno_6_PW7SubNoiseRhodes_Am_2.mp3",
+   "size": 193767,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_chord_Vintage_Chords.mp3",
+   "size": 193767,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_melody_Rhodes_LoFi_Chords_Neo_89_G#m.mp3",
+   "size": 260222,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_keys_Rhodes_2_Bm.mp3",
+   "size": 193767,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_riser_EDM_Build_Up_6.mp3",
+   "size": 109130,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_drum_loop_Drumloop_Edm_Drum_Loop_120_2.mp3",
+   "size": 52392,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_cymbal_Downlifter_Crash_Downlifter_1.mp3",
+   "size": 164301,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_melody_Keyboard_DeepHouse_EDM_Loop_Dm.mp3",
+   "size": 163539,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_synth_Super_Saw_C#m.mp3",
+   "size": 108630,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_bass_Super_Saw_Bass_Cmaj.mp3",
+   "size": 129819,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_synth_Serum_SuperSaw_Cmaj.mp3",
+   "size": 219840,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_synth_Roland_Super_Saw_Staccato_Cmaj.mp3",
+   "size": 193767,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_melody_Synth_Darkpad_10s_Cm.mp3",
+   "size": 193767,
+   "pack": "edm",
+   "curated": true
+  },
+  {
+   "name": "ChopShop_EDM_kick_Synthwave_Kick_1.mp3",
+   "size": 10539,
+   "pack": "edm",
+   "curated": true
+  }
+ ],
+ "packs": [
+  {
+   "id": "hiphop",
+   "name": "Hip hop",
+   "tag": "HipHop",
+   "bpm": 90,
+   "key": "Dm",
+   "style": "boombap",
+   "genres": [
+    "hiphop",
+    "boombap",
+    "oldschool"
+   ],
+   "aesthetic": "Boom bap: a heavy, saturated kick; a cracking snare with a little room; swung hats; jazzy electric-piano chords and vibes; a round upright-style bass."
+  },
+  {
+   "id": "trap",
+   "name": "Trap",
+   "tag": "Trap",
+   "bpm": 140,
+   "key": "F#m",
+   "style": "trap",
+   "genres": [
+    "trap",
+    "cloudrap"
+   ],
+   "aesthetic": "Long, saturated 808s; a bright layered clap; crisp hats with rolls; a dark bell melody and a minor pad."
+  },
+  {
+   "id": "drill",
+   "name": "Drill",
+   "tag": "Drill",
+   "bpm": 142,
+   "key": "C#m",
+   "style": "drill",
+   "genres": [
+    "drill",
+    "ukdrill",
+    "nydrill"
+   ],
+   "aesthetic": "Sliding 808s; a tight, bright snare; triplet hats; a dark minor piano line and string chords."
+  },
+  {
+   "id": "house",
+   "name": "House",
+   "tag": "House",
+   "bpm": 124,
+   "key": "Am",
+   "style": "house",
+   "genres": [
+    "house",
+    "deephouse"
+   ],
+   "aesthetic": "A 909-style kick and clap; open offbeat hats and shakers; organ chord stabs; a deep, short bassline."
+  },
+  {
+   "id": "edm",
+   "name": "EDM",
+   "tag": "EDM",
+   "bpm": 128,
+   "key": "Fm",
+   "style": "house",
+   "genres": [
+    "edm"
+   ],
+   "aesthetic": "A big punchy kick; a wide clap with a long room; supersaw chords; a bright pluck lead; a sub bass."
+  },
+  {
+   "id": "dnb",
+   "name": "Drum & bass",
+   "tag": "DnB",
+   "bpm": 174,
+   "key": "Em",
+   "style": "jungle",
+   "genres": [
+    "dnb",
+    "liquid"
+   ],
+   "aesthetic": "A tight kick and a sharp, high snare; a ride and fast hats; a growling reese bass; airy pads and electric piano."
+  },
+  {
+   "id": "lofi",
+   "name": "Lo-fi",
+   "tag": "Lofi",
+   "bpm": 80,
+   "key": "Am",
+   "style": "lofi",
+   "genres": [
+    "lofi",
+    "lofihiphop",
+    "chillhop"
+   ],
+   "aesthetic": "Dusty, low-passed drums with vinyl crackle; warm, wobbly electric-piano chords; a soft muted-guitar melody; a round bass."
+  },
+  {
+   "id": "afrobeats",
+   "name": "Afrobeats",
+   "tag": "Afrobeats",
+   "bpm": 105,
+   "key": "F#m",
+   "style": "afro",
+   "genres": [
+    "afrobeats"
+   ],
+   "aesthetic": "A soft round kick, rims and snaps; shakers; congas, talking drum and bell; a clean highlife guitar; marimba; a bouncing bass."
+  },
+  {
+   "id": "breakbeat",
+   "name": "Breakbeat",
+   "tag": "Breakbeat",
+   "bpm": 130,
+   "key": "Dm",
+   "style": "break",
+   "genres": [
+    "breakbeat"
+   ],
+   "aesthetic": "Roomy break-style drums with ghost snares; a squelchy acid bassline; rave chord stabs and rave piano."
+  },
+  {
+   "id": "rnb",
+   "name": "R&B",
+   "tag": "RnB",
+   "bpm": 75,
+   "key": "Gm",
+   "style": "lofi",
+   "genres": [
+    "rnb",
+    "slowjams"
+   ],
+   "aesthetic": "A soft, subby kick; finger snaps and rims; lush electric-piano chords; a sub bass; a sung vocal."
+  },
+  {
+   "id": "indierock",
+   "name": "Indie rock",
+   "tag": "IndieRock",
+   "bpm": 120,
+   "key": "Gmaj",
+   "style": "break",
+   "genres": [
+    "indierock",
+    "rock",
+    "garagerock"
+   ],
+   "aesthetic": "A live drum kit (kick, snare, hats, toms, crash); jangly clean guitar chords; driven power chords; a picked bass guitar."
+  },
+  {
+   "id": "amapiano",
+   "name": "Amapiano",
+   "tag": "Amapiano",
+   "bpm": 112,
+   "key": "Gm",
+   "style": "afro",
+   "genres": [
+    "amapiano"
+   ],
+   "aesthetic": "The log drum (a woody FM knock-bass that slides) over soft, low-passed kicks; layered, swung shakers; dry rims and claps; congas, woodblock and a whistle; jazzy Rhodes m9 chords; a light piano lick. No vocal ad-libs."
+  },
+  {
+   "id": "reggaeton",
+   "name": "Reggaeton",
+   "tag": "Reggaeton",
+   "bpm": 95,
+   "key": "Bm",
+   "style": "afro",
+   "genres": [
+    "reggaeton"
+   ],
+   "aesthetic": "The dembow: a punchy kick and short, boxy snares with a rim on them (several, to switch every four bars); 8th hats; timbales with a roll, güiro; a deep sine sub on the roots; plucks on i–VI–III–VII; a nylon-guitar hook. No vocal ad-libs."
+  },
+  {
+   "id": "dancehall",
+   "name": "Dancehall",
+   "tag": "Dancehall",
+   "bpm": 96,
+   "key": "Cm",
+   "style": "afro",
+   "genres": [
+    "dancehall"
+   ],
+   "aesthetic": "A stiff, short, dry kick; hard, dry stick snares and claps (and the stacked Diwali clap); woodblock, toms and a sound-system zap; a short synth-bass riff (the hook); Casio-style riddim stabs; a steel-pan line up high. No vocal ad-libs."
+  },
+  {
+   "id": "ukgarage",
+   "name": "UK garage",
+   "tag": "UKG",
+   "bpm": 132,
+   "key": "Am",
+   "style": "break",
+   "genres": [
+    "ukgarage"
+   ],
+   "aesthetic": "2-step: a short, tuned-up kick with midrange punch; talking rimshots, a crisp snare and claps; crisp noise hats, cabasa and a crash; a deep sine sub under an organ bass; M1-style organ m7/m9 stabs; Rhodes chords. No vocal ad-libs (its chopped vocal hook needs your own vocal)."
+  },
+  {
+   "id": "techno",
+   "name": "Techno",
+   "tag": "Techno",
+   "bpm": 132,
+   "key": "Gm",
+   "style": "house",
+   "genres": [
+    "techno"
+   ],
+   "aesthetic": "Driven, clipped kicks tuned to G, one with its rumble (a dark reverb tail ducked under the kick); a 909 clap and a bitcrushed one; 16th hats, open hats and a ride; rolling toms; a short off-beat bass; a hypnotic dub stab into a 3/16 echo; an acid line. No vocal ad-libs."
+  },
+  {
+   "id": "phonk",
+   "name": "Phonk",
+   "tag": "Phonk",
+   "bpm": 140,
+   "key": "Dm",
+   "style": "trap",
+   "genres": [
+    "phonk"
+   ],
+   "aesthetic": "Memphis to drift: crunchy, tape-degraded 808 drums (kicks, claps, hats with rolls); the tuned 808 cowbell as one-shots and as the lead melody (D minor and its Phrygian ♭2), driven and bit-crushed; a distorted 808; choir-like trance pads. No vocal ad-libs (no pitched-down Memphis vocals)."
+  },
+  {
+   "id": "dubstep",
+   "name": "Dubstep",
+   "tag": "Dubstep",
+   "bpm": 140,
+   "key": "Fm",
+   "style": "trap",
+   "genres": [
+    "dubstep"
+   ],
+   "aesthetic": "Half-time at 140: sub-heavy kicks; a huge snare (a 190 Hz body, a clap over it, a big room); hats with bursts, a ride, a crash; tambourine and toms; a wobble bass whose LFO rate changes every note over a sub that never moves; a talking growl; dark pads. No vocal ad-libs."
+  },
+  {
+   "id": "jerseyclub",
+   "name": "Jersey club",
+   "tag": "JerseyClub",
+   "bpm": 136,
+   "key": "C#m",
+   "style": "house",
+   "genres": [
+    "jerseyclub"
+   ],
+   "aesthetic": "Hard, short, clipped kicks for the five-kick bounce; bright claps with short tails; the bed squeak; hats; short 808s with a slide or two; chord stabs cut like a chopped sample; a vocal-chop hook made in code (a formant synth, not a singer). No vocal ad-libs."
+  },
+  {
+   "id": "synthwave",
+   "name": "Synthwave",
+   "tag": "Synthwave",
+   "bpm": 112,
+   "key": "Am",
+   "style": "house",
+   "genres": [
+    "synthwave"
+   ],
+   "aesthetic": "The night drive: dry 80s drum-machine kicks and hats; bright snares, claps and drum-synth toms in a big room gated shut (the tail stops dead); a tambourine and a machine cowbell; the pulse bass bouncing between octaves on every 8th, and a 16th one; a chorused poly-synth pad and brass stabs on i–VI–III–VII (Am, F, C, G); a 16th pluck arp; a singing saw lead with vibrato. Warm, the top rolled off like tape. No vocal ad-libs."
+  }
+ ],
+ "licenses": [
+  "CC0-SAMPLES-LICENSES.md",
+  "FREESOUND-CC0.md"
+ ],
+ "remote": [
+  {
+   "name": "ChopShop_HipHop_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "hiphop",
+   "sha256": "cdfb9581ff4067b971ed110852be015477d9d89a3cbb31e3ed7b0a4af2e710f3"
+  },
+  {
+   "name": "ChopShop_HipHop_snare_clap_kit.wav",
+   "size": 176444,
+   "pack": "hiphop",
+   "sha256": "96e399ee1b80b31566d0daa771ff2577e10996005503f915db9f8f64f8cf1170"
+  },
+  {
+   "name": "ChopShop_HipHop_hi_hats.wav",
+   "size": 176444,
+   "pack": "hiphop",
+   "sha256": "814a7b1ad7edfa7b12d39be7885bcdacd5ac11e6154c9a27a75ba4aac5b38deb"
+  },
+  {
+   "name": "ChopShop_HipHop_perc_kit.wav",
+   "size": 176444,
+   "pack": "hiphop",
+   "sha256": "aa20e21fcff8d15545662fe4287e48e6cc1f9e7b2f5afd1676c095fde40164fd"
+  },
+  {
+   "name": "ChopShop_HipHop_upright_bass_90_Dm.wav",
+   "size": 505724,
+   "pack": "hiphop",
+   "sha256": "1ba5188b223537077ced77df56b3d8a1e4ac3aefd41324ebf5e8c271a4fd30d1"
+  },
+  {
+   "name": "ChopShop_HipHop_jazz_keys_chords_90_Dm.wav",
+   "size": 976124,
+   "pack": "hiphop",
+   "sha256": "76506996b060dd906799dc3f84bd2317bdf2c5f45f90a7684b279cf844312ff8"
+  },
+  {
+   "name": "ChopShop_HipHop_vibes_melody_90_Dm.wav",
+   "size": 505724,
+   "pack": "hiphop",
+   "sha256": "7e52ba0c01a53de9aaa6dbe4e121541165b03a6a3fec02bfbf9024e4630720c9"
+  },
+  {
+   "name": "ChopShop_Trap_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "trap",
+   "sha256": "c5343703a4b50a47dceee0ac2d962b262a854c837690cec8561262edcea36735"
+  },
+  {
+   "name": "ChopShop_Trap_snare_clap_kit.wav",
+   "size": 176444,
+   "pack": "trap",
+   "sha256": "036852aa33dacf258dcd997a1a9a194a47f5f3625fcb83d9d472ae6880f76b25"
+  },
+  {
+   "name": "ChopShop_Trap_hi_hats.wav",
+   "size": 176444,
+   "pack": "trap",
+   "sha256": "85815cae0e9550f6cf6846e96dcf754e732201790d11d9af02533c0ef5ee2841"
+  },
+  {
+   "name": "ChopShop_Trap_perc_kit.wav",
+   "size": 176444,
+   "pack": "trap",
+   "sha256": "262153c0c9d27bfab2d5f8c4d5672004f957a25ee24bfae98f1229fc6c2f60c6"
+  },
+  {
+   "name": "ChopShop_Trap_808_bass_140_F#m.wav",
+   "file": "ChopShop_Trap_808_bass_140_Fsharpm.wav",
+   "size": 488924,
+   "pack": "trap",
+   "sha256": "b66e21eac0c1bb1c6c6b9e42af9a175d7f16eda8e1ab794c358e3acc86c660d4"
+  },
+  {
+   "name": "ChopShop_Trap_bell_melody_140_F#m.wav",
+   "file": "ChopShop_Trap_bell_melody_140_Fsharpm.wav",
+   "size": 337724,
+   "pack": "trap",
+   "sha256": "169a2e658090afa8e6d4047df50bc2273ce320a3ab8140ea22226b83c41d194e"
+  },
+  {
+   "name": "ChopShop_Trap_dark_pad_chords_140_F#m.wav",
+   "file": "ChopShop_Trap_dark_pad_chords_140_Fsharpm.wav",
+   "size": 640124,
+   "pack": "trap",
+   "sha256": "3e05c137618aa6fb0307a5e20c72b063e4a638619f1c0a05472e2e041eee22c9"
+  },
+  {
+   "name": "ChopShop_Drill_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "drill",
+   "sha256": "deb1687caec294e2b85df68459843225c47038595973cee7c5ff1f81230e56b5"
+  },
+  {
+   "name": "ChopShop_Drill_snare_clap_kit.wav",
+   "size": 176444,
+   "pack": "drill",
+   "sha256": "4902f50031cb96304d54b5f9e7502987067819d791587b28d477dd26be00a721"
+  },
+  {
+   "name": "ChopShop_Drill_hi_hats.wav",
+   "size": 176444,
+   "pack": "drill",
+   "sha256": "d72050660514643b5adef87c85fcc73bd3530cc85d281c0e61169d579e4027d5"
+  },
+  {
+   "name": "ChopShop_Drill_perc_kit.wav",
+   "size": 176444,
+   "pack": "drill",
+   "sha256": "4d049947f55ccfad0b7738d4476c21f47eb8a993a80f06a41a00128d3b532636"
+  },
+  {
+   "name": "ChopShop_Drill_808_slide_bass_142_C#m.wav",
+   "file": "ChopShop_Drill_808_slide_bass_142_Csharpm.wav",
+   "size": 482536,
+   "pack": "drill",
+   "sha256": "3048773bedfeb7bee8c94b381669deed583f8841eb7a7cf6969c84587f055aac"
+  },
+  {
+   "name": "ChopShop_Drill_dark_piano_melody_142_C#m.wav",
+   "file": "ChopShop_Drill_dark_piano_melody_142_Csharpm.wav",
+   "size": 333466,
+   "pack": "drill",
+   "sha256": "36fd95dfa9c5a0b5a0a80589cbc7bc03861ca5012468e0048003ecca24cfa37f"
+  },
+  {
+   "name": "ChopShop_Drill_string_chords_142_C#m.wav",
+   "file": "ChopShop_Drill_string_chords_142_Csharpm.wav",
+   "size": 631606,
+   "pack": "drill",
+   "sha256": "18b49f29b29e9ba165f390710dc86777b634447f0afa047d83e49548225e35f2"
+  },
+  {
+   "name": "ChopShop_House_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "house",
+   "sha256": "57a05eb4c4eb9fcc7c89cf40a320139bcc5d75f416c4f24ab540b4dedd1ae1f4"
+  },
+  {
+   "name": "ChopShop_House_snare_clap_kit.wav",
+   "size": 176444,
+   "pack": "house",
+   "sha256": "2f86f602c9ddc05f426818e87709afd54ae044edf61943be1f332d1caad5bac1"
+  },
+  {
+   "name": "ChopShop_House_hi_hats.wav",
+   "size": 176444,
+   "pack": "house",
+   "sha256": "dbbb8b9d10e39009b51dbdb1a0bfab9f3205c514c69ca07e2f9b89c3852cf58b"
+  },
+  {
+   "name": "ChopShop_House_perc_kit.wav",
+   "size": 176444,
+   "pack": "house",
+   "sha256": "83f02ce24fd56ebbdce90a4de38821c2b2fb10716ab3d48a406ff69487cdfda3"
+  },
+  {
+   "name": "ChopShop_House_deep_bass_124_Am.wav",
+   "size": 376744,
+   "pack": "house",
+   "sha256": "665ba107030695752f5408d7885fd8bdb70df765201e2da45bc0d90ccc8ad3b7"
+  },
+  {
+   "name": "ChopShop_House_organ_stab_chords_124_Am.wav",
+   "size": 376744,
+   "pack": "house",
+   "sha256": "9a0dfdd578dd925927e1fdd731dbb7b12891d563ab7df7de692cbb3253267880"
+  },
+  {
+   "name": "ChopShop_House_piano_chords_124_Am.wav",
+   "size": 376744,
+   "pack": "house",
+   "sha256": "a3e5292f4ad4124f8bf8be24d9b520f99c3d556143f34a986485036c0381b2b3"
+  },
+  {
+   "name": "ChopShop_DnB_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "dnb",
+   "sha256": "70b94d326b2175799f95e34052d655fe3784e317a9725378b61a2fa20eca4eda"
+  },
+  {
+   "name": "ChopShop_DnB_snare_clap_kit.wav",
+   "size": 176444,
+   "pack": "dnb",
+   "sha256": "11eac7d7a74c16ed441ad20e1e9ac6ea314f0d91a407be89aafe286d1a1eef70"
+  },
+  {
+   "name": "ChopShop_DnB_hi_hats.wav",
+   "size": 176444,
+   "pack": "dnb",
+   "sha256": "c5bcfdb4509ed410a8a3ae2dd4b9cfbff243eff9646486cb6a90fad923206242"
+  },
+  {
+   "name": "ChopShop_DnB_perc_kit.wav",
+   "size": 176444,
+   "pack": "dnb",
+   "sha256": "2a1fdba919fd94f36accb93b5314033a3b2ce90313fc43b53cbc21ca1a286a9e"
+  },
+  {
+   "name": "ChopShop_DnB_reese_bass_174_Em.wav",
+   "size": 521946,
+   "pack": "dnb",
+   "sha256": "d8edcdf4dbbb35087f817ba4f2e0b0b51f644ec4b90efa89bbc114bd0e2c4686"
+  },
+  {
+   "name": "ChopShop_DnB_air_pad_chords_174_Em.wav",
+   "size": 521946,
+   "pack": "dnb",
+   "sha256": "9f60628a1dd0805d5de81e2c97862bb80e98a6a58ae94e520b1794dbdd5a2b43"
+  },
+  {
+   "name": "ChopShop_DnB_rhodes_chords_174_Em.wav",
+   "size": 521946,
+   "pack": "dnb",
+   "sha256": "0735ae82ecbc1cfd6d640394b6ae8feb7de3b807d6eb572eb07bfb8272a16270"
+  },
+  {
+   "name": "ChopShop_Lofi_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "lofi",
+   "sha256": "abcce116a99d67e40ab75a744eeb0e451035a4c4ff1a637d1fd0c5d0974439a1"
+  },
+  {
+   "name": "ChopShop_Lofi_snare_clap_kit.wav",
+   "size": 176444,
+   "pack": "lofi",
+   "sha256": "ae45147a2c0ad617110132f5ba8643b951d0af0ca0dc423106b405c679b1b0ac"
+  },
+  {
+   "name": "ChopShop_Lofi_hi_hats.wav",
+   "size": 176444,
+   "pack": "lofi",
+   "sha256": "dc8ff77dea3b736244b20af1a70ca2d22831b303cd5ac90cd9434dcbce75c733"
+  },
+  {
+   "name": "ChopShop_Lofi_perc_kit.wav",
+   "size": 176444,
+   "pack": "lofi",
+   "sha256": "f96d12607f8409c6fe08ff386247c57e920e0322eb7abf41652ac05d2fa7da43"
+  },
+  {
+   "name": "ChopShop_Lofi_warm_bass_80_Am.wav",
+   "size": 564524,
+   "pack": "lofi",
+   "sha256": "993af9d81ccf4e10f5167da605fd9b46478c1d244e8c644a3fc70bacebc5cb75"
+  },
+  {
+   "name": "ChopShop_Lofi_dusty_ep_chords_80_Am.wav",
+   "size": 1093724,
+   "pack": "lofi",
+   "sha256": "ad446ff9d45322a9bd8f3a9e7a8c228c3ba3364fe745f2fc09ccd54c6d20f6a4"
+  },
+  {
+   "name": "ChopShop_Lofi_muted_guitar_melody_80_Am.wav",
+   "size": 564524,
+   "pack": "lofi",
+   "sha256": "3975af4300b0b3c41516947709697e560def0aec37806d521e447d11419b7e65"
+  },
+  {
+   "name": "ChopShop_Afrobeats_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "afrobeats",
+   "sha256": "189e691fcb25a0f0ddbe93411cafed298d79d581b3e81bbf7f0056ff77d1ca03"
+  },
+  {
+   "name": "ChopShop_Afrobeats_snare_rim_kit.wav",
+   "size": 176444,
+   "pack": "afrobeats",
+   "sha256": "1f2711ed53aae4c0f5a84d48083160720d692a2a1eb1dc19788ac55ad639449a"
+  },
+  {
+   "name": "ChopShop_Afrobeats_shaker_hats.wav",
+   "size": 176444,
+   "pack": "afrobeats",
+   "sha256": "d292f4e4b1e22b98bddddb21f812a9f86ffd94346f9e881d4433225e5677f011"
+  },
+  {
+   "name": "ChopShop_Afrobeats_perc_conga_talking_drum.wav",
+   "size": 176444,
+   "pack": "afrobeats",
+   "sha256": "b7eaa86cf441393a53cdb8d57a277e5816c9ee91d68d718ad2390b255bb99ad6"
+  },
+  {
+   "name": "ChopShop_Afrobeats_log_drum_bass_105_F#m.wav",
+   "file": "ChopShop_Afrobeats_log_drum_bass_105_Fsharpm.wav",
+   "size": 438524,
+   "pack": "afrobeats",
+   "sha256": "3650f98579673b7b3b54d533ff14b8f25913efb607ac005408f6a41ce5a73dc0"
+  },
+  {
+   "name": "ChopShop_Afrobeats_highlife_guitar_105_F#m.wav",
+   "file": "ChopShop_Afrobeats_highlife_guitar_105_Fsharpm.wav",
+   "size": 438524,
+   "pack": "afrobeats",
+   "sha256": "3c28b17b8d9f9a81c3463718add615d0fc21d506a5880ad9a595d6e8de176ae2"
+  },
+  {
+   "name": "ChopShop_Afrobeats_marimba_melody_105_F#m.wav",
+   "file": "ChopShop_Afrobeats_marimba_melody_105_Fsharpm.wav",
+   "size": 438524,
+   "pack": "afrobeats",
+   "sha256": "282321c6099dd585b6b2c8e19c4cbc396c1d7e4ce8cee772f7d0f876c6622e92"
+  },
+  {
+   "name": "ChopShop_Breakbeat_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "breakbeat",
+   "sha256": "3c4fc4e5dcd0d97832dccceff76b823264dba7a2a36a27eb44c44aad9a8a0139"
+  },
+  {
+   "name": "ChopShop_Breakbeat_snare_clap_kit.wav",
+   "size": 176444,
+   "pack": "breakbeat",
+   "sha256": "3cda7bf7277038180170531817c381e62356777444188f84f2a0dc5d1ffa168f"
+  },
+  {
+   "name": "ChopShop_Breakbeat_hi_hats.wav",
+   "size": 176444,
+   "pack": "breakbeat",
+   "sha256": "18e2ca866e83bc4cbdca52192595cd547b1634060986efedb50b3629362e57a2"
+  },
+  {
+   "name": "ChopShop_Breakbeat_perc_kit.wav",
+   "size": 176444,
+   "pack": "breakbeat",
+   "sha256": "bd6a713bf9ee69044299623bee17afc3104442c2c1d8031c149222e316b1f59d"
+  },
+  {
+   "name": "ChopShop_Breakbeat_acid_bass_130_Dm.wav",
+   "size": 360986,
+   "pack": "breakbeat",
+   "sha256": "15d723394a832a0288efea400a3a5f578328eec27a954fb78e67eb482e5bebcf"
+  },
+  {
+   "name": "ChopShop_Breakbeat_rave_stab_chords_130_Dm.wav",
+   "size": 360986,
+   "pack": "breakbeat",
+   "sha256": "aa317f5bb701abcade109db3145efba93aec415292a346416b56582125f18478"
+  },
+  {
+   "name": "ChopShop_Breakbeat_rave_piano_chords_130_Dm.wav",
+   "size": 360986,
+   "pack": "breakbeat",
+   "sha256": "5957ef3fb76a906d324604da734a53fece3b5814efeecd981869a37c1a1c41c6"
+  },
+  {
+   "name": "ChopShop_RnB_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "rnb",
+   "sha256": "fcdea75a5fe0986387f255ad563de7be69a40c8607eb04c2f7d82f88cce8c71a"
+  },
+  {
+   "name": "ChopShop_RnB_snap_rim_kit.wav",
+   "size": 176444,
+   "pack": "rnb",
+   "sha256": "740895686e463ae7cb6fb62f4d2d10895e5b2fde2f60e14971fdecd23ec50764"
+  },
+  {
+   "name": "ChopShop_RnB_hi_hats.wav",
+   "size": 176444,
+   "pack": "rnb",
+   "sha256": "c00628e33b61531ac5251b28a022530532cd060304f6b8a4abd1109d2559c5f2"
+  },
+  {
+   "name": "ChopShop_RnB_perc_kit.wav",
+   "size": 176444,
+   "pack": "rnb",
+   "sha256": "ff4866d76f15734203d1606cf52ac44bc081443a28e120d7b64df80f5140269c"
+  },
+  {
+   "name": "ChopShop_RnB_sub_bass_75_Gm.wav",
+   "size": 599806,
+   "pack": "rnb",
+   "sha256": "40e1fe3fadac89f3b520fd0f0278e28bcc434b55d4f5b41ef92baf3cb74cf813"
+  },
+  {
+   "name": "ChopShop_RnB_lush_ep_chords_75_Gm.wav",
+   "size": 599806,
+   "pack": "rnb",
+   "sha256": "281fbaf8b7a87cba68ecdb79e376922f52a8a4efd194a15b16aec5243fc7b6c3"
+  },
+  {
+   "name": "ChopShop_RnB_bell_pad_melody_75_Gm.wav",
+   "size": 599806,
+   "pack": "rnb",
+   "sha256": "d957b3c483e7905f9061aed907676d8f91175c6e7d8c9d32ec29a23fb12d666b"
+  },
+  {
+   "name": "ChopShop_IndieRock_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "indierock",
+   "sha256": "9e56bc8c60b5fba354ff8fe1903c4ad9c50436be45278a2677a3ed521372197c"
+  },
+  {
+   "name": "ChopShop_IndieRock_snare_kit.wav",
+   "size": 176444,
+   "pack": "indierock",
+   "sha256": "aa5b3488c2ac2f86d3ac760aca21f408360cf59ea77a5368afc7c831b55bc6c0"
+  },
+  {
+   "name": "ChopShop_IndieRock_hi_hats_cymbals.wav",
+   "size": 229364,
+   "pack": "indierock",
+   "sha256": "8dfc78876e97ffada4d51653a54c3fa3799044dbdf0a79041286dccdff2a2a34"
+  },
+  {
+   "name": "ChopShop_IndieRock_toms_perc.wav",
+   "size": 176444,
+   "pack": "indierock",
+   "sha256": "9da0fcb273294ea5b36b15705ff9e5dbf56b50226a00550bc5bc9fe5b41cd4f3"
+  },
+  {
+   "name": "ChopShop_IndieRock_bass_guitar_120_Gmaj.wav",
+   "size": 388126,
+   "pack": "indierock",
+   "sha256": "ee8a3f542eed2e32b2174391859a1b7cf6038c36e7d44ea895f48b6684ae49c0"
+  },
+  {
+   "name": "ChopShop_IndieRock_jangle_guitar_chords_120_Gmaj.wav",
+   "size": 740924,
+   "pack": "indierock",
+   "sha256": "02c5461a7117abb1d317f29acdbe209a3ee166ccbdd7a101de6aa15ef3d88a6b"
+  },
+  {
+   "name": "ChopShop_IndieRock_driven_guitar_power_chords_120_Gmaj.wav",
+   "size": 388126,
+   "pack": "indierock",
+   "sha256": "21113cbfe42fffcd8ccd9ab03ee54bfa2eae3f1c067f62d9d75e985fc62b9f76"
+  },
+  {
+   "name": "ChopShop_Amapiano_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "amapiano",
+   "sha256": "1fade9b148fc09ce5e07e0a7c468b080bd9331ebb8af1a36c2bc500be7add779"
+  },
+  {
+   "name": "ChopShop_Amapiano_rim_clap_kit.wav",
+   "size": 176444,
+   "pack": "amapiano",
+   "sha256": "86683f13407eddeba233a9864ba2a8848571a6f751b3147fe0d8565298feaba3"
+  },
+  {
+   "name": "ChopShop_Amapiano_shaker_hats.wav",
+   "size": 176444,
+   "pack": "amapiano",
+   "sha256": "46417ca1a3ed07e97d81664c42e8cefa8bc7d03207025a45e987c8d063162002"
+  },
+  {
+   "name": "ChopShop_Amapiano_perc_conga_kit.wav",
+   "size": 176444,
+   "pack": "amapiano",
+   "sha256": "74b40c17ebbd3cc59a839de8c7bb8c951a3ceceb3b4a18bf2c806f93e212f344"
+  },
+  {
+   "name": "ChopShop_Amapiano_log_drum_bass_112_Gm.wav",
+   "size": 413324,
+   "pack": "amapiano",
+   "sha256": "a1a840d6b7f02de1824db19aec14b3bf8190cb11a24201da797ade3b3650af0f"
+  },
+  {
+   "name": "ChopShop_Amapiano_rhodes_chords_112_Gm.wav",
+   "size": 791324,
+   "pack": "amapiano",
+   "sha256": "2f76aab0e940271248591b6f9d486670f01afcc4f7741e105073ea4779e2e583"
+  },
+  {
+   "name": "ChopShop_Amapiano_piano_melody_112_Gm.wav",
+   "size": 413324,
+   "pack": "amapiano",
+   "sha256": "b045e072f97ff3d3767052905f5616e6fbb8ee9ada73e3e18f2d0f05fcb2b8f6"
+  },
+  {
+   "name": "ChopShop_Reggaeton_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "reggaeton",
+   "sha256": "1ce9312db737acf068d7d7f1c6fd5295d59e379771e8f7bed9f4a42d512dd670"
+  },
+  {
+   "name": "ChopShop_Reggaeton_dembow_snare_rim_kit.wav",
+   "size": 176444,
+   "pack": "reggaeton",
+   "sha256": "61c3bc9667c1d2d9fa319799f155ff0c2e8fcfc1525107644ef141072ad8e168"
+  },
+  {
+   "name": "ChopShop_Reggaeton_hi_hats.wav",
+   "size": 176444,
+   "pack": "reggaeton",
+   "sha256": "1a2ffc9c21df573b2dd9d583437bdb04f9eccad8d91114b0bea770d145fb02d7"
+  },
+  {
+   "name": "ChopShop_Reggaeton_perc_timbal_guiro_kit.wav",
+   "size": 176444,
+   "pack": "reggaeton",
+   "sha256": "a1af68575e2c043cd01e90f23c6de1b4b2ebb4ceb425b7ef7a69cd85f8f4441a"
+  },
+  {
+   "name": "ChopShop_Reggaeton_sub_bass_95_Bm.wav",
+   "size": 480968,
+   "pack": "reggaeton",
+   "sha256": "f5a8cd99d42a088d87646f8fb541a6cab41c833d79c0452d71725358c97b2319"
+  },
+  {
+   "name": "ChopShop_Reggaeton_pluck_chords_95_Bm.wav",
+   "size": 480968,
+   "pack": "reggaeton",
+   "sha256": "35ea065eda0501d51e88f124d71496426755c4d8490a1e90e485f9cfc7ad6e10"
+  },
+  {
+   "name": "ChopShop_Reggaeton_nylon_guitar_melody_95_Bm.wav",
+   "size": 480968,
+   "pack": "reggaeton",
+   "sha256": "5d6299e3c840ecac8bd5f12cf7a19085e41ed98fc659f4d168140fe6bbe1b4a9"
+  },
+  {
+   "name": "ChopShop_Dancehall_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "dancehall",
+   "sha256": "df32954606ffff0bac3468843736dfa64936ba7cfe0fedc43b07b4fd21340d17"
+  },
+  {
+   "name": "ChopShop_Dancehall_stick_snare_clap_kit.wav",
+   "size": 176444,
+   "pack": "dancehall",
+   "sha256": "d3bd656349278a5cce5a5babd617e9ab33c7569d8f49d1bf4985da6cf63b74a9"
+  },
+  {
+   "name": "ChopShop_Dancehall_hi_hats.wav",
+   "size": 176444,
+   "pack": "dancehall",
+   "sha256": "58c3a01dbd85bcfbbdff98341515d9dcaa87dd7fa64c8789ca6700e558d8cf8d"
+  },
+  {
+   "name": "ChopShop_Dancehall_perc_kit.wav",
+   "size": 176444,
+   "pack": "dancehall",
+   "sha256": "9589595329231a83dd3e87eb269d112c34aba477749b83762bc698aaf3818c32"
+  },
+  {
+   "name": "ChopShop_Dancehall_synth_bass_96_Cm.wav",
+   "size": 476326,
+   "pack": "dancehall",
+   "sha256": "5cf8266be889532f7d6af32a020f0a6929094c73b47ebb6c7eedc4f6f7238f1f"
+  },
+  {
+   "name": "ChopShop_Dancehall_riddim_synth_stab_chords_96_Cm.wav",
+   "size": 476326,
+   "pack": "dancehall",
+   "sha256": "ca0cd472a8b6ff3045f15ece47e251f89c32438d5cb91f091ea6094901361958"
+  },
+  {
+   "name": "ChopShop_Dancehall_steel_pan_melody_96_Cm.wav",
+   "size": 476326,
+   "pack": "dancehall",
+   "sha256": "9ad6d1998d1fdce78fc9feed419dfca40b7856429986fa8b910e58eaaa8faed2"
+  },
+  {
+   "name": "ChopShop_UKG_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "ukgarage",
+   "sha256": "ef354a700f54fe9623714edd5c247a5ea8e1b775830ac472fe8b89aba1841c47"
+  },
+  {
+   "name": "ChopShop_UKG_rim_snare_clap_kit.wav",
+   "size": 176444,
+   "pack": "ukgarage",
+   "sha256": "39dc9f771c26d8e2f28fe595c0e8e019ffedcaa80316b7c58f4733b8f592d1a2"
+  },
+  {
+   "name": "ChopShop_UKG_hi_hats_cabasa.wav",
+   "size": 247004,
+   "pack": "ukgarage",
+   "sha256": "8d3b9e18a61acddd222328cbc1297acc29afe7f8a400849b8323d0ab07e84862"
+  },
+  {
+   "name": "ChopShop_UKG_perc_kit.wav",
+   "size": 176444,
+   "pack": "ukgarage",
+   "sha256": "4c65f144f9ea93f36e0fb3c68e4fa224fda4613b018f46fb14863b0763fe3996"
+  },
+  {
+   "name": "ChopShop_UKG_deep_sub_bass_132_Am.wav",
+   "size": 356052,
+   "pack": "ukgarage",
+   "sha256": "7eecff7eb0111368b462836910945c5884509e882cf4aa61c3e421b3f8c58c36"
+  },
+  {
+   "name": "ChopShop_UKG_organ_stab_chords_132_Am.wav",
+   "size": 356052,
+   "pack": "ukgarage",
+   "sha256": "86bd0b3e83df3289f38c0fb77092fabe9bd5a19426e68b9be875b82aceee9e70"
+  },
+  {
+   "name": "ChopShop_UKG_rhodes_chords_132_Am.wav",
+   "size": 676780,
+   "pack": "ukgarage",
+   "sha256": "d792a186831cdef13dbe7052fbab9698b937c695932c002ba37225d8840f8d0b"
+  },
+  {
+   "name": "ChopShop_Techno_kick_one_shots.wav",
+   "size": 229364,
+   "pack": "techno",
+   "sha256": "f069543df2006018a1776957786d0050a86ab7564ee61080dad204fb33b6783a"
+  },
+  {
+   "name": "ChopShop_Techno_clap_snare_kit.wav",
+   "size": 176444,
+   "pack": "techno",
+   "sha256": "a896c0f094e681157349f798f6aaff1a5645fe7c5aa7d5215229e1baf7be14ca"
+  },
+  {
+   "name": "ChopShop_Techno_hi_hats_ride.wav",
+   "size": 176444,
+   "pack": "techno",
+   "sha256": "c69d7d3010adefd1b0ddc06713fe98dbcab6e539d8ac322e3fcd164c14df2806"
+  },
+  {
+   "name": "ChopShop_Techno_perc_kit.wav",
+   "size": 176444,
+   "pack": "techno",
+   "sha256": "b121ebfa6ed6df75a1c4f3fe690e65626e59ed4f1b45f5220543eb2557c7267a"
+  },
+  {
+   "name": "ChopShop_Techno_rolling_bass_132_Gm.wav",
+   "size": 356052,
+   "pack": "techno",
+   "sha256": "1b732d469d91a9d9b36c75639ef42301f35db2d8bac4ee2d8f81f280ed88f344"
+  },
+  {
+   "name": "ChopShop_Techno_hypnotic_stab_chords_132_Gm.wav",
+   "size": 676780,
+   "pack": "techno",
+   "sha256": "3defd3919c119894faea48496b4328f9276ee43461eb439acbafe3095d6e510c"
+  },
+  {
+   "name": "ChopShop_Techno_acid_synth_lead_132_Gm.wav",
+   "size": 356052,
+   "pack": "techno",
+   "sha256": "1f265600cad058ac60d2faf25efb9d5d3bfcc7e82167657a7805f008ea797093"
+  },
+  {
+   "name": "ChopShop_Phonk_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "phonk",
+   "sha256": "998d0dee6fdd008481ed6c2ef62a7f3db6e69c79a1add390e62f6eb822489a62"
+  },
+  {
+   "name": "ChopShop_Phonk_snare_clap_kit.wav",
+   "size": 176444,
+   "pack": "phonk",
+   "sha256": "b2001adabd9bf510f75bb4a32b7de0840dac895d1998faed3984c9489963b293"
+  },
+  {
+   "name": "ChopShop_Phonk_hi_hats.wav",
+   "size": 176444,
+   "pack": "phonk",
+   "sha256": "e1f1a518a02395b14ba92e8b6a514051ded933aae85062efd51d5cf2e2deadf9"
+  },
+  {
+   "name": "ChopShop_Phonk_perc_cowbell_kit.wav",
+   "size": 176444,
+   "pack": "phonk",
+   "sha256": "69b78e46d1641542b03e8d99aa081786ab901741b96368754f67889d8876b945"
+  },
+  {
+   "name": "ChopShop_Phonk_distorted_808_bass_140_Dm.wav",
+   "size": 488924,
+   "pack": "phonk",
+   "sha256": "4a51f533bc9c0843fe990e7562e35124dcf2df9b8f5a1b3e3849f5a40809371c"
+  },
+  {
+   "name": "ChopShop_Phonk_cow_bell_melody_140_Dm.wav",
+   "size": 262124,
+   "pack": "phonk",
+   "sha256": "c45f2ac307ef6abfd0a265b911b535364b4a81415ed2744e01cf06cc153a1378"
+  },
+  {
+   "name": "ChopShop_Phonk_trance_pad_chords_140_Dm.wav",
+   "size": 640124,
+   "pack": "phonk",
+   "sha256": "e5ba2e98351cc68bf7f8ef341f61cd58b5125cf1358e5877876b219f71a142d0"
+  },
+  {
+   "name": "ChopShop_Dubstep_kick_one_shots.wav",
+   "size": 194086,
+   "pack": "dubstep",
+   "sha256": "adc2b61ec96758039098f2ccfeafc01c83cf3641b9ab65c85917b85f3dbab93c"
+  },
+  {
+   "name": "ChopShop_Dubstep_snare_clap_kit.wav",
+   "size": 299924,
+   "pack": "dubstep",
+   "sha256": "af0d8a836f7cf6fe43a1d33ca4cd6bdf29a21e237483f9a14ea3eadbdf423b8c"
+  },
+  {
+   "name": "ChopShop_Dubstep_hi_hats.wav",
+   "size": 247004,
+   "pack": "dubstep",
+   "sha256": "6db9b957b1f0c5d762829016c1bfd9a6bdd4ed0a81b1e933956b7e9df7e11369"
+  },
+  {
+   "name": "ChopShop_Dubstep_perc_kit.wav",
+   "size": 176444,
+   "pack": "dubstep",
+   "sha256": "6aa955e4511dceebf047e286a772d6aefebf2e0337e72d5d5eb7788ecd0a1cf0"
+  },
+  {
+   "name": "ChopShop_Dubstep_wobble_bass_140_Fm.wav",
+   "size": 640124,
+   "pack": "dubstep",
+   "sha256": "91d967422714e9cec267632af51656261ab2af153961dd3ae97ae3a1b6dd5fd5"
+  },
+  {
+   "name": "ChopShop_Dubstep_growl_synth_140_Fm.wav",
+   "size": 337724,
+   "pack": "dubstep",
+   "sha256": "4d062121818b5f265c4093fda3d6adebe25d745436f6c3f1a01e86039dd08768"
+  },
+  {
+   "name": "ChopShop_Dubstep_dark_pad_chords_140_Fm.wav",
+   "size": 640124,
+   "pack": "dubstep",
+   "sha256": "3ffdc33160dadaca1c44c02b82202e342cc4bb8d556d53f81b5e493955453700"
+  },
+  {
+   "name": "ChopShop_JerseyClub_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "jerseyclub",
+   "sha256": "96ff3562a7785254a6d8f3e89d7e1becec72e8d051b6d5150750cea0814516ca"
+  },
+  {
+   "name": "ChopShop_JerseyClub_clap_snare_kit.wav",
+   "size": 176444,
+   "pack": "jerseyclub",
+   "sha256": "863b006e8799d7e32ef608032db03bb5bd3b5b9836b4e3ca514e7d2d3f6ec524"
+  },
+  {
+   "name": "ChopShop_JerseyClub_hi_hats.wav",
+   "size": 176444,
+   "pack": "jerseyclub",
+   "sha256": "b06c62c8a199b10e106a85b9f75739e92fd2c76edb576ec5bb87699285a9d801"
+  },
+  {
+   "name": "ChopShop_JerseyClub_perc_bed_squeak_kit.wav",
+   "size": 176444,
+   "pack": "jerseyclub",
+   "sha256": "beb4e63caf75de374b6fdeb4f811350e8207dd3656a378fe86bb753a6bf7af26"
+  },
+  {
+   "name": "ChopShop_JerseyClub_short_808_bass_136_C#m.wav",
+   "file": "ChopShop_JerseyClub_short_808_bass_136_Csharpm.wav",
+   "size": 346620,
+   "pack": "jerseyclub",
+   "sha256": "c187f89b316700a538de781ed6a761b9a500fe2b69546d04116578ea27932e79"
+  },
+  {
+   "name": "ChopShop_JerseyClub_chopped_stab_chords_136_C#m.wav",
+   "file": "ChopShop_JerseyClub_chopped_stab_chords_136_Csharpm.wav",
+   "size": 346620,
+   "pack": "jerseyclub",
+   "sha256": "e6640858281b8cc56f29b27966c10e66548cee5a5f3acf2d5591638888475405"
+  },
+  {
+   "name": "ChopShop_JerseyClub_vox_chop_synth_136_C#m.wav",
+   "file": "ChopShop_JerseyClub_vox_chop_synth_136_Csharpm.wav",
+   "size": 346620,
+   "pack": "jerseyclub",
+   "sha256": "49ee52da9706c0cbb9036f69acb018b2c15f997f824e2ec7aebe98b8b578222a"
+  },
+  {
+   "name": "ChopShop_Synthwave_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "synthwave",
+   "sha256": "3314ef1546594794a8c97cd5ac8d3ed61278f8478607c44c250a129c8d4266dc"
+  },
+  {
+   "name": "ChopShop_Synthwave_gated_snare_clap_kit.wav",
+   "size": 176444,
+   "pack": "synthwave",
+   "sha256": "a28f7de13078f3d355238fb726dc2d89ef3324e7e85397ac7be907d96c15eefd"
+  },
+  {
+   "name": "ChopShop_Synthwave_hi_hats.wav",
+   "size": 176444,
+   "pack": "synthwave",
+   "sha256": "2e251646876dff148d5d5440d68d5cf2b409a68f8eb7918095090694b5f2fb57"
+  },
+  {
+   "name": "ChopShop_Synthwave_gated_toms_perc.wav",
+   "size": 176444,
+   "pack": "synthwave",
+   "sha256": "8ecaacb0906f770c6532997b9fc0366da0e5d685b1b1c629ff23534af7be9aa2"
+  },
+  {
+   "name": "ChopShop_Synthwave_octave_pulse_bass_112_Am.wav",
+   "size": 413324,
+   "pack": "synthwave",
+   "sha256": "c001b98a82fb24976d011490314eef33f818ca0c72024f7bee140975f73fbbf9"
+  },
+  {
+   "name": "ChopShop_Synthwave_driving_synth_bass_112_Am.wav",
+   "size": 413324,
+   "pack": "synthwave",
+   "sha256": "6a9c460a4fb9d2f27f4dccdccc0cd7982bdfc3111759449829e962d5d746c9cf"
+  },
+  {
+   "name": "ChopShop_Synthwave_poly_synth_pad_chords_112_Am.wav",
+   "size": 808964,
+   "pack": "synthwave",
+   "sha256": "34f6d0db5837b5ad719d7a5516dcf17cb3aa8e620f579f68de30d67426ddd3e3"
+  },
+  {
+   "name": "ChopShop_Synthwave_brass_stab_chords_112_Am.wav",
+   "size": 413324,
+   "pack": "synthwave",
+   "sha256": "c43863459510892792bc2b79bb31ad0696ebde52460daa1ae30c7a902be11182"
+  },
+  {
+   "name": "ChopShop_Synthwave_synth_arp_112_Am.wav",
+   "size": 413324,
+   "pack": "synthwave",
+   "sha256": "dba0019c93d051d37d766ad5a30460c3b28819bbd0b8600bbed3eea8ff218b7f"
+  },
+  {
+   "name": "ChopShop_Synthwave_saw_lead_melody_112_Am.wav",
+   "size": 430964,
+   "pack": "synthwave",
+   "sha256": "26c3e16a45154ce82cc837c690b152db17797c534f1b1222f01757b43e8b7c4e"
+  },
+  {
+   "name": "ChopShop_Afrobeats_vocal_adlibs.wav",
+   "size": 525026,
+   "pack": "afrobeats",
+   "sha256": "d8ddd0284863eb94476f4ceba7c0a817cd6089aa2ab60f2e1e8136ff0a319fac"
+  },
+  {
+   "name": "ChopShop_Breakbeat_vocal_adlibs.wav",
+   "size": 468218,
+   "pack": "breakbeat",
+   "sha256": "86cee5321d50da70caaa01f733312cf453c8ac34c4e4a4cc51b184fe6b985e8e"
+  },
+  {
+   "name": "ChopShop_DnB_vocal_adlibs.wav",
+   "size": 555554,
+   "pack": "dnb",
+   "sha256": "91373ac38c6df30d002d7b30a38c79ae19d65131a896b5344ef23b2994fea7e9"
+  },
+  {
+   "name": "ChopShop_Drill_vocal_adlibs.wav",
+   "size": 419330,
+   "pack": "drill",
+   "sha256": "c0fabd2a38ba1747f0e888d2f8631c0e5297e91c2e7178040614f8591f7cd4b3"
+  },
+  {
+   "name": "ChopShop_HipHop_vocal_adlibs.wav",
+   "size": 551864,
+   "pack": "hiphop",
+   "sha256": "7f7c1678ad70e88d24f4ae429231a28fd4251595dd2165779eb52e5b755b0f92"
+  },
+  {
+   "name": "ChopShop_House_vocal_adlibs.wav",
+   "size": 550604,
+   "pack": "house",
+   "sha256": "96e86658d092d3d37d143f067227c66f094026f546643942bdcd77a22972d371"
+  },
+  {
+   "name": "ChopShop_IndieRock_vocal_adlibs.wav",
+   "size": 557498,
+   "pack": "indierock",
+   "sha256": "932bec3583742f7c709b8b48c36d3239df1f50cd4d7cd00208b45b86eb44d870"
+  },
+  {
+   "name": "ChopShop_Lofi_vocal_adlibs.wav",
+   "size": 432048,
+   "pack": "lofi",
+   "sha256": "bbdca3fd3992c9695054c14339e3edff11990eaef1f2edbdc5a98a06ff64d6f6"
+  },
+  {
+   "name": "ChopShop_RnB_vocal_adlibs.wav",
+   "size": 714648,
+   "pack": "rnb",
+   "sha256": "5d18324114921cff174d4f2de8afebea7167eeb39319a1ea337f3ebeedc583be"
+  },
+  {
+   "name": "ChopShop_Trap_vocal_adlibs.wav",
+   "size": 531470,
+   "pack": "trap",
+   "sha256": "16ec5dc0c82aaf780bed61e7a0a66472af40c7c6eb4e59a9042a26433c9aa988"
+  },
+  {
+   "name": "ChopShop_HipHop_live_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "hiphop",
+   "sha256": "770282228de4dd8721b52f4dc868d778e1c6c4adde5fca9bc08ee447b9ef0157"
+  },
+  {
+   "name": "ChopShop_HipHop_live_snare_kit.wav",
+   "size": 176444,
+   "pack": "hiphop",
+   "sha256": "794bc7850185b712639c70f2ae6340da7e5d9e5d940309d1c093bd996350a482"
+  },
+  {
+   "name": "ChopShop_HipHop_live_hi_hats.wav",
+   "size": 220544,
+   "pack": "hiphop",
+   "sha256": "21f230378781cee72067e4efe33dc7b042a06f133dc9a79e35f5eb8719302344"
+  },
+  {
+   "name": "ChopShop_HipHop_tamb_shakers_perc.wav",
+   "size": 176444,
+   "pack": "hiphop",
+   "sha256": "04b927b8550f46a38fbce359bf80c6c58e98ac7ec1768c8d0c4284b2a18baa6d"
+  },
+  {
+   "name": "ChopShop_HipHop_big_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "hiphop",
+   "sha256": "9c13fc06e28fa5d7f83af6ef5c094a11ab0b93a9fa7e80e530ba1ba23a18c2e1"
+  },
+  {
+   "name": "ChopShop_HipHop_crack_snare_kit.wav",
+   "size": 176444,
+   "pack": "hiphop",
+   "sha256": "7bd5b27d2a3268f9390054655516678c75dd00e6d9d196374cd6c792ef725b45"
+  },
+  {
+   "name": "ChopShop_HipHop_upright_piano_chords_90_Dm.wav",
+   "size": 470444,
+   "pack": "hiphop",
+   "sha256": "228ec0fddf868d22bbd9d8e4211ac5c391039cb63eac70c7cdc413fe62f18fec"
+  },
+  {
+   "name": "ChopShop_HipHop_vibraphone_melody_90_Dm.wav",
+   "size": 470444,
+   "pack": "hiphop",
+   "sha256": "c618dd80709de11ab5dcf59c5b77b7084d66dce28cf8b00d3f2e2172616449b4"
+  },
+  {
+   "name": "ChopShop_HipHop_electric_bass_90_Dm.wav",
+   "size": 470444,
+   "pack": "hiphop",
+   "sha256": "282d60352953b4f502f450866229850111c0022f15500149d328f620d92d3a5e"
+  },
+  {
+   "name": "ChopShop_House_shakers_tamb_perc.wav",
+   "size": 202904,
+   "pack": "house",
+   "sha256": "a9fe398d310829e9f0b50c6d555fd43c6ce235f9176f2be74d1b4035d4697ca2"
+  },
+  {
+   "name": "ChopShop_House_live_clap_snare_kit.wav",
+   "size": 176444,
+   "pack": "house",
+   "sha256": "83cb8593999d15ea223299d721f8138a3d7c183ee9add71deaf2bdcdb07dc3e8"
+  },
+  {
+   "name": "ChopShop_House_grand_piano_stab_chords_124_Am.wav",
+   "size": 341464,
+   "pack": "house",
+   "sha256": "f31bcdba1667b3da5c15c87e6653008d67cf4709d330f4dcedf3dfc0ee388346"
+  },
+  {
+   "name": "ChopShop_House_kalimba_melody_124_Am.wav",
+   "size": 341464,
+   "pack": "house",
+   "sha256": "499ba7dcf7eb0f36cb10f48974d1ef4971b3cc14761f0721105bcc6305b8e923"
+  },
+  {
+   "name": "ChopShop_House_analog_synth_bass_124_Am.wav",
+   "size": 341464,
+   "pack": "house",
+   "sha256": "d1aff79b43e569be4c87d082e019324baa2bef28ce2a7db42b16155b666288ea"
+  },
+  {
+   "name": "ChopShop_Lofi_live_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "lofi",
+   "sha256": "6ee237f04c4479e0356c59a3ca40f9884c8d5a547ba6025b9e14ad6f33a8f15f"
+  },
+  {
+   "name": "ChopShop_Lofi_live_snare_kit.wav",
+   "size": 176444,
+   "pack": "lofi",
+   "sha256": "bdb60df17fb6f65686f7ecd4f57119528a465ccb2b808a8e2e51928ec4b9b6f1"
+  },
+  {
+   "name": "ChopShop_Lofi_live_hi_hats.wav",
+   "size": 220544,
+   "pack": "lofi",
+   "sha256": "0dfaf3dedeeedd8f7c5eb8369110f5ec8407776451d41c9d500c605f9fe6deaf"
+  },
+  {
+   "name": "ChopShop_Lofi_shakers_tamb_perc.wav",
+   "size": 176444,
+   "pack": "lofi",
+   "sha256": "42e8953cd28dd8137565664d282b1b0ecd9143139faa54f32b56213d7d58bd03"
+  },
+  {
+   "name": "ChopShop_Lofi_brushed_snare_kit.wav",
+   "size": 176444,
+   "pack": "lofi",
+   "sha256": "dbb773e7e04e3d67c64c7b74761a3c7c1d947174216023b5292be5dd438b3ef0"
+  },
+  {
+   "name": "ChopShop_Lofi_brushed_hi_hats.wav",
+   "size": 220544,
+   "pack": "lofi",
+   "sha256": "4fe7ac3e14aebd8622f5ff9f7331fcc3bd540a111ed6c67702ed1be08f1d1b6a"
+  },
+  {
+   "name": "ChopShop_Lofi_dusty_piano_chords_80_Am.wav",
+   "size": 529244,
+   "pack": "lofi",
+   "sha256": "6db60b2c683cf7674515fb6c7096947f3878d46744f253d8dd43ab26e1953415"
+  },
+  {
+   "name": "ChopShop_Lofi_archtop_guitar_melody_80_Am.wav",
+   "size": 529244,
+   "pack": "lofi",
+   "sha256": "8628ca4fff4058f8892847796a51780e915614c2f5a54d382060490049c338d6"
+  },
+  {
+   "name": "ChopShop_Lofi_finger_bass_80_Am.wav",
+   "size": 529244,
+   "pack": "lofi",
+   "sha256": "79c03b06b096ab51abc8a060aec8b936e024cffd4dbec71e6538ebc91619d9f9"
+  },
+  {
+   "name": "ChopShop_Afrobeats_conga_bongo_perc.wav",
+   "size": 176444,
+   "pack": "afrobeats",
+   "sha256": "8efca7974102f6a39c1aeb310f88244d8f96019ee5ca9394793627770c35281b"
+  },
+  {
+   "name": "ChopShop_Afrobeats_agogo_cowbell_perc.wav",
+   "size": 176444,
+   "pack": "afrobeats",
+   "sha256": "48c2ceb3b148bda70acb1f95936677c32cbe0d45ea63dcc478e74dd1276e78d7"
+  },
+  {
+   "name": "ChopShop_Afrobeats_djembe_cajon_perc.wav",
+   "size": 176444,
+   "pack": "afrobeats",
+   "sha256": "6fe9179809115436218c2ed7aed1512e0a6006e753eeaca27c5cbddac89889cf"
+  },
+  {
+   "name": "ChopShop_Afrobeats_piano_chords_105_F#m.wav",
+   "file": "ChopShop_Afrobeats_piano_chords_105_Fsharpm.wav",
+   "size": 403244,
+   "pack": "afrobeats",
+   "sha256": "2b3b59dc9cbfa3fb8c944fb1e0dd1a6089f8b3bab0e8e805defb9c2215b3fa0f"
+  },
+  {
+   "name": "ChopShop_Afrobeats_balafon_melody_105_F#m.wav",
+   "file": "ChopShop_Afrobeats_balafon_melody_105_Fsharpm.wav",
+   "size": 403244,
+   "pack": "afrobeats",
+   "sha256": "9a3e72977ccb7cb722dc98bbe7463c714eb0e20294b1d40f39250374bf542e8a"
+  },
+  {
+   "name": "ChopShop_Afrobeats_finger_bass_105_F#m.wav",
+   "file": "ChopShop_Afrobeats_finger_bass_105_Fsharpm.wav",
+   "size": 403244,
+   "pack": "afrobeats",
+   "sha256": "bbccd5c227b7b4c5afa0ba37007bd1fefdf6562915a235170f272e9778fe748d"
+  },
+  {
+   "name": "ChopShop_Breakbeat_room_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "breakbeat",
+   "sha256": "b2c604535c13074299855c3edc1cac3c73d6a499265fea3290bd15648244b515"
+  },
+  {
+   "name": "ChopShop_Breakbeat_room_snare_kit.wav",
+   "size": 176444,
+   "pack": "breakbeat",
+   "sha256": "f4dbbddf45efaf2b8c165fc6318c5a22f526dced8319373a7d95140440151ec4"
+  },
+  {
+   "name": "ChopShop_Breakbeat_live_hi_hats_cymbals.wav",
+   "size": 242594,
+   "pack": "breakbeat",
+   "sha256": "e11b13ccb4ab6ef6c080f9d89ba1f360a70a4e83bc5be5a02622e670c203f35a"
+  },
+  {
+   "name": "ChopShop_Breakbeat_funk_snare_kit.wav",
+   "size": 176444,
+   "pack": "breakbeat",
+   "sha256": "6ba13cca497645e20956e2af9f3894db30b83a7d981a83f8f53064152fd109f8"
+  },
+  {
+   "name": "ChopShop_RnB_soft_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "rnb",
+   "sha256": "39207e132c68d2741103bfd85e499d3eceb7cb724f2335248568d3a3c1345c07"
+  },
+  {
+   "name": "ChopShop_RnB_snap_snare_kit.wav",
+   "size": 176444,
+   "pack": "rnb",
+   "sha256": "02aed8e9a1c6f4ebfcc77d964a4768ff71773670ce002170f4d604ee756565da"
+  },
+  {
+   "name": "ChopShop_RnB_live_hi_hats.wav",
+   "size": 220544,
+   "pack": "rnb",
+   "sha256": "d4bc857bddd39d41db9a72b54cbbd382b7b1299f9857724548de203f97066c29"
+  },
+  {
+   "name": "ChopShop_RnB_electric_piano_chords_75_Gm.wav",
+   "size": 564524,
+   "pack": "rnb",
+   "sha256": "bb55b5d16b6c61be4826827af25589b86cf8caa612b3398b827595dcbd8c95dc"
+  },
+  {
+   "name": "ChopShop_RnB_clean_guitar_melody_75_Gm.wav",
+   "size": 564524,
+   "pack": "rnb",
+   "sha256": "a0c6d100a62d678c4c23ecdc119206a8e70d1b66cd1bfb439b8a2b0d63a34e8f"
+  },
+  {
+   "name": "ChopShop_RnB_smooth_bass_75_Gm.wav",
+   "size": 564524,
+   "pack": "rnb",
+   "sha256": "b1bde67f209c5d42bd822b4992e1a9c0806df45d0d442ab71d30e903f9c91cd6"
+  },
+  {
+   "name": "ChopShop_IndieRock_live_kick_one_shots.wav",
+   "size": 176444,
+   "pack": "indierock",
+   "sha256": "de83238e9ad24ba6d682a87bc18e0c246e61c070d0bc31544bf96bbdce4e1dd8"
+  },
+  {
+   "name": "ChopShop_IndieRock_live_snare_kit.wav",
+   "size": 176444,
+   "pack": "indierock",
+   "sha256": "3061a42e818b67fdf127c08246f577b309723ee68b98af1809ed434f5ca41c1f"
+  },
+  {
+   "name": "ChopShop_IndieRock_live_hi_hats_cymbals.wav",
+   "size": 242594,
+   "pack": "indierock",
+   "sha256": "524e6d0dfef26b18f3f0c8ff393c27d611446169e1ed3707dad8b3fcb186f9c5"
+  },
+  {
+   "name": "ChopShop_IndieRock_live_toms_perc.wav",
+   "size": 211724,
+   "pack": "indierock",
+   "sha256": "f4d8360ef1f1cd1cce91f1ba16a1c4c956233bb1d9cb4754900da84daaa4d0ba"
+  },
+  {
+   "name": "ChopShop_IndieRock_upright_piano_chords_120_Gmaj.wav",
+   "size": 352844,
+   "pack": "indierock",
+   "sha256": "24ba9422e4530f4b6cb9dd9b630aea663d78e7c67b0fb7bb450b477ea7548bf1"
+  },
+  {
+   "name": "ChopShop_IndieRock_clean_guitar_arpeggio_120_Gmaj.wav",
+   "size": 352844,
+   "pack": "indierock",
+   "sha256": "7e79ea0a2b5dc4adadcabd92e83015a8f003dd108af6a3507d0eb408de78aeb1"
+  },
+  {
+   "name": "ChopShop_IndieRock_flatwound_bass_120_Gmaj.wav",
+   "size": 352844,
+   "pack": "indierock",
+   "sha256": "5ab33a17fe8f983813b99bf0cad021cde879c90ce065c8845a61dded446000b9"
+  },
+  {
+   "name": "ChopShop_Amapiano_cabasa_woodblock_perc.wav",
+   "size": 176444,
+   "pack": "amapiano",
+   "sha256": "20b40c49296c02422198ead2112c2960413b94f35f244ab14faa99bcf4315ea3"
+  },
+  {
+   "name": "ChopShop_Amapiano_conga_slit_drum_perc.wav",
+   "size": 176444,
+   "pack": "amapiano",
+   "sha256": "efb9c04cb77b6d53f1d8153cd52446ca92b4d1ea023ac0d22596814903d1d64a"
+  },
+  {
+   "name": "ChopShop_Amapiano_jazz_piano_chords_112_Gm.wav",
+   "size": 378044,
+   "pack": "amapiano",
+   "sha256": "d935bd8c16d972a21e2423a2388afb2b717a3d3a8d6eb9420fd7875f52c4f653"
+  },
+  {
+   "name": "ChopShop_Amapiano_marimba_melody_112_Gm.wav",
+   "size": 378044,
+   "pack": "amapiano",
+   "sha256": "196ec6450e70a69f40c06f2d0f69fe3bd4ea46a8e26a92f1c60b1123f74f3336"
+  },
+  {
+   "name": "ChopShop_Reggaeton_timbale_bongo_perc.wav",
+   "size": 211724,
+   "pack": "reggaeton",
+   "sha256": "9a526f08c2a3b1cca4e345776174001ebf73707debdc24ac86161d7bb5acf8be"
+  },
+  {
+   "name": "ChopShop_Reggaeton_guiro_cowbell_perc.wav",
+   "size": 220544,
+   "pack": "reggaeton",
+   "sha256": "39dd1f0929f0749704f825c2ead07c4833e6eda9933f50af4e6b68105bcdeb2b"
+  },
+  {
+   "name": "ChopShop_Dancehall_bongo_cowbell_perc.wav",
+   "size": 176444,
+   "pack": "dancehall",
+   "sha256": "d89394801f9a11c8d6838586f10f91cb343b14238dffe46758831c58660c3d26"
+  },
+  {
+   "name": "ChopShop_UKG_shakers_cabasa_perc.wav",
+   "size": 176444,
+   "pack": "ukgarage",
+   "sha256": "5aaf6a640f0a560ff200b0be68e4119e44cebe1530723add9d85cd395fc439de"
+  },
+  {
+   "name": "ChopShop_UKG_electric_piano_chords_132_Am.wav",
+   "size": 320772,
+   "pack": "ukgarage",
+   "sha256": "8db65a0a837bd6ce8803ff5c9930230272af43193c97441ff5270c347e29727d"
+  },
+  {
+   "name": "ChopShop_UKG_analog_synth_bass_132_Am.wav",
+   "size": 320772,
+   "pack": "ukgarage",
+   "sha256": "88a493e8351f50ec320a2f00b94986bf42f18f1461c50e4da4a6c943cb0d2593"
+  },
+  {
+   "name": "ChopShop_Techno_tamb_shakers_perc.wav",
+   "size": 176444,
+   "pack": "techno",
+   "sha256": "6cbb45251534bff64ce6359548c65ec1a4df94a9e428fcf69e98831389d03c61"
+  },
+  {
+   "name": "ChopShop_Techno_rolling_synth_bass_132_Gm.wav",
+   "size": 320772,
+   "pack": "techno",
+   "sha256": "65f52b12fd20caaf5f56d8e55632a938c18235f5f8e7057c822e4d6b16a66eba"
+  },
+  {
+   "name": "ChopShop_Techno_analog_synth_stab_chords_132_Gm.wav",
+   "size": 320772,
+   "pack": "techno",
+   "sha256": "2f0a01dd09e5bea3d91e5314f226c7b8ed1a0bb81bcb4e67c8990af7c611f9a9"
+  },
+  {
+   "name": "ChopShop_RnB_Honeyglow_sub_bass_88_D#maj.wav",
+   "file": "ChopShop_RnB_Honeyglow_sub_bass_88_Dsharpmaj.wav",
+   "size": 516416,
+   "pack": "rnb",
+   "extra": true,
+   "sha256": "d404e6f7b9d67d1eb7c800cf3b5fc50cd9a335979eb27328a18508064708930c"
+  },
+  {
+   "name": "ChopShop_RnB_Honeyglow_lush_ep_chords_88_D#maj.wav",
+   "file": "ChopShop_RnB_Honeyglow_lush_ep_chords_88_Dsharpmaj.wav",
+   "size": 516416,
+   "pack": "rnb",
+   "extra": true,
+   "sha256": "cfd9e788e08b7b8aac93180ed729971de34880d8755d99d2d481241344ccf3a9"
+  },
+  {
+   "name": "ChopShop_RnB_Honeyglow_bell_pad_melody_88_D#maj.wav",
+   "file": "ChopShop_RnB_Honeyglow_bell_pad_melody_88_Dsharpmaj.wav",
+   "size": 516416,
+   "pack": "rnb",
+   "extra": true,
+   "sha256": "e9bc6bcd29ce78a211531c0b684ef36091a5c465ea8ddd332444dc84eb813274"
+  },
+  {
+   "name": "ChopShop_RnB_Slowburn_sub_bass_82_F#m.wav",
+   "file": "ChopShop_RnB_Slowburn_sub_bass_82_Fsharpm.wav",
+   "size": 551618,
+   "pack": "rnb",
+   "extra": true,
+   "sha256": "caca5e3de71fb3e975cdf3fd1a2a521a496b005639fcfb61225e9826b828a06d"
+  },
+  {
+   "name": "ChopShop_RnB_Slowburn_lush_ep_chords_82_F#m.wav",
+   "file": "ChopShop_RnB_Slowburn_lush_ep_chords_82_Fsharpm.wav",
+   "size": 551618,
+   "pack": "rnb",
+   "extra": true,
+   "sha256": "a87242e95b95b0ea0652b8437911ddd9d3d152bd935618785ba60cbe564cbadd"
+  },
+  {
+   "name": "ChopShop_RnB_Slowburn_bell_pad_melody_82_F#m.wav",
+   "file": "ChopShop_RnB_Slowburn_bell_pad_melody_82_Fsharpm.wav",
+   "size": 551618,
+   "pack": "rnb",
+   "extra": true,
+   "sha256": "66a3ddda1724c92677d7d969514635fb45e12a52af7f762a24158ca0f6be05d9"
+  },
+  {
+   "name": "ChopShop_RnB_LateNight_sub_bass_90_A#maj.wav",
+   "file": "ChopShop_RnB_LateNight_sub_bass_90_Asharpmaj.wav",
+   "size": 505724,
+   "pack": "rnb",
+   "extra": true,
+   "sha256": "f5624d42935d8f4401bac341d0647ea389b2e912c35d052853eb959f6fc9345b"
+  },
+  {
+   "name": "ChopShop_RnB_LateNight_lush_ep_chords_90_A#maj.wav",
+   "file": "ChopShop_RnB_LateNight_lush_ep_chords_90_Asharpmaj.wav",
+   "size": 505724,
+   "pack": "rnb",
+   "extra": true,
+   "sha256": "b9cd4a7603140aeb864608317f65ee5d0162363199d61c768737201a4f4c23ea"
+  },
+  {
+   "name": "ChopShop_RnB_LateNight_bell_pad_melody_90_A#maj.wav",
+   "file": "ChopShop_RnB_LateNight_bell_pad_melody_90_Asharpmaj.wav",
+   "size": 505724,
+   "pack": "rnb",
+   "extra": true,
+   "sha256": "1b56b2e33f4dc66db101cb92d1551cef7d4dad1fcb38f38fc13e2b9c4aa5d533"
+  },
+  {
+   "name": "ChopShop_RnB_SundayMorning_sub_bass_86_Fmaj.wav",
+   "size": 527604,
+   "pack": "rnb",
+   "extra": true,
+   "sha256": "303705c76af18d75ca589cc22b38e9f0ac826ee38ec27d4906c9c2199f522dcd"
+  },
+  {
+   "name": "ChopShop_RnB_SundayMorning_lush_ep_chords_86_Fmaj.wav",
+   "size": 527604,
+   "pack": "rnb",
+   "extra": true,
+   "sha256": "e190db87a579c864915619e2a3cae79fc6d6abfc4f827d71da492ad69d5f81cd"
+  },
+  {
+   "name": "ChopShop_RnB_SundayMorning_bell_pad_melody_86_Fmaj.wav",
+   "size": 527604,
+   "pack": "rnb",
+   "extra": true,
+   "sha256": "f9a5ac82c30da0f2caa3f00e9038d46c58b7ecfe2df2b155236605c60b35a8fe"
+  },
+  {
+   "name": "ChopShop_RnB_Satin_sub_bass_78_Cm.wav",
+   "size": 578094,
+   "pack": "rnb",
+   "extra": true,
+   "sha256": "d17dbe725962efe31268d40828b6ee77df723ab70563ca05a36b9a7f0d4870a0"
+  },
+  {
+   "name": "ChopShop_RnB_Satin_lush_ep_chords_78_Cm.wav",
+   "size": 578094,
+   "pack": "rnb",
+   "extra": true,
+   "sha256": "4384c068c3d2aff89341e53e9ae1960b29ad1650dd2c7643a3b5c23e8f93279d"
+  },
+  {
+   "name": "ChopShop_RnB_Satin_bell_pad_melody_78_Cm.wav",
+   "size": 578094,
+   "pack": "rnb",
+   "extra": true,
+   "sha256": "e40c8b3d418cf61fe5b14d01b3171fcd865cd99a88b1356ef5fec5bc6cbf1b5c"
+  },
+  {
+   "name": "ChopShop_RnB_Afterhours_sub_bass_92_Dmaj.wav",
+   "size": 495498,
+   "pack": "rnb",
+   "extra": true,
+   "sha256": "ffcfa3079d78440b96e1baf499758279ed0732c7a19ac11a95aa72e4cfd055d3"
+  },
+  {
+   "name": "ChopShop_RnB_Afterhours_lush_ep_chords_92_Dmaj.wav",
+   "size": 495498,
+   "pack": "rnb",
+   "extra": true,
+   "sha256": "6f502da15686248c87e546500800f25dd3d0ea36d223f39cd024144ff889081b"
+  },
+  {
+   "name": "ChopShop_RnB_Afterhours_bell_pad_melody_92_Dmaj.wav",
+   "size": 495498,
+   "pack": "rnb",
+   "extra": true,
+   "sha256": "4ad6e70731550d293a9b3a61e5877ca9e21df92b06c3feaffcc7454752bb163a"
+  },
+  {
+   "name": "ChopShop_RnB_Candlelight_sub_bass_84_G#m.wav",
+   "file": "ChopShop_RnB_Candlelight_sub_bass_84_Gsharpm.wav",
+   "size": 539324,
+   "pack": "rnb",
+   "extra": true,
+   "sha256": "e65bb61423943daa5cd983b80651384e3364955c6be887d3f53c500207b0bcef"
+  },
+  {
+   "name": "ChopShop_RnB_Candlelight_lush_ep_chords_84_G#m.wav",
+   "file": "ChopShop_RnB_Candlelight_lush_ep_chords_84_Gsharpm.wav",
+   "size": 539324,
+   "pack": "rnb",
+   "extra": true,
+   "sha256": "ec0be47ce121f9a3afdbd8605917ce93eb434b030bd753e14adfa85109ac0c89"
+  },
+  {
+   "name": "ChopShop_RnB_Candlelight_bell_pad_melody_84_G#m.wav",
+   "file": "ChopShop_RnB_Candlelight_bell_pad_melody_84_Gsharpm.wav",
+   "size": 539324,
+   "pack": "rnb",
+   "extra": true,
+   "sha256": "8d1037095b6acdf11dcf916ddda5e49697e31a51371a8ea58802050e8763940c"
+  },
+  {
+   "name": "ChopShop_IndieRock_PaperTown_bass_guitar_128_Dmaj.wav",
+   "size": 366076,
+   "pack": "indierock",
+   "extra": true,
+   "sha256": "6d05541b47ab3900345a34519d05cd375b0aa9599033aa07fa22626f40ad0b1e"
+  },
+  {
+   "name": "ChopShop_IndieRock_PaperTown_jangle_guitar_chords_128_Dmaj.wav",
+   "size": 696824,
+   "pack": "indierock",
+   "extra": true,
+   "sha256": "5e22766e591a9bd0ad6c68f68f7e7f5283752c49c847a4a68db8340741addddb"
+  },
+  {
+   "name": "ChopShop_IndieRock_PaperTown_driven_guitar_power_chords_128_Dmaj.wav",
+   "size": 366076,
+   "pack": "indierock",
+   "extra": true,
+   "sha256": "f898a344c0ade4442f9e512229a01be7cd6480bc878bc451f74a29a42a779557"
+  },
+  {
+   "name": "ChopShop_IndieRock_Backroads_bass_guitar_116_Amaj.wav",
+   "size": 400290,
+   "pack": "indierock",
+   "extra": true,
+   "sha256": "8ad50c979fae55c1d4198a18b58d30d88bec8bb57e061240e72cb85de8095ec1"
+  },
+  {
+   "name": "ChopShop_IndieRock_Backroads_jangle_guitar_chords_116_Amaj.wav",
+   "size": 765256,
+   "pack": "indierock",
+   "extra": true,
+   "sha256": "a99368b5313f52060ed89382b9945057ac590ed71c8736152922e5a321f808b8"
+  },
+  {
+   "name": "ChopShop_IndieRock_Backroads_driven_guitar_power_chords_116_Amaj.wav",
+   "size": 400290,
+   "pack": "indierock",
+   "extra": true,
+   "sha256": "bdf0d9faae7d4112607d73a4b6bb715fdc2a1b2930a029708562fb1a6f7f77db"
+  },
+  {
+   "name": "ChopShop_IndieRock_Polaroid_bass_guitar_140_Emaj.wav",
+   "size": 337724,
+   "pack": "indierock",
+   "extra": true,
+   "sha256": "d3701e7209f8b7276e5dbe7ed48d1d04a47f3114c7da2f0f341bd762fbbd78a4"
+  },
+  {
+   "name": "ChopShop_IndieRock_Polaroid_jangle_guitar_chords_140_Emaj.wav",
+   "size": 640124,
+   "pack": "indierock",
+   "extra": true,
+   "sha256": "5b526966aa96d73d6e9a9ba5c7e4fb720bc3a28bb692ea554ac50dc1736314e0"
+  },
+  {
+   "name": "ChopShop_IndieRock_Polaroid_driven_guitar_power_chords_140_Emaj.wav",
+   "size": 337724,
+   "pack": "indierock",
+   "extra": true,
+   "sha256": "ab448ed35cc3973bf28149d20f610bdb4fdb247bcf6bdf8c02bef063e4018e23"
+  },
+  {
+   "name": "ChopShop_IndieRock_Driveway_bass_guitar_124_Cmaj.wav",
+   "size": 376744,
+   "pack": "indierock",
+   "extra": true,
+   "sha256": "161e9e0da18ee55f9511bb4d7fffcb7296093fd7e09dd8c30364e7a658a6d5fa"
+  },
+  {
+   "name": "ChopShop_IndieRock_Driveway_jangle_guitar_chords_124_Cmaj.wav",
+   "size": 718164,
+   "pack": "indierock",
+   "extra": true,
+   "sha256": "926f9b8585ba9ec47802ad6cebe94c4e6e0bb6428fad61dadbc29bbeb712861d"
+  },
+  {
+   "name": "ChopShop_IndieRock_Driveway_driven_guitar_power_chords_124_Cmaj.wav",
+   "size": 376744,
+   "pack": "indierock",
+   "extra": true,
+   "sha256": "621d97fb7793daa4f0ba0364a123ba8e9ae799814065a734bd8df2b320a7dc79"
+  },
+  {
+   "name": "ChopShop_IndieRock_Seaside_bass_guitar_132_Fmaj.wav",
+   "size": 356052,
+   "pack": "indierock",
+   "extra": true,
+   "sha256": "c3c1b8d25b8288accca39c25aea4e9f5d052c32929893a0370973929deb4f7e3"
+  },
+  {
+   "name": "ChopShop_IndieRock_Seaside_jangle_guitar_chords_132_Fmaj.wav",
+   "size": 676780,
+   "pack": "indierock",
+   "extra": true,
+   "sha256": "7ef3fb04f4da5240e81b3f6040af629721a6e9af26e6a7d0a34b899dbaa9a87e"
+  },
+  {
+   "name": "ChopShop_IndieRock_Seaside_driven_guitar_power_chords_132_Fmaj.wav",
+   "size": 356052,
+   "pack": "indierock",
+   "extra": true,
+   "sha256": "c0b83a78fba8524c12dd0f05b5c4fd9af53cdb117692b055546a591a3197653a"
+  },
+  {
+   "name": "ChopShop_IndieRock_Rooftops_bass_guitar_112_Bmaj.wav",
+   "size": 413324,
+   "pack": "indierock",
+   "extra": true,
+   "sha256": "ef6e11b01db075b25a38ee65d1e91499a8ee5665b4451c6ffd2d3c9773f2fdb3"
+  },
+  {
+   "name": "ChopShop_IndieRock_Rooftops_jangle_guitar_chords_112_Bmaj.wav",
+   "size": 791324,
+   "pack": "indierock",
+   "extra": true,
+   "sha256": "0c8d32ee09c6c3de80aadd327c8833eb4ddfcd96517847e1d29f4bba7ab9c327"
+  },
+  {
+   "name": "ChopShop_IndieRock_Rooftops_driven_guitar_power_chords_112_Bmaj.wav",
+   "size": 413324,
+   "pack": "indierock",
+   "extra": true,
+   "sha256": "ea0e718d8b9f82b226828f839c887eff4517a9cd77de18c7716e91ccabf12831"
+  },
+  {
+   "name": "ChopShop_IndieRock_Weekend_bass_guitar_146_Cmaj.wav",
+   "size": 325298,
+   "pack": "indierock",
+   "extra": true,
+   "sha256": "f67b4484d53ed3cac11306d71bf2893a4517e0211291bf3d2faf08902969fa59"
+  },
+  {
+   "name": "ChopShop_IndieRock_Weekend_jangle_guitar_chords_146_Cmaj.wav",
+   "size": 615270,
+   "pack": "indierock",
+   "extra": true,
+   "sha256": "e08f30a449e611fdf1a025a1caa72851a88d2af154ae52150e8c8de6c572554d"
+  },
+  {
+   "name": "ChopShop_IndieRock_Weekend_driven_guitar_power_chords_146_Cmaj.wav",
+   "size": 325298,
+   "pack": "indierock",
+   "extra": true,
+   "sha256": "d0c7297998ecf810f143d874b9b978daa66c1b7c3ef47e5d0bf1da58a67b14d3"
+  },
+  {
+   "name": "ChopShop_Synthwave_NeonMile_octave_pulse_bass_104_Em.wav",
+   "size": 442402,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "dda02ff92dab5779d95acc6df06302b62c5f88f3a531a951efdf472d88f9c494"
+  },
+  {
+   "name": "ChopShop_Synthwave_NeonMile_poly_synth_pad_chords_104_Em.wav",
+   "size": 867118,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "2e8d3f110566b061ede76661b71bb7e33a79b32c811532e13028992c95cc66fa"
+  },
+  {
+   "name": "ChopShop_Synthwave_NeonMile_synth_arp_104_Em.wav",
+   "size": 442402,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "a9fa696a3e9fa5961ee27a14384a2a7ecfd28c05a00f4a4cc0daf63875b7b272"
+  },
+  {
+   "name": "ChopShop_Synthwave_NeonMile_saw_lead_melody_104_Em.wav",
+   "size": 460042,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "cf6f769387486824f1ead39a57dcb73a6889bd959328fa64a85e1ab86d93f974"
+  },
+  {
+   "name": "ChopShop_Synthwave_Palmline_octave_pulse_bass_100_Dm.wav",
+   "size": 458684,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "106e0893ece07578dd85fcd7485df6810262f2edbc0dcfc306815d90c6b13263"
+  },
+  {
+   "name": "ChopShop_Synthwave_Palmline_poly_synth_pad_chords_100_Dm.wav",
+   "size": 899684,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "c84f934dc73123fe87a9ee72ab9a7f4dc23f482ec4ba76520a9388cd330d8802"
+  },
+  {
+   "name": "ChopShop_Synthwave_Palmline_synth_arp_100_Dm.wav",
+   "size": 458684,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "0b47af13bab7e6dc7510d40e675b5ecc7ad73792fadfb66bb08bc6357a9f9e74"
+  },
+  {
+   "name": "ChopShop_Synthwave_Palmline_saw_lead_melody_100_Dm.wav",
+   "size": 476324,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "6b5fbb26684de0f3c21bd633f1a1a7d13f50f3e12fe775232e3cd431ca0ee12a"
+  },
+  {
+   "name": "ChopShop_Synthwave_Moonrunner_octave_pulse_bass_110_F#m.wav",
+   "file": "ChopShop_Synthwave_Moonrunner_octave_pulse_bass_110_Fsharpm.wav",
+   "size": 420198,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "ad5284b788eb91250e84c22f0eb0485c21bb25cb9175044163d2401d6a65ea29"
+  },
+  {
+   "name": "ChopShop_Synthwave_Moonrunner_poly_synth_pad_chords_110_F#m.wav",
+   "file": "ChopShop_Synthwave_Moonrunner_poly_synth_pad_chords_110_Fsharpm.wav",
+   "size": 822710,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "fec740c960fd8dce6317ca92d8c9d3eb37a29f8033ae09b2402e0985209f5ac1"
+  },
+  {
+   "name": "ChopShop_Synthwave_Moonrunner_synth_arp_110_F#m.wav",
+   "file": "ChopShop_Synthwave_Moonrunner_synth_arp_110_Fsharpm.wav",
+   "size": 420198,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "eebefb32e25bd1458a97a4b8b5c06ee1fb4b78b8ce5a8892ade79537b280f9ef"
+  },
+  {
+   "name": "ChopShop_Synthwave_Moonrunner_saw_lead_melody_110_F#m.wav",
+   "file": "ChopShop_Synthwave_Moonrunner_saw_lead_melody_110_Fsharpm.wav",
+   "size": 437838,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "734be1121cbe88ec8d5890b27c56bdfbfbf8f85a089e3358a5ae887c080f916c"
+  },
+  {
+   "name": "ChopShop_Synthwave_ChromeHeart_octave_pulse_bass_116_Cm.wav",
+   "size": 400290,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "0ff600b6b29154979a3b159c998f712dd41d87658ce3d23e67f83e2c874cdbc8"
+  },
+  {
+   "name": "ChopShop_Synthwave_ChromeHeart_poly_synth_pad_chords_116_Cm.wav",
+   "size": 782896,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "fafa694a7bf9e5f7010b66ed85d85bc3a22f32efbd5d2da00093785df214d2a9"
+  },
+  {
+   "name": "ChopShop_Synthwave_ChromeHeart_synth_arp_116_Cm.wav",
+   "size": 400290,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "00dbc229de35a1030ccd9d5cf56c548c294a34ba7bf05c2b6948ba6b42be0c59"
+  },
+  {
+   "name": "ChopShop_Synthwave_ChromeHeart_saw_lead_melody_116_Cm.wav",
+   "size": 417930,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "8886e340b197eafa5d8c0f729379863d37ade11f56cf9eef596aaab13cd7b1f3"
+  },
+  {
+   "name": "ChopShop_Synthwave_Sundown_octave_pulse_bass_96_Bm.wav",
+   "size": 476326,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "c8d88554dc307f834240b8270cb9284c62d43feab84d50edf6de1ff9a7c62602"
+  },
+  {
+   "name": "ChopShop_Synthwave_Sundown_poly_synth_pad_chords_96_Bm.wav",
+   "size": 934964,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "b31ecc85c516e6abad34c754d3926638026f7097928e386c10fd6333239a6e70"
+  },
+  {
+   "name": "ChopShop_Synthwave_Sundown_synth_arp_96_Bm.wav",
+   "size": 476326,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "9f70621650d4403a06a1937ca2ffb93b53b514a515d035b5d6c134ef34736d03"
+  },
+  {
+   "name": "ChopShop_Synthwave_Sundown_saw_lead_melody_96_Bm.wav",
+   "size": 493964,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "82469dd5a2d6f421d1dcf7ce66f95a0c276451f4a85fd90e80a0e079b28fb02d"
+  },
+  {
+   "name": "ChopShop_Synthwave_ArcadeGlow_octave_pulse_bass_118_Gm.wav",
+   "size": 394104,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "44faf821c12841941c32a8b197e0540d8d6f50d3e14421b4e77da8a00b8961bb"
+  },
+  {
+   "name": "ChopShop_Synthwave_ArcadeGlow_poly_synth_pad_chords_118_Gm.wav",
+   "size": 770524,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "46a06f299badd1895c8f768422a5d47f8e1cdc9aa2993701f448f1c875fe1dea"
+  },
+  {
+   "name": "ChopShop_Synthwave_ArcadeGlow_synth_arp_118_Gm.wav",
+   "size": 394104,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "862bbc412b6f5f3286e379eed4f1ca16400a551f7a7c20d3db289e5933862827"
+  },
+  {
+   "name": "ChopShop_Synthwave_ArcadeGlow_saw_lead_melody_118_Gm.wav",
+   "size": 411744,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "15a9e5d3ad63a146cbdc96ddd3d48121f3ed941067c3ee586b2e49619106aefd"
+  },
+  {
+   "name": "ChopShop_Synthwave_Mirage_octave_pulse_bass_108_C#m.wav",
+   "file": "ChopShop_Synthwave_Mirage_octave_pulse_bass_108_Csharpm.wav",
+   "size": 427326,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "cafd3078db02249eb4967f33b46fa07d6ffa854f0fca1e0a2ab1a9cc73e44778"
+  },
+  {
+   "name": "ChopShop_Synthwave_Mirage_poly_synth_pad_chords_108_C#m.wav",
+   "file": "ChopShop_Synthwave_Mirage_poly_synth_pad_chords_108_Csharpm.wav",
+   "size": 836964,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "0b792be65d7999acd1387fb76e6b9d8f2c82799677027a8c84099a4983626c44"
+  },
+  {
+   "name": "ChopShop_Synthwave_Mirage_synth_arp_108_C#m.wav",
+   "file": "ChopShop_Synthwave_Mirage_synth_arp_108_Csharpm.wav",
+   "size": 427326,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "ad64444626b15aa69981a8ac0782bed42387ab4634d906a4ed61417fd60ae530"
+  },
+  {
+   "name": "ChopShop_Synthwave_Mirage_saw_lead_melody_108_C#m.wav",
+   "file": "ChopShop_Synthwave_Mirage_saw_lead_melody_108_Csharpm.wav",
+   "size": 444964,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "0ccc47fdd6b9906f6fd8069a7ffb9d3232add19ccf1479f4295cce1ee8d95915"
+  },
+  {
+   "name": "ChopShop_EDM_Skyline_sub_bass_126_Am.wav",
+   "size": 371324,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "78214c05755e8d172cc9bcc39487a9d2ae687e14045993e3855ed438a5477a01"
+  },
+  {
+   "name": "ChopShop_EDM_Skyline_supersaw_chords_126_Am.wav",
+   "size": 707324,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "a037969ed81376775b3791429a808183af14c1da1a0dd59f6daa942d2d5423f8"
+  },
+  {
+   "name": "ChopShop_EDM_Skyline_pluck_lead_126_Am.wav",
+   "size": 371324,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "4f383c86553e6e8922230a3c12c04a91027eeb49aa8135ede9b850ea48252e9d"
+  },
+  {
+   "name": "ChopShop_EDM_Firewalk_sub_bass_128_Cm.wav",
+   "size": 366076,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "ed45811fffd526f3b4142357e80291fe943732c10b72b93ce029753459cd7411"
+  },
+  {
+   "name": "ChopShop_EDM_Firewalk_supersaw_chords_128_Cm.wav",
+   "size": 696824,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "5df626dd7f4fe99d3b1f5c8d46950c4c6b4b0200b99da109980d2309bfb53c96"
+  },
+  {
+   "name": "ChopShop_EDM_Firewalk_pluck_lead_128_Cm.wav",
+   "size": 366076,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "032bd6957e89bc4beaf79b9a9bc0fed06897fc074cffcf13d1bcf60a8ec2cd2e"
+  },
+  {
+   "name": "ChopShop_EDM_Afterlight_sub_bass_124_Gm.wav",
+   "size": 376744,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "5299ad096188d8c8fe9587a3d559ae511c0044feb577674b3a3e42cb1d6e7fd6"
+  },
+  {
+   "name": "ChopShop_EDM_Afterlight_supersaw_chords_124_Gm.wav",
+   "size": 718164,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "5f9e9ce304b0f4f227ea4bae81c9570ea6c366233c47ad90d22b4c57643090ac"
+  },
+  {
+   "name": "ChopShop_EDM_Afterlight_pluck_lead_124_Gm.wav",
+   "size": 376744,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "b72d86997f302f997a7ef518b4fa9f13f95756e5743d8268aa16e28fed402400"
+  },
+  {
+   "name": "ChopShop_EDM_Riptide_sub_bass_130_Dm.wav",
+   "size": 360986,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "f583222618b24e671e427823e4bde8ef99ee88f10fc156681c7dc7adcd3179fd"
+  },
+  {
+   "name": "ChopShop_EDM_Riptide_supersaw_chords_130_Dm.wav",
+   "size": 686648,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "0b27a0b77ebb2710c6c4e93607dfcbc72d097078f02ede120fe51c1f6b4556f1"
+  },
+  {
+   "name": "ChopShop_EDM_Riptide_pluck_lead_130_Dm.wav",
+   "size": 360986,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "6112ba61d50e49161a3dba6a32b25635463f5f667970e99df5b2dfb8ce6dbc65"
+  },
+  {
+   "name": "ChopShop_EDM_Starfall_sub_bass_126_D#m.wav",
+   "file": "ChopShop_EDM_Starfall_sub_bass_126_Dsharpm.wav",
+   "size": 371324,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "697705a8b51070cf96f6c5282df4d65e9a19660fefde9a296d6e337ba35a6611"
+  },
+  {
+   "name": "ChopShop_EDM_Starfall_supersaw_chords_126_D#m.wav",
+   "file": "ChopShop_EDM_Starfall_supersaw_chords_126_Dsharpm.wav",
+   "size": 707324,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "82328f3aa62c3b8e4173c84ae904a4a6c1eaf6caccff3588475666082571fb9c"
+  },
+  {
+   "name": "ChopShop_EDM_Starfall_pluck_lead_126_D#m.wav",
+   "file": "ChopShop_EDM_Starfall_pluck_lead_126_Dsharpm.wav",
+   "size": 371324,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "6a6a646c7457e448a3099f1a3ba325e69854a4c9f02ac1657d98e908230342e5"
+  },
+  {
+   "name": "ChopShop_EDM_Lightyear_sub_bass_128_Bm.wav",
+   "size": 366076,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "0c45781e79ec30fc12006781c531d9c0f8fe2d2e14de4b2c2cc250c185570d3b"
+  },
+  {
+   "name": "ChopShop_EDM_Lightyear_supersaw_chords_128_Bm.wav",
+   "size": 696824,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "39795f1f80f7583baf69efe8c278f7a33787ec15419771b4a0b70024475b49d1"
+  },
+  {
+   "name": "ChopShop_EDM_Lightyear_pluck_lead_128_Bm.wav",
+   "size": 366076,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "7150bc7abc85d9ac641f27a2274e721ee6871148bdfa72d416f37ad379666ad9"
+  },
+  {
+   "name": "ChopShop_EDM_Overdrive_sub_bass_125_Em.wav",
+   "size": 374012,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "730efc6b68e730c628214a207d9ebe408fa46273d12875d55024e26928256689"
+  },
+  {
+   "name": "ChopShop_EDM_Overdrive_supersaw_chords_125_Em.wav",
+   "size": 712700,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "1a42427b0e54e2da3765ae0b1d78e68801fc71c20c0575cab3de3dad0b9495f4"
+  },
+  {
+   "name": "ChopShop_EDM_Overdrive_pluck_lead_125_Em.wav",
+   "size": 374012,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "78176580bf9607a367110418e22c3825041b2b5f91a7674deebabf55f1b8277d"
+  },
+  {
+   "name": "ChopShop_RnB_vocal_chops_75_Gm.wav",
+   "size": 1285118,
+   "pack": "rnb",
+   "sha256": "785d6f3bfc4995ba5220318ff183609ca8756dd53b9fe60e396293b7e9d874c0"
+  },
+  {
+   "name": "ChopShop_Synthwave_vocal_chops_112_Am.wav",
+   "size": 1310696,
+   "pack": "synthwave",
+   "sha256": "46def3cccadb244e1865598e9a8d49384795da69356c2fad16af3fbbfe8ae941"
+  },
+  {
+   "name": "ChopShop_Synthwave_vocoder_chops_112_Am.wav",
+   "size": 1354796,
+   "pack": "synthwave",
+   "sha256": "36a946256d739568175c3d8ae9eba9046fa9cccf8f82b91eb95773a05cd6960c"
+  },
+  {
+   "name": "ChopShop_EDM_Aurora_future_chords_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "af06cbb92aa45b56a33b7d3f61b613d18164eb73106eb8fc8afc41f12e110bfd"
+  },
+  {
+   "name": "ChopShop_EDM_Aurora_pad_chords_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "660a72c7586f241c9b2964c21f15ed33864454525ad36377c1c5a02cd7a01b97"
+  },
+  {
+   "name": "ChopShop_EDM_Aurora_pluck_lead_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "637813a0639c791a5b8b460e06b33332d8e5e6f3387aecea88bda0a907b0d653"
+  },
+  {
+   "name": "ChopShop_EDM_Aurora_reese_bass_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "a87e87b031e628a075b3c9141be9646668a9523f483a6ca03a01a18fbeb8ae9f"
+  },
+  {
+   "name": "ChopShop_EDM_Comet_keys_chords_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "87adb6ec3773bdba1c0f43b21ec5cc61f5429113803165d3368a1b430275c0c4"
+  },
+  {
+   "name": "ChopShop_EDM_Comet_pad_chords_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "5830e639f9ac16c59755954bae8e3c04e5bcfeb13fc1c0c8c47da2d013a7540c"
+  },
+  {
+   "name": "ChopShop_EDM_Comet_pluck_lead_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "d6c5e3b1aa2e5d5f9a3c08a606632b7fa4126de2e9b8f6adb213d748851dc223"
+  },
+  {
+   "name": "ChopShop_EDM_Comet_sub_bass_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "f09bd0fbd98130e6dab07cf26ec98b6cec26510ab7268a64001eb517460ea95a"
+  },
+  {
+   "name": "ChopShop_EDM_Ember_future_chords_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "f57c0c99044cb3a8750b4c267c12da4d2974b57b506e69572fcbae125103cb38"
+  },
+  {
+   "name": "ChopShop_EDM_Ember_pad_chords_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "c79a44eea98e10612d4fcd965fefc6ac6355010c1790995179e5120d5eb5c80e"
+  },
+  {
+   "name": "ChopShop_EDM_Ember_pluck_lead_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "a434ddc2170baecfb9438f30c251036c5d56c32c9d3be2804b15499994425e48"
+  },
+  {
+   "name": "ChopShop_EDM_Ember_sub_bass_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "c6d681434cda29211f28a1bcd23f66a1ba2e9a38d36817caece16c0d4f20f5f3"
+  },
+  {
+   "name": "ChopShop_EDM_Halcyon_pad_chords_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "53b444be230c6ca5107cfe79cd949ac93a8ebb54d1393ec46e11a3c8b8e2c3ea"
+  },
+  {
+   "name": "ChopShop_EDM_Halcyon_sub_bass_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "388ceafc5310ce49ce57f84b6e2465bda1b2d2d09209237c8006250320e903af"
+  },
+  {
+   "name": "ChopShop_EDM_Halcyon_supersaw_chords_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "3ade3e1b109eb4d35042cc070ebeef05a6ba18ca48a3c054948b7f517878d167"
+  },
+  {
+   "name": "ChopShop_EDM_Halcyon_synth_lead_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "93c2976d347b9bcc0436963dfb7dcb680fcc7ed7fe2fc4302850da91a64dbbad"
+  },
+  {
+   "name": "ChopShop_EDM_Mirage_arp_lead_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "4ec3382e84cfb9dca0b7ed41e22d7288b8c3ca1e093f588e8ef60934c5dff973"
+  },
+  {
+   "name": "ChopShop_EDM_Mirage_keys_chords_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "671f337e19b8a5112a09f44e74ed395f64e297e06ec2e9160dbf46dfafebf14c"
+  },
+  {
+   "name": "ChopShop_EDM_Mirage_pad_chords_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "a87d31f4514a072c45e4b234b8a8b6a3e2b4d8c996a5212b0c1b2b7241ce3778"
+  },
+  {
+   "name": "ChopShop_EDM_Mirage_reese_bass_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "0dc48ee115eedd6942917f243c2d38012b68b556a3d386f2ff32d09ee0f4befd"
+  },
+  {
+   "name": "ChopShop_EDM_Neon_pad_chords_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "6affea3186eea51ec27dba9d284d577306d658d3621990c0b890e0c7a7f39975"
+  },
+  {
+   "name": "ChopShop_EDM_Neon_pluck_lead_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "d6aa879975465838cb247e2b2f2e02c6163ccf87287aadfcfd3ae07be0b8fa23"
+  },
+  {
+   "name": "ChopShop_EDM_Neon_sub_bass_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "9efc66de5213342735dbfe0e9ecae0fd81c15c266f2dfb9324dd174068487c11"
+  },
+  {
+   "name": "ChopShop_EDM_Neon_supersaw_chords_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "311542b1268c4c16090aab83c92fbf74119f499bdc1c039390a34e413a5db2e2"
+  },
+  {
+   "name": "ChopShop_EDM_Nova_arp_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "8d028234d5e3cc8162c3d6aa49c9bd2468cda9f87c5b9f97040b3e6a727abe47"
+  },
+  {
+   "name": "ChopShop_EDM_Nova_keys_chords_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "bd0692affbb22b49a400c3bdf99b944f3d25bf80ea41920d4f5c455279ce92f1"
+  },
+  {
+   "name": "ChopShop_EDM_Nova_lead_bass_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "a63d908218c66b554972fda39831806e59c8e857311983b23c80140643645100"
+  },
+  {
+   "name": "ChopShop_EDM_Nova_melody_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "5295d9c9e63b16ab272027c09bd4ef5059cc6f84cb9796ba157e3c0a9e5d8299"
+  },
+  {
+   "name": "ChopShop_EDM_Nova_pluck_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "04bb98a688ca40d4b86b06a9ddc0d4edb1a0810bd527a582196d2a78f97c3780"
+  },
+  {
+   "name": "ChopShop_EDM_Prism_arp_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "b9f6a7e4edcc6bfdd9a9756a9499c6837c7d181d881871a14fe958e19ef92336"
+  },
+  {
+   "name": "ChopShop_EDM_Prism_keys_chords_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "77e0dd1a4bb3c13c1072b515deaec79e2071dcd7e4f553b5f6f9d5a9de166dad"
+  },
+  {
+   "name": "ChopShop_EDM_Prism_lead_bass_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "fdaef656827d0c0dd3ed326614119c42cb8731313960ff0374ebdc105cf9d7f5"
+  },
+  {
+   "name": "ChopShop_EDM_Prism_melody_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "ae3a2fc01526bde490f675cb157cd8c01d3bd24ae4f3366df8ec5fb7bf7a7678"
+  },
+  {
+   "name": "ChopShop_EDM_Prism_pluck_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "2c1c9b5803da3186bd0931c07179c5976616697e40c4c5fc02818ed32fd5ebdb"
+  },
+  {
+   "name": "ChopShop_EDM_Solstice_pad_chords_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "a225814595fd185018ca7f42b81b4d8afa580b7129212576c7522e5c77b7a896"
+  },
+  {
+   "name": "ChopShop_EDM_Solstice_pluck_chords_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "f988cc8ce0b2e9337222ad8dd82936b017f67ed1ec5c6ce6fb35b10b91f2f81b"
+  },
+  {
+   "name": "ChopShop_EDM_Solstice_reese_bass_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "d6e66d4b6efa84f9ae511e701c75c202ce9f49b401f5872888f251c7fb990bf9"
+  },
+  {
+   "name": "ChopShop_EDM_Solstice_synth_lead_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "a3d410d1113bac41400e9af58b2d3c88125a6a4b1c94e7712dcd19144781fd43"
+  },
+  {
+   "name": "ChopShop_EDM_Tidal_arp_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "7d993f9b4abf43770ad892951b467066e55fa46978cb86fbb1d9ce22668d8a41"
+  },
+  {
+   "name": "ChopShop_EDM_Tidal_keys_chords_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "f6882ed5f44decf5325fc28e575eec7665b4e06b00551bbe68baacbcb710c2e8"
+  },
+  {
+   "name": "ChopShop_EDM_Tidal_lead_bass_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "fc52805cd018dab26eda3826e056cf70f0555e6214dee61a3c1d15ac7f5f1abb"
+  },
+  {
+   "name": "ChopShop_EDM_Tidal_melody_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "d70e6c8de71a45b494eacb21747fec3a9996bcd13fbff05416d629da1b8e429a"
+  },
+  {
+   "name": "ChopShop_EDM_Tidal_pluck_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "7b50a3a3959eaae1d767f5ce13fa93a7874c2a05a0cf3752f094dbc3b8edfff6"
+  },
+  {
+   "name": "ChopShop_EDM_Voltage_sub_bass_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "2a871c09ff1cbf87f22c35153027b85e2ad736428309f3d3e4b0c19d068f1ca1"
+  },
+  {
+   "name": "ChopShop_EDM_Voltage_supersaw_chords_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "827930a9afca4c81b20b32d4e5b08d4b17f02d6a4354f6ea0018d8ebf99ccdf9"
+  },
+  {
+   "name": "ChopShop_EDM_Voltage_synth_lead_128_Fm.wav",
+   "size": 1323044,
+   "pack": "edm",
+   "extra": true,
+   "sha256": "69796e5f4a2a67956da12c666cd722ba5967187416993f04a232f15bd08e0459"
+  },
+  {
+   "name": "ChopShop_Synthwave_Boulevard_arp_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "d2a6c78eb58a5f71157137f643fb74cf4036dbd9dc8ab7d18f07bbcc07eeeb63"
+  },
+  {
+   "name": "ChopShop_Synthwave_Boulevard_keys_chords_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "e67081aa5b62f835931b24bd5594ee0a0bbb46ea31119f477b4da57128932c27"
+  },
+  {
+   "name": "ChopShop_Synthwave_Boulevard_lead_bass_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "7ced4da6e8f47b400e2486ba29008cb39b22083b2ebc2347b1967baaba84280a"
+  },
+  {
+   "name": "ChopShop_Synthwave_Boulevard_melody_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "fc9a0bddf4d235207e408f1b88e232f40319e857858a5057e6708609e8343b37"
+  },
+  {
+   "name": "ChopShop_Synthwave_Boulevard_pluck_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "b737d18d4831c6caf4e214a226e1a555954c9f9a15381d2a409eb6017e2d27c9"
+  },
+  {
+   "name": "ChopShop_Synthwave_Cassette_arp_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "e893e7231b451e2e09fa5fef6dcb91fa17d0c721d308baaa7909ba51923161ce"
+  },
+  {
+   "name": "ChopShop_Synthwave_Cassette_keys_chords_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "7da93daa281536c05c7c429186054c49135188f2c6ea7ae92bfa81655790e288"
+  },
+  {
+   "name": "ChopShop_Synthwave_Cassette_lead_bass_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "5459b5eb4b01e44021fb1e120bdfda1e5e146b63fc7625858eebc94a9c9efbeb"
+  },
+  {
+   "name": "ChopShop_Synthwave_Cassette_melody_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "c3aca1bceafec4048cc1b73f26b2fdef71b863fdbc9e306a8e4c554b25380717"
+  },
+  {
+   "name": "ChopShop_Synthwave_Cassette_pluck_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "cf224cea6dc60c5a38fad3807e48fb5ed0e3535e6f2f70b63727e88958ffdc4e"
+  },
+  {
+   "name": "ChopShop_Synthwave_Freeway_pad_chords_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "1e81885ce1f9b69089a383321d0b849cdbb5c8f961fe3e58611eb7d9e3d62e9c"
+  },
+  {
+   "name": "ChopShop_Synthwave_Freeway_strings_chords_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "0bd101615f1de7ccf1dd5cbec4f832a443bd60fb8045cb02285b5f09b8448d5b"
+  },
+  {
+   "name": "ChopShop_Synthwave_Freeway_synth_bass_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "d1d86b9d3e59be84f046e6114b138216b0ab02d3817b7d89edaa8360d84604d9"
+  },
+  {
+   "name": "ChopShop_Synthwave_Freeway_synth_lead_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "34d2d79c7ffb32b8281402e234ae18d83f55396062152177336d3880a82021eb"
+  },
+  {
+   "name": "ChopShop_Synthwave_Laser_arp_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "371cb2cc5487e6a94a1770b9966384f9c8b8c7e4aa0678e3c8a6843d549d2f69"
+  },
+  {
+   "name": "ChopShop_Synthwave_Laser_keys_chords_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "70feb15014819080fbdc5981780121af3bc7c5be71e62efdc1a4379a609e5430"
+  },
+  {
+   "name": "ChopShop_Synthwave_Laser_lead_bass_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "135455aa5bb0024262a20fe1083a5da83f090357ac6bd520d76e5fe64a084358"
+  },
+  {
+   "name": "ChopShop_Synthwave_Laser_melody_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "3dac2e0eac9bd03e6317ef9f407798104e30ebb999ce55d14ff5d00caf67c26c"
+  },
+  {
+   "name": "ChopShop_Synthwave_Laser_pluck_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "c1fbdb26081154fd938d096e315d157fca682d034eb8445001d67a6873b04e39"
+  },
+  {
+   "name": "ChopShop_Synthwave_Outrun_arp_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "7628fac5b305ec0a512f5d200f9d3f899e6fbbe059928bb590603a3f68ca0643"
+  },
+  {
+   "name": "ChopShop_Synthwave_Outrun_brass_chords_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "0b6ba35735f114934898c0a0e2d002a07e054af5bfa9d33758bc9f9cc98a14c8"
+  },
+  {
+   "name": "ChopShop_Synthwave_Outrun_synth_bass_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "d5ee93f628146f146e6e2b85aeaddee63948247281b41e5b95abf37ca8955efe"
+  },
+  {
+   "name": "ChopShop_Synthwave_Palms_pad_chords_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "7e6ddffa6d4349f5f73109994f5ba9d262c668db7ec3d78b343a3bdae779d674"
+  },
+  {
+   "name": "ChopShop_Synthwave_Palms_strings_chords_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "d5beab785d83f8343cee6cda3264cd1d59893a966258f213dc697283cdc5f592"
+  },
+  {
+   "name": "ChopShop_Synthwave_Palms_synth_bass_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "908a96c6f2a58046255ed698e3b2cb064179034083a329887408db8b7447e16c"
+  },
+  {
+   "name": "ChopShop_Synthwave_Palms_synth_lead_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "52076a642a4d86f2103b375b9572a1023eb206821da7dc9f68e1df2082e8725c"
+  },
+  {
+   "name": "ChopShop_Synthwave_Sunset_arp_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "3ee31538ece0de7c9fcccd9054cd3f2bbc52b6cead11ef86589ffba3c32f03f6"
+  },
+  {
+   "name": "ChopShop_Synthwave_Sunset_poly_chords_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "f7580d6e405d4213a502f78d2c4dd73480ba385f75b7efbf0a302328a7db879c"
+  },
+  {
+   "name": "ChopShop_Synthwave_Sunset_synth_bass_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "89ec208fde8f500552f683ec2af21cef4df572be61064802a9934c9a7670b2c7"
+  },
+  {
+   "name": "ChopShop_Synthwave_Turbo_brass_chords_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "a55f05d1d1b42f9b078c54cc0c8d31fe9884c64b40e68995a301da19ba8497b8"
+  },
+  {
+   "name": "ChopShop_Synthwave_Turbo_synth_bass_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "91994aa33ee8004c0353ac1db0b35781db19d6744f8e7d5dc304ce189eda72a9"
+  },
+  {
+   "name": "ChopShop_Synthwave_Turbo_synth_lead_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "3f84a18582d22f0357d2e86647cbc83deacd3b152151e367c09f9d0f8bac6822"
+  },
+  {
+   "name": "ChopShop_Synthwave_Vapor_arp_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "926af8ff6c3031a4ab5e70f693aa535cceaa126c5df57d98b5bf0caa9dd986df"
+  },
+  {
+   "name": "ChopShop_Synthwave_Vapor_brass_chords_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "558b9ebfe00cca151ace44080f73e86dc53eb994443c69ded198b34b2365c4e2"
+  },
+  {
+   "name": "ChopShop_Synthwave_Vapor_pad_chords_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "d1af7703114d4f75619508a044cb3a95a91d709f2d031de5fe767b4fe77c9bdf"
+  },
+  {
+   "name": "ChopShop_Synthwave_Vapor_synth_bass_112_Am.wav",
+   "size": 1512044,
+   "pack": "synthwave",
+   "extra": true,
+   "sha256": "c369cdb187bc062c50030e9f5d34e9dbaf7fb425c12ae3e97cdbe8f3627bcbf3"
+  },
+  {
+   "name": "ChopShop_IndieRock_gen_amp_hum_fx.wav",
+   "size": 704508,
+   "pack": "indierock",
+   "sha256": "18cae6f731922189721e8da1378a3047aeb89bfc9c0df48936ff033adada8677"
+  },
+  {
+   "name": "ChopShop_IndieRock_gen_crowd_cheer_fx.wav",
+   "size": 600060,
+   "pack": "indierock",
+   "sha256": "2856b27f9c6612e0d0ace5c9eb5ec95177b1bcdc91c2a444276daf2e2a1a44f4"
+  },
+  {
+   "name": "ChopShop_IndieRock_gen_cymbal_swell_fx.wav",
+   "size": 373484,
+   "pack": "indierock",
+   "sha256": "fa58c9fa0b2237b0d32fa6d68acf5a28310d3ece13d2c158d273a000dd89acef"
+  },
+  {
+   "name": "ChopShop_IndieRock_gen_feedback_swell_fx.wav",
+   "size": 447740,
+   "pack": "indierock",
+   "sha256": "2f4c456ffbc7e439f688819dfa167ada8c3deba385b9126d85b7ece1a400978d"
+  },
+  {
+   "name": "ChopShop_IndieRock_gen_hi_hats.wav",
+   "size": 243476,
+   "pack": "indierock",
+   "sha256": "3330b750c667c64281949eca03b6889662ef9fb7f82c876e5f26e51126ea41df"
+  },
+  {
+   "name": "ChopShop_IndieRock_gen_kick_one_shots.wav",
+   "size": 183500,
+   "pack": "indierock",
+   "sha256": "93e7fe876a9069628b9089a5a5abc7b5dfdb6cc09001fbf8b4eca534fe1afe5c"
+  },
+  {
+   "name": "ChopShop_IndieRock_gen_perc_kit.wav",
+   "size": 141228,
+   "pack": "indierock",
+   "sha256": "2c241568f9712ab460558c23eb41f4d6bfc5ef52785b8ab74a67533d8cec804b"
+  },
+  {
+   "name": "ChopShop_IndieRock_gen_pick_scrape_fx.wav",
+   "size": 268764,
+   "pack": "indierock",
+   "sha256": "521b6db0196c48089113eaefe1911a6c8a03f2f69b82af6dac7188be95fce250"
+  },
+  {
+   "name": "ChopShop_IndieRock_gen_reverse_crash_fx.wav",
+   "size": 306268,
+   "pack": "indierock",
+   "sha256": "dec0bc034f7bc8c3c56baf9239a9315f2be0120279a1362e594bfdea782ca74d"
+  },
+  {
+   "name": "ChopShop_IndieRock_gen_snare_clap_kit.wav",
+   "size": 199732,
+   "pack": "indierock",
+   "sha256": "59ab5d4407bc9dad9dde1e2476fd9402f81f98f9ca3d4d9a22840aadc40be962"
+  },
+  {
+   "name": "ChopShop_RnB_gen_cymbal_swell_fx.wav",
+   "size": 336876,
+   "pack": "rnb",
+   "sha256": "aca473edeb449f81e9e3198af93f287c837c0f71407d959b6afc0790fa86d17e"
+  },
+  {
+   "name": "ChopShop_RnB_gen_hi_hats.wav",
+   "size": 115332,
+   "pack": "rnb",
+   "sha256": "c42e7363fa5389bf1243fc6d77fdc1fb8690e2944e59716b27622cd6ff7b8720"
+  },
+  {
+   "name": "ChopShop_RnB_gen_kick_one_shots.wav",
+   "size": 134026,
+   "pack": "rnb",
+   "sha256": "94975f65e9c675a48f4e4d374ec8d9ec84e2f9c81b785dedd78fc1b256762944"
+  },
+  {
+   "name": "ChopShop_RnB_gen_perc_kit.wav",
+   "size": 79564,
+   "pack": "rnb",
+   "sha256": "9251d06741a1311bf13698104ca1f4195d8e0a04414afa09af1efc7523267696"
+  },
+  {
+   "name": "ChopShop_RnB_gen_rain_texture_fx.wav",
+   "size": 1058444,
+   "pack": "rnb",
+   "sha256": "cb7ad255f8f3cc22ce6231d50c89bf894b4b714b6cae356a73bb406254860e5b"
+  },
+  {
+   "name": "ChopShop_RnB_gen_reverse_swell_fx.wav",
+   "size": 404460,
+   "pack": "rnb",
+   "sha256": "8576c0c0ec45d8f021660df0e8fa54cf5d7072ec84823e3916a7c518515952ad"
+  },
+  {
+   "name": "ChopShop_RnB_gen_snare_clap_kit.wav",
+   "size": 218418,
+   "pack": "rnb",
+   "sha256": "40d2b8ff4ec7f8a71889f454b19f21462650ee22fdd61ce05f3007e36476beff"
+  },
+  {
+   "name": "ChopShop_RnB_gen_sub_drop_fx.wav",
+   "size": 491244,
+   "pack": "rnb",
+   "sha256": "455c273bbf5ab6fac64d519bd3ba1129006b4b30f6a4b61722cfd788c8f3a5b0"
+  },
+  {
+   "name": "ChopShop_RnB_gen_tape_stop_fx.wav",
+   "size": 337372,
+   "pack": "rnb",
+   "sha256": "3e91f837b0afffd4c61c7228923e86a1a9ef63f8f7af5de2c097ca7ef95d1e14"
+  },
+  {
+   "name": "ChopShop_RnB_gen_vinyl_texture_fx.wav",
+   "size": 1058444,
+   "pack": "rnb",
+   "sha256": "605a8cc6e6ee2f821614600efafe1eadf8c9f3fe3a3fa4fb5b46803ae41e8af9"
+  },
+  {
+   "name": "ChopShop_Synthwave_gen_crash_fx.wav",
+   "size": 352844,
+   "pack": "synthwave",
+   "sha256": "cab0c4b5f273311bc92ec3c8c7ec2a2f79d90b6225ed0736e4c69ca354074a7a"
+  },
+  {
+   "name": "ChopShop_Synthwave_gen_hi_hats.wav",
+   "size": 137658,
+   "pack": "synthwave",
+   "sha256": "8d7440d8f8317650b7aaae01c69bd0f756e8fc4a83da35671160d3cb4dc88138"
+  },
+  {
+   "name": "ChopShop_Synthwave_gen_kick_one_shots.wav",
+   "size": 165882,
+   "pack": "synthwave",
+   "sha256": "58c0bc22fb115cff302bef180be9ea2f3f3f826def024dccad9671478f021f7b"
+  },
+  {
+   "name": "ChopShop_Synthwave_gen_pass_by_fx.wav",
+   "size": 295164,
+   "pack": "synthwave",
+   "sha256": "801188ca668ebdc65cc5563c4be6443b91caee82185b66329655cf55ab31974f"
+  },
+  {
+   "name": "ChopShop_Synthwave_gen_perc_kit.wav",
+   "size": 173836,
+   "pack": "synthwave",
+   "sha256": "018082853d8ead4b8d5d4849504ec9757891e0c7fc65d7d74094cbacf22ad780"
+  },
+  {
+   "name": "ChopShop_Synthwave_gen_rain_texture_fx.wav",
+   "size": 1046044,
+   "pack": "synthwave",
+   "sha256": "b32b221cb8e68b14c378369f89734226b77b386825960cbda21d5e6569240a40"
+  },
+  {
+   "name": "ChopShop_Synthwave_gen_riser_fx.wav",
+   "size": 703484,
+   "pack": "synthwave",
+   "sha256": "d6be248dbb9447b945e22cd8a8cb928741c3d7c98894fa09c6e68f801cef4621"
+  },
+  {
+   "name": "ChopShop_Synthwave_gen_snare_clap_kit.wav",
+   "size": 145068,
+   "pack": "synthwave",
+   "sha256": "33e3232cca2b3ac9cbe222559980b53ee0e3b9b32108808733a61a54bff739d9"
+  },
+  {
+   "name": "ChopShop_Synthwave_gen_sweep_fx.wav",
+   "size": 352844,
+   "pack": "synthwave",
+   "sha256": "9ae2448c69a09aaf49e623536a483d15335fb1920d421c0255e74a0cc2fe8efc"
+  },
+  {
+   "name": "ChopShop_Synthwave_gen_tape_stop_fx.wav",
+   "size": 342492,
+   "pack": "synthwave",
+   "sha256": "de8f041dcc5a6b28f6dddc6d64e6e0d2fdd1d267e3e02417426cd3bd9d57bf94"
+  },
+  {
+   "name": "ChopShop_RnB_bassline_Funk_BassGroove_94_Gm.mp3",
+   "size": 62736,
+   "pack": "rnb",
+   "sha256": "0e343ae0da3f428b276e1cbeff499667fd6a2aea37cccbe6fb03d24377b368cb"
+  },
+  {
+   "name": "ChopShop_RnB_guitar_Blues_Guitar_3_C#maj.mp3",
+   "file": "ChopShop_RnB_guitar_Blues_Guitar_3_Csharpmaj.mp3",
+   "size": 81552,
+   "pack": "rnb",
+   "sha256": "5b3c75a021d5073e75552ea0071975a5b6a1c27c1e98c1efc575e3f1cab3c7cd"
+  },
+  {
+   "name": "ChopShop_RnB_brass_Trumpet_Blues_Lick.mp3",
+   "size": 193767,
+   "pack": "rnb",
+   "sha256": "c7655e66fe28596ba1ca3c84538edaef60f5bd3667a758a303eb186c8685f174"
+  },
+  {
+   "name": "ChopShop_RnB_fx_Blues_Scale.mp3",
+   "size": 193767,
+   "pack": "rnb",
+   "sha256": "cd8a312dab52f21a76e7456637ed84be8c0059c016cb3023b9bf9429e1ee8a7f"
+  },
+  {
+   "name": "ChopShop_RnB_bass_Jazz_Bass_7_Fmaj.mp3",
+   "size": 123051,
+   "pack": "rnb",
+   "sha256": "8b36b8a982087d3417e1fa6e76a2566e7be50a5ed5a4b4fee8a68762a5f6c5de"
+  },
+  {
+   "name": "ChopShop_RnB_bassline_Double_Bass_Upright_Jazz.mp3",
+   "size": 193767,
+   "pack": "rnb",
+   "sha256": "42b7934f9ab0c00c53bbff6f6ef7c2173c1cabd6bb5a065c63c91b4501cc13f9"
+  },
+  {
+   "name": "ChopShop_RnB_brass_Fragment_Of_Sax_Phrase_Dm.mp3",
+   "size": 34336,
+   "pack": "rnb",
+   "sha256": "17853084ade9761568a5c717f12781758233a41e66cb124a11b82d7b63eab874"
+  },
+  {
+   "name": "ChopShop_RnB_brass_Sax_Vibrato.mp3",
+   "size": 93300,
+   "pack": "rnb",
+   "sha256": "83038ad52ba04c8d24bd597b82a0ca425f741a6237ce9014a67adb47f5549e1b"
+  },
+  {
+   "name": "ChopShop_RnB_brass_Alto_Sax_G4_Gmaj.mp3",
+   "size": 142644,
+   "pack": "rnb",
+   "sha256": "720926a3c52937433d22891cbe74a461445b99a10993f3d2ef517687c4332bdf"
+  },
+  {
+   "name": "ChopShop_RnB_brass_Sax_Drone_Amaj.mp3",
+   "size": 193767,
+   "pack": "rnb",
+   "sha256": "29ae96c604b1a21ef74d82bf03f374f6e6ea29262016a51de5701aa4d71aef22"
+  },
+  {
+   "name": "ChopShop_RnB_brass_Sax_Slap.mp3",
+   "size": 22961,
+   "pack": "rnb",
+   "sha256": "200ff05f4122453fe83672f9c55286c4fccbb55c2bc039d091d236d9ba2bd8fa"
+  },
+  {
+   "name": "ChopShop_RnB_brass_Sax_Whistle.mp3",
+   "size": 139213,
+   "pack": "rnb",
+   "sha256": "50e3d289993a8d2c96e2fb1620936c6f57c01f2d67da7a1bd1063557da914f4b"
+  },
+  {
+   "name": "ChopShop_RnB_kick_Kick_Drum.mp3",
+   "size": 10701,
+   "pack": "rnb",
+   "sha256": "67dba1a16f426aad6b5930d35c4f02441fab3020fb1e5c6023e17e6fbea8ea69"
+  },
+  {
+   "name": "ChopShop_RnB_kick_Kick_Drum_1.mp3",
+   "size": 8158,
+   "pack": "rnb",
+   "sha256": "c90ae241a01a1c6de3e205e5263c09e9ac62d70fc7485eb7038a43ae26475d05"
+  },
+  {
+   "name": "ChopShop_RnB_drum_loop_Soul_Pride_Break.mp3",
+   "size": 193767,
+   "pack": "rnb",
+   "sha256": "bff4ec671f24fb6ad881e6f95aca4e977ce1159b8a20e02cd27e37820cd1c229"
+  },
+  {
+   "name": "ChopShop_IndieRock_fx_LL_Q188_Deu_ENERGY.mp3",
+   "size": 193767,
+   "pack": "indierock",
+   "sha256": "c5f6b0b38e0513f2df404c684248c15941a419a62a354db57e8c5ba826e30f75"
+  },
+  {
+   "name": "ChopShop_IndieRock_bassline_Funk_BassGroove_94_Gm.mp3",
+   "size": 62736,
+   "pack": "indierock",
+   "sha256": "0e343ae0da3f428b276e1cbeff499667fd6a2aea37cccbe6fb03d24377b368cb"
+  },
+  {
+   "name": "ChopShop_IndieRock_bass_Rock_BassLine_Em.mp3",
+   "size": 193767,
+   "pack": "indierock",
+   "sha256": "db9a11ee1641292eb432eeaabac21c8a84ccd8dadfea024bdc18a5d13663d3cb"
+  },
+  {
+   "name": "ChopShop_IndieRock_snare_Classic_TR_Snare_JdXi.mp3",
+   "size": 21408,
+   "pack": "indierock",
+   "sha256": "8ee7c2318c8b15429b2628cfe8a01e430c6d1ee11e937589260deffc630f6905"
+  },
+  {
+   "name": "ChopShop_IndieRock_bass_Rock_BassLine_100_Bm.mp3",
+   "size": 225363,
+   "pack": "indierock",
+   "sha256": "23bc2819d634e248d300f136904e8bcac35bad480f815d782a3589405bd0c955"
+  },
+  {
+   "name": "ChopShop_IndieRock_kick_PHAT_Bass_DrumGroove_97.mp3",
+   "size": 60856,
+   "pack": "indierock",
+   "sha256": "4e283ce38adacef391ac1296e42a113ff57739be2ea89b25a5fcb45ed0796d0b"
+  },
+  {
+   "name": "ChopShop_IndieRock_bass_Rock_BassLine_Fm.mp3",
+   "size": 193767,
+   "pack": "indierock",
+   "sha256": "c92cad105fa8a231e5f66f3588c6daabc2471735330ec6c364adc52dbf57a6b2"
+  },
+  {
+   "name": "ChopShop_IndieRock_kick_Classic_TR_KICK_JdXi.mp3",
+   "size": 22464,
+   "pack": "indierock",
+   "sha256": "7e12b83f17d191c52394428eb29160f619cbbc6ef9f319451c0fe795d1063f80"
+  },
+  {
+   "name": "ChopShop_IndieRock_bass_Picked_BassNote_Cmaj.mp3",
+   "size": 193767,
+   "pack": "indierock",
+   "sha256": "203992e40ad73244c60310bc1fd94acc63173b754bc1d86014af0b2bb3a70ebf"
+  },
+  {
+   "name": "ChopShop_IndieRock_guitar_Electric_Guitar_Metal_Riff_Emaj.mp3",
+   "size": 131943,
+   "pack": "indierock",
+   "sha256": "3ac311f02e515cb85a1713707d228afa47c67ffef2f379336b32a50d15cbd154"
+  },
+  {
+   "name": "ChopShop_IndieRock_guitar_Electric_Guitar_Riff_Jingle_C#m.mp3",
+   "file": "ChopShop_IndieRock_guitar_Electric_Guitar_Riff_Jingle_Csharpm.mp3",
+   "size": 193767,
+   "pack": "indierock",
+   "sha256": "125d6271f5be2d05f9779cbd7a27f18bee86389011fc03e769cee09f9030adad"
+  },
+  {
+   "name": "ChopShop_IndieRock_guitar_Funky_Electric_Guitar_Sample_90_Gm.mp3",
+   "size": 21985,
+   "pack": "indierock",
+   "sha256": "9413bcca42edb6563e92bf794c9498c0c79bee6ef6c71ee2e6116fdc3339579e"
+  },
+  {
+   "name": "ChopShop_IndieRock_guitar_Funky_Electric_Guitar_Sample_90_Cmaj.mp3",
+   "size": 256801,
+   "pack": "indierock",
+   "sha256": "780f37f88e5eb48989cfec9506d0d659fb7f4475583c578336a5867f0f550075"
+  },
+  {
+   "name": "ChopShop_IndieRock_guitar_Funky_Electric_Guitar_Sample_90_Gm_2.mp3",
+   "size": 36405,
+   "pack": "indierock",
+   "sha256": "b9b8f1d8f4e83b9f26b42ae8c400f410bf6d0e0affd095c11007c7958cd31646"
+  },
+  {
+   "name": "ChopShop_IndieRock_guitar_Electric_Guitar_With_Chorus_Amaj.mp3",
+   "size": 103359,
+   "pack": "indierock",
+   "sha256": "f9aa91df86921cbeae7d1ed759945e0b2d99bb01938a0c8480bb79fe9e42d7d6"
+  },
+  {
+   "name": "ChopShop_IndieRock_guitar_Horror_Electric_Guitar_Sounds.mp3",
+   "size": 193767,
+   "pack": "indierock",
+   "sha256": "d6b17935d74247acb1c4ddb110796385e5c0fe52cf1e4465d61f800ff511f77c"
+  },
+  {
+   "name": "ChopShop_IndieRock_kick_Hardstyle_Kick.mp3",
+   "size": 31237,
+   "pack": "indierock",
+   "sha256": "a2b0914466ba47a9d9046dc5cdf8f97bcd46aa1608e125b98fa5a436aa2fc522"
+  },
+  {
+   "name": "ChopShop_Dubstep_bass_Koany_Reese_Bmaj.mp3",
+   "size": 35696,
+   "pack": "dubstep",
+   "sha256": "cb6891362a96230c56edb7ac14e0c3426ed129a985b3b68b56008d94d267bc4d"
+  },
+  {
+   "name": "ChopShop_Dubstep_bass_Airy_Reese_Cm.mp3",
+   "size": 109176,
+   "pack": "dubstep",
+   "sha256": "3ea69966b4b3cc294b057c1a49b6902340c357e13cf17ddc4de2625ccc85f91c"
+  },
+  {
+   "name": "ChopShop_Dubstep_bass_Dark_Reese.mp3",
+   "size": 127245,
+   "pack": "dubstep",
+   "sha256": "d339712e2633da3e0a52f02236d7e6854949d26f67e2242cf09567745510ff36"
+  },
+  {
+   "name": "ChopShop_Dubstep_bass_Dnb_Reese.mp3",
+   "size": 30530,
+   "pack": "dubstep",
+   "sha256": "7683b4c91d74aea57940ace07f92905d3b495ad5db7a2384a1b52515f46e7fc4"
+  },
+  {
+   "name": "ChopShop_Synthwave_kick_Synthwave_Kick_1.mp3",
+   "size": 10539,
+   "pack": "synthwave",
+   "sha256": "a678d1170e0a2789fa22860b16d837f3ab1222a19ef5f53033e3ef966d466cb2"
+  },
+  {
+   "name": "ChopShop_Synthwave_kick_Synthwave_Kick_2.mp3",
+   "size": 17847,
+   "pack": "synthwave",
+   "sha256": "1c5aa6075272e967116e1e654e26df7b201d2777f21ee74cd689a89c5ae5df9a"
+  },
+  {
+   "name": "ChopShop_Synthwave_lead_Retro_Lead_1_Bmaj.mp3",
+   "size": 193767,
+   "pack": "synthwave",
+   "sha256": "7087ecdc2cfb73b68015dca286072bfd313160efa79b9503db6d2355f48a248d"
+  },
+  {
+   "name": "ChopShop_Synthwave_melody_Pad_Analog_Dreamz_110_Cm.mp3",
+   "size": 211321,
+   "pack": "synthwave",
+   "sha256": "2f581f2502110f7a429bd309061d449afc79231f9ab904ca367ffa1a9f0c82fb"
+  },
+  {
+   "name": "ChopShop_Synthwave_synth_Roland_Juno_6_Rave_Cmaj.mp3",
+   "size": 20976,
+   "pack": "synthwave",
+   "sha256": "db93ca806466712d76b3e63beca4578bf034e0d7481b780fc727f7e78a572123"
+  },
+  {
+   "name": "ChopShop_Synthwave_keys_Roland_Juno_6_PW7SubNoiseRhodes_Cmaj.mp3",
+   "size": 193767,
+   "pack": "synthwave",
+   "sha256": "f6823fc8b514657528f3f55bce5e717c87263beed81a5b15a5dacd5b28414632"
+  },
+  {
+   "name": "ChopShop_Synthwave_strings_WobbleStringsJunoSynth_120.mp3",
+   "size": 150115,
+   "pack": "synthwave",
+   "sha256": "159ebe7ad92fb72f3ecacba4617411e981a6b3c09180e46f3bb7ad4bc4602db5"
+  },
+  {
+   "name": "ChopShop_Synthwave_melody_BrightNSharpSquareJunoSynth_100_Em.mp3",
+   "size": 176611,
+   "pack": "synthwave",
+   "sha256": "233ed7accc152c89fa6bb756e3e3bb8ce6332664b6e5e97b77ed7c2b3ee7e031"
+  },
+  {
+   "name": "ChopShop_Synthwave_synth_Sine_Wave_Glider_Em.mp3",
+   "size": 193767,
+   "pack": "synthwave",
+   "sha256": "943752823042d7569a652b5d2c82ecd8666fc23fb22f78f437e736bdde042f50"
+  }
+ ]
+}

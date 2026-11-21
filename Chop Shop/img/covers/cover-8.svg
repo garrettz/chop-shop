@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Background: flat near-black -->
+  <rect width="512" height="512" fill="#061419" />
+
+  <!-- Calm, uncluttered center kept empty for app initials overlay -->
+
+  <!-- A dull, flattened second-colour circle sitting low in the middle -->
+  <ellipse cx="256" cy="380" rx="90" ry="32" fill="#e0c27a" />
+
+  <!-- A row of small off-white dots that stops one beat early, leaving a clear empty gap -->
+  <g fill="#f8f5ee">
+    <circle cx="112" cy="140" r="4" />
+    <circle cx="142" cy="140" r="4" />
+    <circle cx="172" cy="140" r="4" />
+    <circle cx="202" cy="140" r="4" />
+    <circle cx="232" cy="140" r="4" />
+    <circle cx="262" cy="140" r="4" />
+    <!-- Gap intentionally left here before the end of the row -->
+  </g>
+
+  <!-- A big accent starburst at the top right -->
+  <g fill="#9be7ff">
+    <polygon points="410,80 416,115 451,121 416,127 410,162 404,127 369,121 404,115" />
+    <polygon points="410,80 414,110 444,114 414,118 410,148 406,118 376,114 406,110" transform="rotate(45 410 121)" />
+  </g>
+</svg>

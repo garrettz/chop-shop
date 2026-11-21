@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chop Shop</title>
+  <link rel="stylesheet" href="style.css?v=mwpj9o89">
+</head>
+<body class="keytint">
+  <header>
+    <div class="hd-left">
+      <!-- Volume (tester, 2026-10-29): LUNA's Main Output fader, where the logo was. Built by main.ts. -->
+      <div class="hd-vol" id="mainvol"></div>
+      <button class="brand" id="home" aria-label="Start screen" title="Start screen: open a session, start a new one, or randomize"><img class="logo" src="img/logo.png" alt="Chop Shop"><i class="hd-start" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 7h14M5 12h14M5 17h14"/></svg></i></button>
+      <div class="groove">
+        <button id="gen" class="hd-dice" title="Generate a chop: a whole kit and pattern from your tracks' samples, in a style" aria-label="Generate a chop"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4"/><circle cx="8.3" cy="8.3" r="1.5"/><circle cx="15.7" cy="8.3" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="8.3" cy="15.7" r="1.5"/><circle cx="15.7" cy="15.7" r="1.5"/></svg></button>
+        <button id="gundo" title="Back to before the last Generate chop" disabled>↶</button>
+      </div>
+    </div>
+    <div class="hd-mid">
+      <!-- The transport sits dead centre of the window, whatever else is in the header (tester, 2026-10-22):
+           BPM on its left, the sections on its right; the logo and the buttons stay at the edges. -->
+      <div class="mid-l">
+        <!-- BPM as text (tester, 2026-10-24): click it for the tempo field. -->
+        <div class="bpmwrap"><button id="bpmtext" class="bpmtext" title="LUNA's tempo: drag up or down to change it (Shift: finer), or click to type it">BPM <b>–</b></button>
+          <div id="bpmpop" class="bpmpop" hidden><label class="field bpm" title="LUNA's tempo at the pattern. Edit it to change LUNA's tempo.">BPM <input id="bpm" type="number" min="20" max="300" step="0.1" disabled></label></div></div>
+      </div>
+      <div class="mid-c">
+        <div class="transport" role="group" aria-label="Transport">
+          <button id="tostart" class="tkey t-start" title="Back to the start of the song (section 1)" aria-label="Back to the start"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 5.2L4.6 10l5.4 4.8zM16 5.2L10.6 10l5.4 4.8z"/></svg></button>
+          <!-- Play and Stop are one key (tester, 2026-11-04): ▶ while stopped; while LUNA plays it shows ■, glowing red, and a
+               press stops. The shop's pattern for any play/stop pair: `.ps` with a .ps-play and a .ps-stop icon (style.css). -->
+          <button id="play" class="tkey t-play ps" title="Play in LUNA" aria-label="Play"><svg class="ps-play" viewBox="0 0 20 20" aria-hidden="true"><path d="M6.5 4.6v10.8L15.8 10z"/></svg><svg class="ps-stop" viewBox="0 0 20 20" aria-hidden="true"><rect x="5.5" y="5.5" width="9" height="9" rx="1.2"/></svg></button>
+          <button id="recbtn" class="tkey t-rec" hidden title="Record from your controller, or Chop Pads if you have none" aria-label="Record" aria-pressed="false"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="4.8"/></svg></button>
+        </div>
+      </div>
+      <div class="mid-r">
+        <!-- Loop the whole track (every section in turn) or just this bar (tester, 2026-10-24). -->
+        <div class="looppair" role="group" aria-label="Loop">
+          <button id="looptrack" class="lpbtn" aria-pressed="false" title="Loop the track: LUNA plays every section in turn, then goes round"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9V8a2.5 2.5 0 0 1 2.5-2.5h7M12.5 3.5l2 2-2 2M15 11v1a2.5 2.5 0 0 1-2.5 2.5h-7M7.5 16.5l-2-2 2-2"/></svg><span>track</span></button>
+          <button id="looppart" class="lpbtn" aria-pressed="false" hidden title="Loop the part: LUNA loops the whole part you're in (Build's Swell, Chorus …)"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9V8a2.5 2.5 0 0 1 2.5-2.5h7M12.5 3.5l2 2-2 2M15 11v1a2.5 2.5 0 0 1-2.5 2.5h-7M7.5 16.5l-2-2 2-2"/></svg><span>part</span></button>
+          <button id="loopbar" class="lpbtn" aria-pressed="true" title="Loop the bar: LUNA loops the section you're on"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9V8a2.5 2.5 0 0 1 2.5-2.5h7M12.5 3.5l2 2-2 2M15 11v1a2.5 2.5 0 0 1-2.5 2.5h-7M7.5 16.5l-2-2 2-2"/></svg><span>bar</span></button>
+        </div>
+        <!-- The earlier section controls, kept (hidden) for Chop Pads' mirrored transport. -->
+        <div class="oldsecnav" hidden><div class="secnav" role="group" aria-label="Sections">
+          <button id="loopbtn" class="tkey t-loop" title="Loop this section, or play every section in turn" aria-label="Loop" aria-pressed="true"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 9V8a2.5 2.5 0 0 1 2.5-2.5h7M12.5 3.5l2 2-2 2M15 11v1a2.5 2.5 0 0 1-2.5 2.5h-7M7.5 16.5l-2-2 2-2"/></svg></button>
+          <button id="secprev" class="tkey secarrow" title="The section before" aria-label="Previous section"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.5 5l-5 5 5 5"/></svg></button>
+          <div class="secview"><canvas id="overview" title="This section, with the ends of the ones either side (click one to go there)"></canvas><span id="seclbl" hidden></span><button id="secdel" class="arm" title="Remove this section (click twice)">✕</button></div>
+          <button id="secnext" class="tkey secarrow" title="The next section" aria-label="Next section"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.5 5l5 5-5 5"/></svg></button>
+          <div class="secplus-wrap"><button id="secplus" class="tkey t-plus" title="Add a section after the last" aria-label="Add a section" aria-haspopup="menu"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 5v10M5 10h10"/></svg></button>
+            <div id="secpop" class="secpop" role="menu" hidden>
+              <button data-secadd="copy" role="menuitem"><b>Duplicate this section</b><span>The same hits, to change from here</span></button>
+              <button data-secadd="empty" role="menuitem"><b>Empty section</b><span>The same tracks, no hits yet</span></button>
+              <button data-secadd="gen" role="menuitem"><b>Randomize · same instruments</b><span>A fresh part on every track, in the current style</span></button>
+              <button data-secadd="genkit" role="menuitem"><b>Randomize · new instruments</b><span>A new kit from the sample library (every section hears it)</span></button>
+            </div></div>
+        </div>
+</div>
+      </div>
+    </div>
+    <!-- The sections as their own lane (tester, 2026-10-24): a bar per cell, as many as fit, centred under the
+         transport; → copies this section into a new one at the end, ＋ adds a blank one (same instruments). -->
+    <div class="hd-strip">
+      <div id="secstrip" class="secstrip" role="group" aria-label="Sections"></div>
+      <div class="secacts">
+      <div class="secadd-wrap"><button id="secdup" class="secact" title="Build: grow the song from here (a swell, a chorus, a break, a getaway…) · ⌥-click: a copy of this section at the end" aria-label="Build (⌥-click: duplicate)"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 12h11M11 8l4 4-4 4"/><path d="M15.5 4.5a8 8 0 0 1 0 15"/></svg></button></div></div>
+    </div>
+    <div class="hd-right">
+      <span class="hd-hidden" hidden><span id="clock">–</span><select id="length"><option>16</option><option>32</option></select><input id="bar" type="number" min="1" max="999" value="1"></span>
+      <div class="names-wrap hd-morewrap">
+        <button id="hdmore" class="hd-icon" title="More: swing, clear, names" aria-label="More">⋯</button>
+        <div id="hdmore-pop" class="pop" hidden>
+          <!-- The Guide (help.ts): everything you can do, with pictures; ? opens it anywhere. -->
+          <button id="hp-open" class="hp-open" type="button" title="The Guide: everything you can do in Chop Shop, with pictures">Guide <kbd>?</kbd></button>
+          <!-- The interface's size (tester, 2026-11-03, like Serum's): Fit fills the window's height; or a fixed size. -->
+          <div class="field uisize" role="radiogroup" aria-label="Size: the whole interface"><span>Size</span><button data-uisize="fit" role="radio" title="Fit: as big as the window's height allows (the whole app, every track)">Fit</button><button data-uisize="0.5" role="radio">50%</button><button data-uisize="0.75" role="radio">75%</button><button data-uisize="0.9" role="radio">90%</button><button data-uisize="1" role="radio">100%</button><button data-uisize="1.1" role="radio">110%</button></div>
+          <!-- The layout (tester, 2026-11-08): Accordion (the levels as folds: Arrangement, Section, Chop, with Mods) or Classic. One key: it reads what's on. -->
+          <div class="field layoutkey" hidden title="Layout: Accordion (Arrangement, Section and Chop fold open, with their Mods) or Classic (the panel as before)"><span>Layout</span><button id="layoutkey" type="button" aria-label="Layout">Accordion</button></div>
+          <label class="field" hidden title="The display look: the panel as one dark digital screen with digital dials (tester's mockup, 2026-10-25)"><input id="skinlcd" type="checkbox"> Display look</label>
+          <label class="field" title="Try the frosted keys (photographed key caps, lit in the track's colour)"><input id="keysfrost" type="checkbox"> Frosted keys</label>
+          <label class="field" title="Chop Shop dressed as LUNA: its charcoal panels, grey keys and clip-coloured steps (your own look comes back when it's off)"><input id="skinluna" type="checkbox"> LUNA look</label>
+          <button id="fxdedupe" title="On every track, keep the first copy of each plugin and remove the extra copies (they pile up and overload)">Remove duplicate effects</button>
+          <label class="field" hidden title="Every second 16th is played late by this much (Generate sets it per style)">Swing <input id="gswing" type="number" min="0" max="50" step="1" value="0">%</label>
+    <div class="names-wrap">
+      <button id="clear-all" title="Clear the pattern, or start over">Clear…</button>
+      <div id="clear-pop" class="pop" hidden>
+        <p class="pop-h">Clear</p>
+        <button id="clear-steps" class="pop-opt"><b>Clear all steps</b><span>Every track keeps its sample and settings.</span></button>
+        <button id="clear-over" class="pop-opt"><b>Start over</b><span>Empty pattern, 4 tracks, no samples on them. Loaded samples stay in each track's Sample menu.</span></button>
+        <p class="pop-t">Click again to confirm. ⌘Z undoes it.</p>
+      </div>
+    </div>
+    <div class="names-wrap">
+      <button id="names" title="Name rows with Claude">Names</button>
+      <div id="names-pop" hidden>
+        <p class="pop-h">Row names</p>
+        <p class="pop-t">Claude turns sample file names into 16-character row names. Rename any row by clicking its name at the top of its menu.</p>
+        <div class="pop-r"><input id="names-key" type="password" autocomplete="off" spellcheck="false"><button id="names-save">Save</button></div>
+        <div class="pop-r"><button id="names-borrow" hidden>Use SoundSeed's key</button><button id="names-run">Name all rows</button><button id="names-forget">Remove key</button></div>
+        <p id="names-msg" class="pop-t"></p>
+      </div>
+    </div>
+        </div>
+      </div>
+      <button id="padsbtn" class="hd-icon" title="Pads &amp; keys: open them in their own floating window, Chop Pads (⌥-click: inside Chop Shop). Your controller plays either way." aria-label="Pads and keys"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.6"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.6"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.6"/></svg></button>
+      <span id="busy" title="Writing to LUNA"></span>
+      <button id="setup" hidden>Set up tracks</button>
+      <button id="close" title="Close Chop Shop and go back to LUNA's timeline" aria-label="Close Chop Shop">✕</button>
+    </div>
+    <div class="hd-status"><div id="status">connecting…</div><button id="mksess" hidden title="Create a new session in LUNA and connect Chop Shop to it">Create a LUNA session</button><span class="field stat" title="Last write to LUNA"><output id="lat"></output></span></div>
+  </header>
+
+  <main>
+    <section id="dock" aria-label="Selected trigger"></section>
+    <div id="grid" role="grid" aria-label="Pattern"></div>
+    <div class="below">
+      <button id="add-row" title="Add a track (a new LUNA track)">＋ Track</button>
+      <p class="hint">Click a key to add a hit · click a lit key to edit it above · click it again to remove it · click a track name for track settings · ✦ Generate chop writes a whole kit</p>
+    </div>
+    <section id="mixnotes" aria-live="polite" hidden>
+      <div class="mn-head"><b>Mix notes</b><span class="mn-by"></span><div class="mn-bands" aria-hidden="true"></div><button id="mn-refresh" title="Listen again">↻</button></div>
+      <div class="mn-text"></div>
+    </section>
+  </main>
+
+  <div id="splash" class="start" role="dialog" aria-modal="true" aria-label="Chop Shop: start">
+    <!-- The start screen (tester, 2026-10-27): four panels over a background image (img/start-bg.jpg, the tester's to
+         make), the app behind it dark and its transport off until there's sound. -->
+    <video class="sp-video" muted playsinline preload="none" aria-hidden="true"></video>
+    <!-- The video's last frame as a sharp still (img/start-end.jpg, the tester's 4K render), once the video has played. -->
+    <img class="sp-video sp-still" alt="" aria-hidden="true" hidden>
+    <!-- The sign, sharp (img/start-sign.jpg, the tester's still), laid exactly over the video's soft one, with smoke. -->
+    <div class="sp-sign" aria-hidden="true"><img src="img/start-sign.jpg" alt=""><canvas class="sp-smoke"></canvas><canvas class="sp-sparks"></canvas></div>
+    <div class="sp-stage">
+      <div class="sp-panel">
+        <div class="sp-cards">
+          <button id="sp-tour" class="sp-card sp-col sp-tour">
+            <div class="sp-ch"><svg class="ic-eye" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><ellipse cx="12" cy="12" rx="2.5" ry="3.1"/></svg><b>Take the tour</b></div>
+            <span class="sp-line">Glitchy shows you round the shop. A few minutes, sound on.</span>
+          </button>
+          <!-- DEV-ONLY: Scan needs the local sample helper (UAB-058); hidden since the tour took its place. -->
+          <div id="sp-scancard" class="sp-card sp-col" hidden>
+            <div class="sp-ch"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5"/></svg><b>Scan for samples</b></div>
+            <span id="sp-scanline" class="sp-line">Your sample folders (or a whole drive)</span>
+            <div id="sp-scanprog" class="sp-prog" hidden><i class="bar"><b></b></i><span class="sp-at"></span><span class="sp-nums"></span></div>
+            <div id="sp-folders"></div>
+            <button id="sp-rescan" class="sp-rescan" title="Scan the folders again (picks up new, moved and deleted samples)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v5h-5"/></svg>Rescan</button>
+            <button id="sp-scan" class="sp-plus" title="Add folder" aria-label="Add folder" hidden>＋</button>
+          </div>
+          <button id="sp-load" class="sp-card sp-col" hidden>
+            <div class="sp-ch"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M5 20h14"/></svg><b>Load samples</b></div>
+            <span class="sp-line">Pick audio files from your Mac, or drop them anywhere</span>
+          </button>
+          <!-- Load samples, then (tester, 2026-10-30): what it loaded, and a riff from it or a blank start. -->
+          <div id="sp-loaded" class="sp-card sp-col sp-loaded" hidden>
+            <div class="sp-ch"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12M6 10l6 6 6-6M5 20h14"/></svg><b id="sp-ldtitle">Loading…</b><button id="sp-ldmore" class="sp-newbtn" title="Load more samples">＋ More</button></div>
+            <div id="sp-ldlist" class="sp-ldlist"></div>
+            <div class="sp-ldopts"><label class="sp-ldstyle" title="The groove the riff is played in">Style <select id="sp-ldstyle"></select></label><label class="sp-ldfill" title="Keeps your samples and adds the parts they lack (drums, bass…) from the starter kit"><input id="sp-ldfill" type="checkbox"> Fill gaps from the <span id="sp-ldfillname">starter kit</span></label></div>
+            <div class="sp-ldgo"><button id="sp-ldgen" class="capbtn wide sp-ldprimary"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 5.4L19 10l-5.2 1.6L12 17l-1.8-5.4L5 10l5.2-1.6z"/></svg>Generate a riff</button><button id="sp-ldblank" class="capbtn wide sp-ldsecondary">Start from scratch</button></div>
+          </div>
+          <!-- Create a track as one list (tester, 2026-11-13, mock-up: "just a list of cards … The only thing that's on the
+               left is the genre. And the top one is a blank session"): the genres down the left; on the right From scratch,
+               then the packs as cards. A card opens in place: about five skills that fit it to tick (＋ searches the rest),
+               Bars and Generate track. main.ts initSplash renderList. -->
+          <div id="sp-random" class="sp-card sp-col sp-create sp-list2">
+            <div class="sp-ch sp-regen-only"><b>Create a track</b><span class="sp-chsub">Pick a pack, or start from scratch</span><span class="sp-chgap"></span>
+              <button id="sp-regen-x" class="sp-cancel" title="Back to your groove (Esc)">Cancel</button></div>
+            <p class="sp-regen-note sp-regen-only">Generate starts a new session with a new kit. This one is saved first: LUNA’s File → Open Recent has it, and it stays in Recent sessions.</p>
+            <div class="sl-body">
+              <nav class="sl-genres" aria-label="Genre"><b class="sl-gt">Genre</b><div id="sp-genres" class="sl-glist" role="tablist" aria-label="Show packs in"></div>
+                <button id="sp-mypack" class="sl-getpacks sl-mypack" title="A folder of samples you have (a Splice pack, your own recordings): it becomes a pack here, on this Mac only"><svg class="sl-ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M2.5 8h11"/></svg>Add your pack</button>
+                <button id="sp-find" class="sl-getpacks sl-mypack" title="Listen through a folder on your Mac, pick the sounds you want, and import only those (as a pack named after the folder)"><svg class="sl-ic" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.8" cy="6.8" r="4.3"/><path d="M10 10l3.6 3.6"/></svg>Find samples</button>
+                <button id="sp-res" class="sl-getpacks sl-mypack" title="Where to get sounds, free and paid: each opens its site in your browser"><svg class="sl-ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M6.5 9.5l3-3M7.6 4.4l1.1-1.1a2.6 2.6 0 0 1 3.7 3.7l-1.1 1.1M8.4 11.6l-1.1 1.1a2.6 2.6 0 0 1-3.7-3.7l1.1-1.1"/></svg>Resources</button>
+                <button id="sp-getpacks" class="sl-getpacks" title="Unlock premium packs with a serial from the pack store">Get packs</button></nav>
+              <div id="sp-packs" class="sl-rows" role="list" aria-label="Start from"></div>
+            </div>
+            <!-- Moved into the open card by renderList: Bars, Generate track. -->
+            <div id="sp-gohome" hidden><div class="sp-go" id="sp-go"><div id="sp-gbars" class="sp-from sp-bars" role="radiogroup" aria-label="How many bars"><span>Bars</span><button data-gbars="1" role="radio" title="One bar, looping">1</button><button data-gbars="2" role="radio" title="Two bars">2</button><button data-gbars="3" role="radio" title="Three bars">3</button><button data-gbars="4" role="radio" title="Four bars that go somewhere">4</button></div><div id="sp-gchop" class="sp-from sp-bars sp-chop" role="radiogroup" aria-label="How hard to chop"><span>Chop</span><button data-gchop="whole" role="radio" title="The pack’s loops play whole, in their key and tempo: the poppy version">One shots</button><button data-gchop="chop" role="radio" title="The loops cut into hits and played as new melodies on the genre’s chords">Chop</button><button data-gchop="wild" role="radio" title="Chopped hard (splits, reversals, repeats, octave jumps), plus odd track lengths and chance: it changes every time round">Experimental</button></div><button id="sp-gen" class="capbtn wide sp-key sp-genbtn" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 5.4L19 10l-5.2 1.6L12 17l-1.8-5.4L5 10l5.2-1.6z"/></svg>Generate track<i class="gen-spin" aria-hidden="true"></i></button><button id="sp-hearsk" class="capbtn sp-key sp-hearsk" data-hear-tray="" aria-pressed="false" disabled title="Hear the ticked skills together on plain sounds, as many bars as Bars says (LUNA hears nothing)" aria-label="Hear the ticked skills"><svg class="hk-play" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 4.8v10.4L15.6 10z"/></svg><svg class="hk-stop" viewBox="0 0 20 20" aria-hidden="true"><rect x="5.8" y="5.8" width="8.4" height="8.4" rx="1.2"/></svg></button></div><span id="sp-genline" class="sp-line"></span></div>
+            <button id="sp-cnew" hidden class="capbtn wide sp-key" title="A blank session: four tracks of starter drums (kick, snare, hats, percussion), an empty pattern. Swap in your own samples any time"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.9 4.5h2.2v6.4h6.4v2.2h-6.4v6.4h-2.2v-6.4H4.5v-2.2h6.4z"/></svg>Blank track</button>
+          </div>
+
+          <div id="sp-recent" class="sp-card sp-recent" hidden><div class="sp-rh"><b>Open recent</b><span class="sp-rbtns"><button id="sp-clear" class="sp-newbtn sp-clear" title="Hide these from this list. They stay in LUNA's File → Open Recent; a session you open again comes back.">Clear</button><button id="sp-blank" class="sp-newbtn" hidden title="A new blank session: an empty pattern, four tracks">＋ New</button></span></div><div id="sp-list" role="list"></div></div>
+          <button id="sp-new" class="sp-card"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><b>New session</b><span>An empty pattern, four tracks</span></button>
+        </div>
+        <button id="sp-open" hidden></button>
+      </div>
+    </div>
+    <!-- Once the tour's been taken (its card makes way for Recent sessions): the tour again, top right (tester, 2026-11-04). -->
+    <button id="sp-retour" class="sp-retour away" title="Glitchy shows you round the shop again" tabindex="-1" aria-hidden="true"><svg class="ic-eye" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><ellipse cx="12" cy="12" rx="2.5" ry="3.1"/></svg>Take the tour</button>
+    <button id="sp-help" class="sp-retour sp-help" title="The Guide: everything you can do in Chop Shop, with pictures (?)"><svg class="ic-book" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7c-1.9-1.4-4.6-1.9-8.2-1.7v12.6c3.6-.2 6.3.3 8.2 1.7 1.9-1.4 4.6-1.9 8.2-1.7V5.3C16.6 5.1 13.9 5.6 12 7zM12 7v12.6"/></svg>Guide</button>
+    <button id="sp-skip" hidden></button>
+  </div>
+  <div id="genpop" role="dialog" aria-label="Generate chop" hidden>
+    <p class="gp-h" title="Rhythm, chops, notes in one key, levels, EQ, LFO and effects, for every unlocked track">Generate chop</p>
+    <div class="gp-src" role="radiogroup" aria-label="Samples to use">
+      <button data-src="tracks" role="radio" title="Only the samples on your tracks"><b>My tracks</b></button>
+      <button data-src="supplement" role="radio" title="Adds what the beat lacks (kick, snare, hats, bass…) from the sample folder to free tracks"><b>+ Missing</b></button>
+      <button data-src="new" role="radio" title="A fresh kit from the sample folder on every unlocked track"><b>New kit</b></button>
+    </div>
+    <div class="gp-styles" role="listbox" aria-label="Style"></div>
+    <div class="gp-row">
+      <label class="field" title="How busy the chop is">Sparse <input id="gdens" type="range" min="0" max="1" step="0.05" value="0.6"> Busy</label>
+      <label class="field" title="Every musical chop and the bass are moved onto chords in this key. Auto: the key of your main musical sample.">Key <select id="gkey"><option value="">Auto</option></select></label>
+    </div>
+    <div class="gp-row">
+      <label class="field" title="Write the chords Generate picks to LUNA's Chord ruler (one undo entry). Off: Generate follows the chords already on the ruler at the pattern."><input id="gchords" type="checkbox"> Chords to LUNA</label>
+      <label class="field" title="Load a style-matched LUNA plugin on each track (replacing the ones Generate added before)"><input id="gfx" type="checkbox" checked> LUNA effects</label>
+    </div>
+    <button id="gogen" class="capbtn wide gp-go"><span class="gp-go-i">✦</span> <b>Generate</b> <span id="gogen-style"></span></button>
+    <p class="gp-t" id="gnote">Locked tracks (Lock in the track panel) are kept. ↶ goes back.</p>
+  </div>
+  <div id="menu" role="dialog" aria-label="Settings"><div class="backdrop"></div><input id="mname" spellcheck="false" autocomplete="off" aria-label="Row name" title="Click to rename" hidden><div id="zoom"></div></div>
+  <input id="file" type="file" accept="audio/*,.wav,.aif,.aiff,.mp3,.m4a,.flac" multiple hidden>
+  <footer id="log" aria-live="polite"></footer>
+
+  <script src="vendor/luna.global.js"></script>
+  <script src="app.js?v=mwpj9o89"></script>
+</body>
+</html>

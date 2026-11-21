@@ -1,0 +1,44 @@
+{
+  "package_name": "Chop Shop",
+  "manufacturer": "Chop Shop",
+  "add_ons": [
+    {
+      "id": "com.chopshop.chopshop",
+      "title": "Chop Shop",
+      "version": "0.4.36",
+      "sdk_version": "3.1.2.63",
+      "min_luna_version": "3.1.1",
+      "engines": [
+        "luna"
+      ],
+      "html": "index.html",
+      "icon": "icon.png",
+      "description": [
+        "Chop Shop is a slice sequencer for LUNA: chop any sample into hits, play them on a step grid, roll new takes and build a whole song. ",
+        "Start from an example pack, bring your own sounds, or let Glitchy's tour show you round. ",
+        "Everything lands in your LUNA session as audio clips on Chop tracks, mixed with LUNA's own plugins."
+      ],
+      "categories": [
+        "Create",
+        "Editing"
+      ],
+      "network": [
+        "lowdownsound.io",
+        "chop-shop-packs.netlify.app",
+        "api.anthropic.com",
+        "api.elevenlabs.io",
+        "api.stability.ai",
+        "fal.run",
+        "fal.media",
+        "*.fal.media"
+      ],
+      "target": "window",
+      "floating": false,
+      "show_with_session": false,
+      "width": 1512,
+      "height": 982,
+      "fixed_size": false,
+      "local_content_offset": "../../../../../../../../../../../.."
+    }
+  ]
+}

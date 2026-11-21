@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chop Pads</title>
+  <link rel="stylesheet" href="style.css?v=mwpj9o89">
+  <style>
+    /* Chop Pads: Chop Shop's pads (or keys) in their own floating LUNA window. Chop Shop owns the
+       sound, the MIDI controller and the pattern; this window shows its pads and sends clicks back. */
+    html, body { margin: 0; height: 100%; background: #1a1b1f; overflow: hidden; }
+    body { display: flex; flex-direction: column; font: 500 12px -apple-system, sans-serif; color: #9aa0a8; }
+    body > #wait, body > #pads { flex: 1; min-height: 0; }
+    #wait { display: grid; place-content: center; }
+    /* The header's transport, as in Chop Shop (‹ ■ ▶ ⟳ ● ›); it drives Chop Shop and LUNA. */
+    header.ptr { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 10px 10px 4px; flex: none; background: none; }
+    header.ptr[hidden] { display: none; }
+    header.ptr .transport { gap: 8px; }
+    header.ptr .tkey { width: 38px; height: 38px; }
+    header.ptr .tkey.secarrow { width: 30px; height: 38px; }
+    header.ptr .psec { font: 500 12px -apple-system, sans-serif; color: #7d838c; font-variant-numeric: tabular-nums; min-width: 26px; }
+    /* The controller picker: an outlined dropdown that reads as one. */
+    #pads.remote .pf-pick { all: unset; box-sizing: border-box; flex: 1; min-width: 0; max-width: none; height: 26px; padding: 0 26px 0 10px; border-radius: 7px; cursor: pointer;
+      font: 500 12px/26px -apple-system, sans-serif; color: #e4e6e9; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+      box-shadow: inset 0 0 0 1px #3a3d43; background: #17181b url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%239aa0a8' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 9px center; }
+    #pads.remote .pf-pick:hover { box-shadow: inset 0 0 0 1px #5a5f66; }
+    #pads.remote .pf-pick:focus-visible { box-shadow: inset 0 0 0 1px var(--accent, #22e6ff); }
+    #pads.remote .pf-bar { gap: 8px; }
+    #pads.pfloat.remote { position: static; box-shadow: none; background: none; padding: 10px; gap: 10px; width: 100%; height: 100%; box-sizing: border-box; align-content: center; justify-items: stretch; }
+    #pads.remote .pf-bar { cursor: default; }
+    #pads.remote .pf-x, #pads.remote .pf-pop { display: none; }
+    /* Chop Shop's floating pads have a title bar of their own; this window has LUNA's. */
+    #pads.remote .pf-title { display: none; }
+    #pads.remote .pf-body { display: grid; gap: 10px; align-content: center; justify-items: stretch; }
+    #pads.remote .pf-name, #pads.remote .pf-row button, #pads.remote .pf-pick { font-size: 11px; max-width: none; }
+    #pads.remote .pf-keys { width: calc(var(--whites) * var(--wk)); }
+    #pads.remote.keysview { align-content: center; grid-template-rows: auto auto auto; }
+    #pads.remote .pf-keys.off { opacity: .55; }
+    /* Flat pads, as in Chop Shop's own Chop Pads window (tester, 2026-11-04: no faux hardware; flat surfaces and
+       states): the tray a well, unlit pads grey, lit ones the track's colour (the root note full), a hit a brighter
+       flash. Each controller keeps only its corner radius. */
+    #pads.remote .pf-grid { padding: 10px; border-radius: 10px; background: #141518; box-shadow: inset 0 0 0 1px #24272c; gap: calc(var(--pd) * .16 + 2px); }
+    #pads.remote .pc-pad { position: relative; border: 0; border-radius: 3px; cursor: pointer; background: #26282c; box-shadow: none; transition: transform 60ms; }
+    #pads.remote .pc-pad.on { background: color-mix(in srgb, var(--tc) 75%, #1c1d20); box-shadow: none; }
+    #pads.remote .pc-pad.on.root { background: var(--tc); }
+    #pads.remote .pc-pad:active { transform: scale(.96); }
+    #pads.remote .pc-pad.hit { animation: pad-hot 260ms ease-out; }
+    @keyframes pad-hot { 0% { filter: brightness(1.4); } 100% { } }
+    /* Glowing pads and a white flash on a hit (tester, 2026-11-05), as in Chop Shop's own pads (style.css .pwin). */
+    #pads.remote .pc-pad { background: linear-gradient(180deg, #2b2d32, #222428); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .05); }
+    #pads.remote .pc-pad.on { background: radial-gradient(130% 110% at 50% 18%, color-mix(in srgb, var(--tc) 70%, #fff) 0%, var(--tc) 46%, color-mix(in srgb, var(--tc) 58%, #0d0e10) 100%);
+      box-shadow: 0 0 12px color-mix(in srgb, var(--tc) 42%, transparent), inset 0 1px 0 rgba(255, 255, 255, .28), inset 0 -2px 6px rgba(0, 0, 0, .25); }
+    #pads.remote .pc-pad.on.root { background: radial-gradient(130% 110% at 50% 18%, color-mix(in srgb, var(--tc) 55%, #fff) 0%, color-mix(in srgb, var(--tc) 85%, #fff) 40%, var(--tc) 100%);
+      box-shadow: 0 0 16px color-mix(in srgb, var(--tc) 60%, transparent), inset 0 1px 0 rgba(255, 255, 255, .4); }
+    #pads.remote .pc-pad::after { content: ''; position: absolute; inset: 0; border-radius: inherit; background: #fff; opacity: 0; pointer-events: none; }
+    #pads.remote .pc-pad.hit { animation: pad-glow 340ms ease-out; }
+    #pads.remote .pc-pad.hit::after { animation: pad-white 340ms ease-out; }
+    @keyframes pad-white { 0% { opacity: 1; } 35% { opacity: .85; } 100% { opacity: 0; } }
+    @keyframes pad-glow { 0% { box-shadow: 0 0 22px rgba(255, 255, 255, .85), 0 0 10px var(--tc); } 100% { } }
+    #pads.remote .pf-grid[data-ctl="launchpad"] .pc-pad { border-radius: 2px; }
+    #pads.remote .pf-grid[data-ctl^="maschine"] .pc-pad { border-radius: calc(var(--pd) * .12); }
+    #pads.remote .pf-grid[data-ctl^="mp"] .pc-pad, #pads.remote .pf-grid[data-ctl="lpd8"] .pc-pad { border-radius: calc(var(--pd) * .14); }
+    #pads.remote .pf-grid[data-ctl="beatstep"] .pc-pad, #pads.remote .pf-grid[data-ctl="tr8s"] .pc-pad { border-radius: 4px; }
+    #wait { text-align: center; line-height: 1.6; padding: 20px; }
+    #wait b { color: #c4c8ce; font-weight: 500; font-size: 13px; }
+    #wait { gap: 6px; justify-items: center; }
+    #wait .wmsg { color: #7d838c; }
+    /* Open Chop Shop: one of the shop's keys (a wide key, drawn as the flat look draws it: this page has no look). */
+    #openshop.capbtn.wide { all: unset; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; margin-top: 10px; height: 30px; padding: 0 14px; border-radius: 7px; cursor: pointer;
+      font: 600 12px -apple-system, sans-serif; color: #c9ccd1; background: #16171a; box-shadow: inset 0 0 0 1px #3a3c41; }
+    #openshop.capbtn.wide:hover { box-shadow: inset 0 0 0 1px #5a5d63; color: #eceef1; }
+    #openshop.capbtn.wide:focus-visible { box-shadow: inset 0 0 0 1px var(--accent, #22e6ff); }
+    #openshop.capbtn.wide:disabled { opacity: .5; cursor: default; }
+  </style>
+</head>
+<body>
+  <header class="ptr" hidden>
+    <div class="transport" role="group" aria-label="Chop Shop's transport">
+        <button id="secprev" class="tkey secarrow" title="The section before" aria-label="Previous section"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12.5 5l-5 5 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <button id="stop" class="tkey" title="Stop, and back to the start" aria-label="Stop"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="5.5" y="5.5" width="9" height="9" rx="1.4"/></svg></button>
+        <button id="play" class="tkey" title="Loop the pattern in LUNA and play" aria-label="Play"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 5v10a.7.7 0 0 0 1.07.6l7.7-5a.7.7 0 0 0 0-1.2l-7.7-5A.7.7 0 0 0 7 5z"/></svg></button>
+        <button id="loopbtn" class="tkey" title="Loop this section, or play every section in turn" aria-label="Loop" aria-pressed="true"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 9V8a2.5 2.5 0 0 1 2.5-2.5h7M12.5 3.5l2 2-2 2M15 11v1a2.5 2.5 0 0 1-2.5 2.5h-7M7.5 16.5l-2-2 2-2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <button id="recbtn" class="tkey" title="Record from Chop Pads, the keys or your controller" aria-label="Record" aria-pressed="false"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="4.6"/></svg></button>
+        <button id="secnext" class="tkey secarrow" title="The next section (a new one starts as a copy of this one)" aria-label="Next section"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7.5 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+    <span class="psec" title="The section Chop Shop is on">1/1</span>
+  </header>
+  <div id="wait"><b>Chop Pads</b><span class="wmsg">Chop Pads plays Chop Shop's tracks.</span><button id="openshop" class="capbtn wide" type="button">Open Chop Shop</button></div>
+  <div id="pads" class="pfloat remote" hidden></div>
+  <script src="vendor/luna.global.js"></script>
+  <script>
+  (() => {
+    // The same link as src/padlink.ts (kept in step by hand: this page has no build step). Inside LUNA it runs through
+    // the session's storage: add_preference / set_preference under /sessions/<uid>/preferences/com.chopshop.chopshop/
+    // chopshop_pads/<from>_<type>, every change pushed to every Add On watching (2–6 ms on LUNA 3.1.1). No helper.
+    const NAME = 'chopshop-pads', ME = 'pads', KEY = NAME + '.msg', CONTEXT = 'com.chopshop.chopshop', PREF = NAME.replace(/\W/g, '_');
+    const BUILD = 'mwpj9o89'; // esbuild.mjs stamps the build here; Chop Shop's messages carry its own
+    const KEEP = { act: 16, flash: 8 }, STATE = ['view', 'transport', 'hello', 'here'], BORN = Date.now();
+    const seen = new Set(); let n = 0; const fns = [];
+    const take = (m, via) => {
+      if (!m || !m._id || m._from === ME || seen.has(m._id)) return;
+      if (typeof m._t === 'number' && m._t < BORN - 5000 && STATE.indexOf(m.type) < 0) return; // from before this window
+      seen.add(m._id); if (seen.size > 500) seen.delete(seen.values().next().value);
+      // Chop Shop is a newer build: this page is old (LUNA keeps a window's page until it quits). Reload, once per build.
+      if (m._b && BUILD && m._b > BUILD) { let done = ''; try { done = sessionStorage.getItem('chopPadsReloadedFor') || ''; } catch (e) { /* none */ } if (done !== m._b) { try { sessionStorage.setItem('chopPadsReloadedFor', m._b); } catch (e) { /* none */ } location.reload(); return; } }
+      fns.forEach((f) => f(m, via));
+    };
+    let bc; try { bc = new BroadcastChannel(NAME); bc.onmessage = (e) => take(e.data, 'channel'); } catch (e) { /* none */ }
+    addEventListener('storage', (e) => { if (e.key === KEY && e.newValue) { try { take(JSON.parse(e.newValue), 'storage'); } catch (x) { /* not ours */ } } });
+    const PEER = window.opener && window.opener !== window ? window.opener : null;
+    addEventListener('message', (e) => { if (PEER && e.source === PEER && e.data && e.data._id) take(e.data, 'window'); });
+    const recent = new Map(), added = new Set(), queue = new Map(); let sess = null;
+    const takeList = (k, v, initial) => {
+      if (k.indexOf(ME + '_') === 0 || !/^[a-z]+_[a-z]+$/.test(k)) return;
+      if (initial && STATE.indexOf(k.slice(k.indexOf('_') + 1)) < 0) return;
+      let list = v && typeof v === 'object' && 'value' in v ? v.value : v;
+      if (list && typeof list === 'object' && 'list' in list) list = list.list;
+      if (Array.isArray(list)) list.forEach((m) => take(m, 'session'));
+    };
+    const send = (m) => {
+      const out = Object.assign({}, m, { _id: ME + '.' + Date.now().toString(36) + '.' + (n++), _from: ME, _t: Date.now() });
+      try { bc && bc.postMessage(out); } catch (e) { /* closed */ }
+      try { PEER && !PEER.closed && PEER.postMessage(out, '*'); } catch (e) { /* gone */ }
+      try { localStorage.setItem(KEY, JSON.stringify(out)); } catch (e) { /* blocked */ }
+      if (sess) {
+        const k = ME + '_' + m.type, list = (recent.get(k) || []).concat([out]).slice(-(KEEP[m.type] || 1));
+        recent.set(k, list);
+        const s = sess, args = { context: CONTEXT, preference: PREF, property: k, value: { list }, undoable: false };
+        const next = (queue.get(k) || Promise.resolve())
+          .then(() => (added.has(k) ? undefined : s.client.raw.post(s.prefs + '/add_preference', Object.assign({}, args, { value: null })).then(() => { added.add(k); })))
+          .then(() => s.client.raw.post(s.prefs + '/set_preference', args)).then(() => undefined)
+          .catch((e) => { if (sess === s) log('warn', 'session storage refused ' + k + ': ' + (e && e.message || e)); });
+        queue.set(k, next);
+      }
+    };
+    /** Carry the link through this LUNA session's storage. */
+    const useSession = (client, uid) => {
+      if (sess) sess.off(); sess = null; recent.clear(); added.clear(); queue.clear();
+      if (!uid) return;
+      const prefs = '/sessions/' + uid + '/preferences', node = prefs + '/' + CONTEXT + '/' + PREF;
+      const w = client.store.watch(prefs, { recursive: true, load: false });
+      const offEv = client.store.onEvent((e) => { if (e.path.indexOf(node + '/') === 0) takeList(e.path.slice(node.length + 1), e.data, false); });
+      sess = { client, prefs, off: () => { offEv(); w.release(); } };
+      client.raw.get(node).then((v) => { const p = (v && v.properties) || {}; Object.keys(p).forEach((k) => takeList(k, p[k], true)); }).catch(() => undefined)
+        .then(() => { log('info', 'on session storage'); send({ type: 'hello' }); });
+    };
+
+    // Dev builds: say what happened to the log collector (tools/collector.mjs), so it can be checked from outside LUNA.
+    const LOG_URL = ''; // esbuild.mjs empties this for --prod builds
+    const log = (level, text) => { if (!LOG_URL) return; try { fetch(LOG_URL, { method: 'POST', body: JSON.stringify({ at: new Date().toISOString(), level, text: '[chop pads] ' + text }), headers: { 'content-type': 'application/json' } }).catch(() => {}); } catch (e) { /* none */ } };
+    log('info', 'window open · BroadcastChannel ' + (bc ? 'yes' : 'no') + ' · opened by Chop Shop: ' + (PEER ? 'yes' : 'no') + ' · ' + location.href);
+
+    const el = document.getElementById('pads'), wait = document.getElementById('wait');
+    // Chop Shop does the sound, the controller and the pattern; Chop Pads only shows them. It's "there"
+    // while its messages keep coming (it sends the transport at least every 3 s once we've said hello).
+    let lastShop = 0, opening = 0;
+    const shopAlive = () => Date.now() - lastShop < 45000; // Chop Shop speaks at least every 20 s
+    const btn = document.getElementById('openshop');
+    let client;
+    /** Open Chop Shop (tester, 2026-10-21: "if someone launches Chop Pads and clicks on something"). */
+    async function openShop(why) {
+      if (Date.now() - opening < 4000) return;
+      opening = Date.now();
+      btn.disabled = true; btn.textContent = 'Opening Chop Shop…';
+      setTimeout(() => { btn.disabled = false; btn.textContent = 'Open Chop Shop'; }, 4000);
+      try {
+        // LUNA's show toggles a window Add On like its menu item: on an open Chop Shop it would close it. Ask
+        // first (Chop Shop answers a hello within a moment); only open it when nothing answers.
+        // Without the session link we can't tell whether Chop Shop is open, and a toggle would close an open one
+        // (tester, 2026-10-29: "when I click on that button, it closes Chop Shop"). Say where to find it instead.
+        if (window.Luna && Luna.isEmbeddedInLuna() && !sess) { log('info', 'no session link yet: not toggling Chop Shop (' + why + ')'); btn.textContent = 'Open a session, then Chop Shop (Add Ons menu)'; return; }
+        send({ type: 'hello' });
+        for (let t = 0; t < 30 && !shopAlive(); t++) await new Promise((r) => setTimeout(r, 100)); // 3 s: a session write takes a moment
+        if (shopAlive()) { log('info', 'Chop Shop answered: already open, not toggling it (' + why + ')'); return; }
+        if (window.Luna && Luna.isEmbeddedInLuna()) {
+          client = client || await Luna.connect({});
+          const r = await client.gui.showAddOn('com.chopshop.chopshop');
+          log('info', 'opened Chop Shop (' + why + '): ' + (JSON.stringify(r) || 'ok'));
+        } else { window.open('index.html', 'chop-shop'); log('info', 'opened Chop Shop in a browser window (' + why + ')'); }
+      } catch (e) { log('error', 'open Chop Shop: ' + (e && e.message || e)); btn.textContent = 'Couldn\'t open it: use LUNA\'s Add Ons menu'; }
+    }
+    btn.addEventListener('click', () => openShop('button'));
+    // Chop Shop closed: back to the waiting screen (pads that can't play would only confuse).
+    setInterval(() => { if (!el.hidden && !shopAlive()) { el.hidden = true; wait.hidden = false; document.querySelector('header.ptr').hidden = true; } }, 1000);
+    let lastView = 0, firstVia = '';
+    const fit = () => {
+      // Pads as big as the window allows (the bar and the buttons take ~70 px).
+      const grid = el.querySelector('.pf-grid'), keys = el.querySelector('.pf-keys');
+      const W = innerWidth - 24, H = innerHeight - 90 - (document.querySelector('header.ptr')?.offsetHeight || 0);
+      if (grid) {
+        const cols = Number(getComputedStyle(grid).getPropertyValue('--cols')) || 8, rows = Math.ceil(grid.children.length / cols);
+        const pd = Math.max(8, Math.floor(Math.min(W / (cols * 1.28), H / (rows * 1.28))));
+        el.style.setProperty('--pd', pd + 'px');
+      }
+      if (keys) {
+        const whites = Number(getComputedStyle(keys).getPropertyValue('--whites')) || 15;
+        el.style.setProperty('--wk', Math.max(9, Math.floor(W / whites)) + 'px');
+        el.style.setProperty('--kh', Math.max(40, Math.min(H, Math.floor(W / whites) * 6.5)) + 'px');
+      }
+    };
+    addEventListener('resize', fit);
+
+    fns.push((m, via) => {
+      lastShop = Math.max(lastShop, Math.min(Date.now(), typeof m._t === 'number' ? m._t : Date.now()));
+      if (m.type === 'view') {
+        if (!firstVia) { firstVia = via; log('info', 'first view from Chop Shop via ' + via); }
+        lastView = Date.now();
+        el.innerHTML = m.html; el.dataset.size = m.size; el.classList.toggle('keysview', !!m.keys);
+        el.hidden = false; wait.hidden = true; fit();
+      } else if (m.type === 'transport') {
+        const tr = document.querySelector('header.ptr'); tr.hidden = false;
+        tr.querySelector('#play').classList.toggle('on', !!m.play);
+        tr.querySelector('#loopbtn').classList.toggle('on', !!m.loop);
+        tr.querySelector('#recbtn').classList.toggle('on', !!m.rec);
+        tr.querySelector('#secprev').disabled = !!m.first;
+        tr.querySelector('.psec').textContent = m.sec || '1/1';
+      } else if (m.type === 'flash') {
+        const b = el.querySelector(m.kind === 'pad' ? '[data-pad="' + m.val + '"]' : '[data-key="' + m.val + '"]');
+        if (!b) return;
+        if (m.kind === 'pad') { b.classList.remove('hit'); void b.offsetWidth; b.classList.add('hit'); }
+        else { b.classList.add('hit'); setTimeout(() => b.classList.remove('hit'), 160); }
+      }
+    });
+
+    // Clicks go back to Chop Shop, which plays, records and re-sends the view.
+    el.addEventListener('pointerdown', (e) => {
+      if (e.button !== 0) return;
+      if (!shopAlive()) { openShop('pad'); return; }
+      const pad = e.target.closest('[data-pad]'), key = e.target.closest('[data-key]');
+      if (pad) { e.preventDefault(); send({ type: 'act', kind: 'pad', val: pad.dataset.pad }); }
+      else if (key) { e.preventDefault(); send({ type: 'act', kind: 'key', val: key.dataset.key }); }
+    });
+    el.addEventListener('click', (e) => {
+      const b = e.target.closest('button'); if (!b) return;
+      if (b.dataset.view) send({ type: 'act', kind: 'view', val: b.dataset.view });
+      else if (b.dataset.pmode) send({ type: 'act', kind: 'pmode', val: b.dataset.pmode });
+      else if (b.dataset.oct) send({ type: 'act', kind: 'oct', val: b.dataset.oct });
+      else if ('size' in b.dataset) send({ type: 'act', kind: 'size' });
+      else if (b.classList.contains('pc-rec')) send({ type: 'act', kind: 'rec' });
+    });
+    // The computer keys play here too (pads: Z X C V / A S D F …; keys: A W S E D …, Z / X octave).
+    addEventListener('keydown', (e) => {
+      if (e.metaKey || e.ctrlKey || e.altKey || e.repeat || e.key.length !== 1 || e.target.closest?.('select, input')) return;
+      e.preventDefault(); if (!shopAlive()) { openShop('key'); return; } send({ type: 'act', kind: 'keydown', val: e.key.toLowerCase() });
+    });
+    el.addEventListener('change', (e) => { if (e.target.matches('.pf-pick')) send({ type: 'act', kind: 'pick', val: e.target.value }); });
+
+    document.querySelector('header.ptr').addEventListener('click', (e) => { const b = e.target.closest('button[id]'); if (!b || b.disabled) return; if (!shopAlive()) { openShop('transport'); return; } send({ type: 'act', kind: 'transport', val: b.id }); });
+    // Hello now and every 20 s (each one is a write to the session): Chop Shop treats the window as open while they come.
+    send({ type: 'hello' });
+    setInterval(() => send({ type: 'hello' }), 20000);
+    // Inside LUNA: reach LUNA, and follow its focused session (the link lives in the session's storage).
+    if (window.Luna && Luna.isEmbeddedInLuna()) (async () => {
+      try {
+        client = client || await Luna.connect({});
+        // Which session LUNA has open: asked every 2 s, not only on LUNA's focus change (its focused uid can sit
+        // unchanged, or name a session that's gone: UAB-062), so a session opened after this window is found.
+        let curUid = null, busy = false;
+        const follow = async () => {
+          if (busy) return; busy = true;
+          try {
+            const s = await client.session();
+            if (s.uid !== curUid) { curUid = s.uid; useSession(client, s.uid); log('info', 'following the open session'); }
+          } catch (e) {
+            if (curUid !== null || !wait.dataset.nosess) { curUid = null; useSession(client, undefined); log('info', 'no session open in LUNA yet'); }
+            wait.dataset.nosess = '1'; wait.querySelector('.wmsg').textContent = 'Open a session in LUNA: Chop Pads and Chop Shop meet there.';
+          } finally { busy = false; }
+        };
+        client.sessions.focusedUid.onChange(() => void follow());
+        setInterval(() => void follow(), 2000);
+        await follow();
+      } catch (e) { log('error', 'connect: ' + (e && e.message || e)); }
+    })();
+    addEventListener('pagehide', () => send({ type: 'bye' }));
+  })();
+  </script>
+</body>
+</html>

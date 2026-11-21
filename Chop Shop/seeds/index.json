@@ -1,0 +1,222 @@
+{
+ "made": "2026-11-20T02:46:33.560Z",
+ "seeds": [
+  {
+   "name": "edm-03",
+   "pack": "edm",
+   "level": "whole",
+   "bars": 1,
+   "grade": 3
+  },
+  {
+   "name": "edm-04",
+   "pack": "edm",
+   "level": "whole",
+   "bars": 4,
+   "grade": 3
+  },
+  {
+   "name": "edm-05",
+   "pack": "edm",
+   "level": "wild",
+   "bars": 1,
+   "grade": 3
+  },
+  {
+   "name": "edm-06",
+   "pack": "edm",
+   "level": "wild",
+   "bars": 4,
+   "grade": 2
+  },
+  {
+   "name": "edm-07",
+   "pack": "edm",
+   "level": "chop",
+   "bars": 2,
+   "grade": 3
+  },
+  {
+   "name": "edm-11",
+   "pack": "edm",
+   "level": "whole",
+   "bars": 4,
+   "grade": 2
+  },
+  {
+   "name": "edm-12",
+   "pack": "edm",
+   "level": "wild",
+   "bars": 1,
+   "grade": 2
+  },
+  {
+   "name": "edm-13",
+   "pack": "edm",
+   "level": "wild",
+   "bars": 4,
+   "grade": 2
+  },
+  {
+   "name": "edm-16",
+   "pack": "edm",
+   "level": "chop",
+   "bars": 4,
+   "grade": 2
+  },
+  {
+   "name": "edm-17",
+   "pack": "edm",
+   "level": "whole",
+   "bars": 1,
+   "grade": 3
+  },
+  {
+   "name": "edm-19",
+   "pack": "edm",
+   "level": "wild",
+   "bars": 1,
+   "grade": 2
+  },
+  {
+   "name": "edm-20",
+   "pack": "edm",
+   "level": "chop",
+   "bars": 1,
+   "grade": 2
+  },
+  {
+   "name": "edm-21",
+   "pack": "edm",
+   "level": "chop",
+   "bars": 4,
+   "grade": 2
+  },
+  {
+   "name": "edm-23",
+   "pack": "edm",
+   "level": "whole",
+   "bars": 4,
+   "grade": 3
+  },
+  {
+   "name": "edm-25",
+   "pack": "edm",
+   "level": "chop",
+   "bars": 4,
+   "grade": 2
+  },
+  {
+   "name": "edm-26",
+   "pack": "edm",
+   "level": "chop",
+   "bars": 1,
+   "grade": 3
+  },
+  {
+   "name": "edm-28",
+   "pack": "edm",
+   "level": "chop",
+   "bars": 1,
+   "grade": 2
+  },
+  {
+   "name": "synthwave-03",
+   "pack": "synthwave",
+   "level": "whole",
+   "bars": 1,
+   "grade": 2
+  },
+  {
+   "name": "synthwave-04",
+   "pack": "synthwave",
+   "level": "whole",
+   "bars": 4,
+   "grade": 2
+  },
+  {
+   "name": "synthwave-08",
+   "pack": "synthwave",
+   "level": "chop",
+   "bars": 1,
+   "grade": 2
+  },
+  {
+   "name": "rnb-01",
+   "pack": "rnb",
+   "level": "chop",
+   "bars": 1,
+   "grade": 2
+  },
+  {
+   "name": "rnb-02",
+   "pack": "rnb",
+   "level": "chop",
+   "bars": 4,
+   "grade": 2
+  },
+  {
+   "name": "rnb-03",
+   "pack": "rnb",
+   "level": "whole",
+   "bars": 1,
+   "grade": 3
+  },
+  {
+   "name": "rnb-05",
+   "pack": "rnb",
+   "level": "wild",
+   "bars": 1,
+   "grade": 2
+  },
+  {
+   "name": "rnb-06",
+   "pack": "rnb",
+   "level": "wild",
+   "bars": 4,
+   "grade": 2
+  },
+  {
+   "name": "rnb-07",
+   "pack": "rnb",
+   "level": "chop",
+   "bars": 2,
+   "grade": 2
+  },
+  {
+   "name": "rnb-08",
+   "pack": "rnb",
+   "level": "chop",
+   "bars": 1,
+   "grade": 2
+  },
+  {
+   "name": "synthwave-12",
+   "pack": "synthwave",
+   "level": "wild",
+   "bars": 1,
+   "grade": 3
+  },
+  {
+   "name": "synthwave-17",
+   "pack": "synthwave",
+   "level": "whole",
+   "bars": 1,
+   "grade": 2
+  },
+  {
+   "name": "synthwave-18",
+   "pack": "synthwave",
+   "level": "whole",
+   "bars": 4,
+   "grade": 2
+  },
+  {
+   "name": "synthwave-20",
+   "pack": "synthwave",
+   "level": "chop",
+   "bars": 1,
+   "grade": 2
+  }
+ ]
+}

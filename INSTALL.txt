@@ -1,0 +1,48 @@
+Chop Shop — a slice sequencer Add On for LUNA
+Built on @uaudio/luna-builder-sdk 3.1.2.63. Needs LUNA 3.1.1 or newer, on macOS.
+
+Install
+  1. Unzip this download. You get "Chop Shop.lunaaddon" (one file) and this note.
+  2. Close any open session in LUNA first (save it), then open "Chop Shop.lunaaddon" with LUNA (double-click it,
+     or drag it onto LUNA): LUNA installs it into its Add Ons folder.
+     (Installing with a session open, LUNA swaps it for a new empty "Untitled" session, and an open Chop Shop window
+     loses its tracks. If that happens: close the Chop Shop window, open it again, and pick your session from Recent.)
+     If your LUNA doesn't take it: rename it to "Chop Shop.zip", unzip it, and copy the "Chop Shop" folder into
+       /Library/Application Support/Universal Audio/LUNA/Add Ons/
+     (create that folder if it isn't there; your user needs to be able to write to it).
+  3. In LUNA, open a session, then the Add Ons menu → Chop Shop. No restart needed.
+     LUNA 3.1.2 and newer ask once which servers Chop Shop may reach: Allow, or the example packs can't download
+     their other songs (and sound generation and track naming can't reach their services). Change it later in
+     LUNA's Settings → Add Ons → SERVERS.
+  Updating: install the new one the same way, then close the Chop Shop window and open it again.
+
+Start here
+  "Take the tour" on the start screen: Glitchy shows you round the shop in a few minutes, sound on. The tour is a
+  sandbox: it doesn't touch your LUNA session. Skip section and Skip Tutorial are at the top right; ✕ or Esc ends it.
+  The ? key (or ⋯ → Guide) opens the Guide: every screen, with pictures.
+
+Sounds
+  Three example packs to play with: Main Stage (EDM), Night Drive (synthwave) and Velvet Hours (neo-soul and R&B).
+  Main Stage comes in the box; Night Drive and Velvet Hours download free from the pack site (lowdownsound.io) with one
+  click on their cards. Open one on the start screen, pick how hard to chop (One shots, Chop, Experimental) and how many
+  bars, and Generate: Chop Shop makes a fresh LUNA session and sketches a starting point from the pack. Each pack's
+  songs come down from the pack site the first time you Generate with it (once; then they stay on this Mac). The other
+  packs on the list are coming soon.
+  Your own sounds:
+    - ＋ Add your pack: turn a folder of samples (a sample pack, your own recordings) into a pack of your own.
+    - Find samples: listen through any folder on your Mac, keep the good ones, or make a song from the ones you pick.
+    - Resources: where to get more sounds, free and paid.
+  Dropping files onto Chop Shop doesn't work inside LUNA yet; use Add your pack or Find samples.
+
+Pads
+  The pads key in Chop Shop's header opens its pads. Play them with the mouse, the computer keys (1–4, Q–R, A–F, Z–V)
+  or a controller (LUNA passes it on, no other software needed).
+
+Good to know
+  - Chop Shop writes your pattern into LUNA as audio clips on "Chop" tracks. It needs an open session.
+  - The first time a hit plays in LUNA, its audio uploads; give it a moment.
+  - Effects are LUNA's own plugins, on each Chop track.
+  - Optional, with your own keys (⋯ → Functions → API keys): generate sounds from a description (ElevenLabs, Stable
+    Audio or fal.ai) and have Claude name your tracks (Anthropic). None ships in this package; keys stay on your Mac
+    and go only to their provider, billed to your account there.
+  - Something wrong? ⋯ → Functions → Download logs, and send the file along with what happened.
