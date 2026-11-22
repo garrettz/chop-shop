@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Chop Pads</title>
-  <link rel="stylesheet" href="style.css?v=mwpj9o89">
+  <link rel="stylesheet" href="style.css?v=mwsft876">
   <style>
     /* Chop Pads: Chop Shop's pads (or keys) in their own floating LUNA window. Chop Shop owns the
        sound, the MIDI controller and the pattern; this window shows its pads and sends clicks back. */
@@ -94,7 +94,7 @@
     // the session's storage: add_preference / set_preference under /sessions/<uid>/preferences/com.chopshop.chopshop/
     // chopshop_pads/<from>_<type>, every change pushed to every Add On watching (2–6 ms on LUNA 3.1.1). No helper.
     const NAME = 'chopshop-pads', ME = 'pads', KEY = NAME + '.msg', CONTEXT = 'com.chopshop.chopshop', PREF = NAME.replace(/\W/g, '_');
-    const BUILD = 'mwpj9o89'; // esbuild.mjs stamps the build here; Chop Shop's messages carry its own
+    const BUILD = 'mwsft876'; // esbuild.mjs stamps the build here; Chop Shop's messages carry its own
     const KEEP = { act: 16, flash: 8 }, STATE = ['view', 'transport', 'hello', 'here'], BORN = Date.now();
     const seen = new Set(); let n = 0; const fns = [];
     const take = (m, via) => {
