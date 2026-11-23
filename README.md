@@ -23,7 +23,9 @@ and writes every hit into your session as real tracks and clips.
 - **Needs** LUNA 3.1.1 or later, on macOS
 - **Three example packs** to start, or **bring your own samples**
 
-![Pick a pack and press Generate](docs/media/generate.gif)
+https://github.com/user-attachments/assets/172158d0-3a1f-4104-b723-2bf487173056
+
+<sub>Pick a pack, press Generate, and a song plays (27 s, sound on).</sub>
 
 ## Watch it
 
