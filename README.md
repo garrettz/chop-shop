@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://github.com/garrettz/chop-shop/releases/latest"><b>Download</b></a> ·
   <a href="#install">Install</a> ·
-  <a href="#watch-it">Watch it</a> ·
+  <a href="https://www.youtube.com/watch?v=hiP7GBm7hJo">Take a tour with Glitchy ▶</a> ·
   <a href="https://lowdownsound.io/chop-shop">Website</a> ·
   <a href="https://lowdownsound.io/store">Skill packs</a>
 </p>
@@ -26,6 +26,14 @@ and writes every hit into your session as real tracks and clips.
 ![Pick a pack and press Generate](docs/media/generate.gif)
 
 ## Watch it
+
+### [▶ Take a tour with Glitchy](https://www.youtube.com/watch?v=hiP7GBm7hJo)
+
+The full tour on YouTube: Glitchy shows you round the shop, from a pack to a finished song.
+
+[![Take a tour with Glitchy, on YouTube](docs/media/tour-thumb.jpg)](https://www.youtube.com/watch?v=hiP7GBm7hJo)
+
+### Feature clips
 
 Click a picture to play the video with sound (it opens on lowdownsound.io). The same videos are in
 [`docs/video/`](docs/video).
