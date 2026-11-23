@@ -11,7 +11,8 @@
   <a href="#install">Install</a> ·
   <a href="https://www.youtube.com/watch?v=hiP7GBm7hJo">Take a tour with Glitchy ▶</a> ·
   <a href="https://lowdownsound.io/chop-shop">Website</a> ·
-  <a href="https://lowdownsound.io/store">Skill packs</a>
+  <a href="https://lowdownsound.io/store">Skill packs</a> ·
+  <a href="#contact">Contact</a>
 </p>
 
 ![Chop Shop](docs/media/crew.jpg)
@@ -258,8 +259,14 @@ credits are inside the Add On.
 <details>
 <summary><b>Something's wrong. What do I send?</b></summary>
 
-In Chop Shop, ⋯ → Functions → Download logs, then open an issue here with the file and what happened.
+In Chop Shop, ⋯ → Functions → Download logs, then [open an issue](https://github.com/garrettz/chop-shop/issues) with the file and what happened.
 </details>
+
+## Contact
+
+- **Questions and ideas:** ask in [Discussions](https://github.com/garrettz/chop-shop/discussions).
+- **Something not working:** [open an issue](https://github.com/garrettz/chop-shop/issues) with what you did, and attach
+  Chop Shop's log file (⋯ → Functions → Download logs).
 
 ## What's in this repo
 
