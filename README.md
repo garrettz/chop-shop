@@ -138,13 +138,13 @@ Play is LUNA's own Play, through LUNA's mixer. Your plugins, faders and bounces 
 Each example pack holds a full kit and songs to Generate from. Main Stage comes in the box; Night Drive and Velvet Hours
 download free with one click on their cards.
 
-| | | | |
-|---|---|---|---|
-| ![Main Stage](docs/media/edm.jpg) | ![Night Drive](docs/media/synthwave.jpg) | ![Velvet Hours](docs/media/rnb.jpg) | ![Basement Show](docs/media/indierock.jpg) |
-| **Main Stage**<br>EDM · In the box | **Night Drive**<br>Synthwave · Free download | **Velvet Hours**<br>R&B · Neo-soul · Free download | **Basement Show**<br>Indie rock · Coming soon |
-| A big punchy kick, a wide clap with a long room, supersaw chords, a bright pluck lead and a sub bass. | Dry 80s drum-machine kicks and hats, gated snares and toms, a tambourine, a machine cowbell and a pulse bass. | A soft, laid-back kick, finger snaps and rims, lush electric-piano chords, a round sub bass and a sung vocal. | A live drum kit, jangly clean guitar chords, driven power chords and a picked bass guitar. |
+| | | |
+|---|---|---|
+| ![Main Stage](docs/media/edm.jpg) | ![Night Drive](docs/media/synthwave.jpg) | ![Velvet Hours](docs/media/rnb.jpg) |
+| **Main Stage**<br>EDM · In the box | **Night Drive**<br>Synthwave · Free download | **Velvet Hours**<br>R&B · Neo-soul · Free download |
+| A big punchy kick, a wide clap with a long room, supersaw chords, a bright pluck lead and a sub bass. | Dry 80s drum-machine kicks and hats, gated snares and toms, a tambourine, a machine cowbell and a pulse bass. | A soft, laid-back kick, finger snaps and rims, lush electric-piano chords, a round sub bass and a sung vocal. |
 
-**More genre packs:** house, techno, drum & bass, lo-fi, afrobeats and more are on the way. They show on Chop Shop's
+**More genre packs:** indie rock, house, techno, drum & bass, lo-fi, afrobeats and more are on the way. They show on Chop Shop's
 start screen as Coming soon.
 
 **Skill packs:** new sounds plus skills that Generate writes with. Skills are yours to keep, with any pack.
