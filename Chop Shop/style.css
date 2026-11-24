@@ -207,7 +207,7 @@ body.stretching, body.stretching * { cursor: ew-resize !important; }
 
 /* Keys: the designer's key art exactly as rendered (art/key2-*-src.png), the same on every track for
    now (tester's call). keyart.ts can recolour it per track if that comes back. */
-.track { --art-off: url(img/key-off.png?v=mwsft876); --art-on: url(img/key-on.png?v=mwsft876); }
+.track { --art-off: url(img/key-off.png?v=mwv8azz3); --art-on: url(img/key-on.png?v=mwv8azz3); }
 .key { width: var(--cell); height: var(--cell); flex: none; position: relative; cursor: pointer; border: 0; padding: 0; display: grid; place-items: center;
   background: var(--art-off) center / contain no-repeat; transition: transform 60ms, filter 80ms; color: var(--tc); }
 .key.on { background-image: var(--art-on); filter: drop-shadow(0 0 5px rgba(80, 230, 245, .45)); } /* the lit key glows */
@@ -717,12 +717,12 @@ main { grid-template-columns: minmax(0, 100%); justify-items: center; } /* never
    spills past it. Same art on every track. ==== */
 .key, .key.on, .key:not(.on).ph, .key.on.ph, .key:hover:not(.nosample), .key.on:hover:not(.nosample) { background: none; filter: none; }
 .key.sel { outline: none; }
-.key::before { content: ''; position: absolute; z-index: 0; inset: -11.1% -8.3%; pointer-events: none; background: url(img/key-off.png?v=mwsft876) center / 100% 100% no-repeat; transition: filter 80ms; }
-.key.ph::before { background-image: url(img/key-off-ph.png?v=mwsft876); }
-.key.on::before { background-image: url(img/key-on.png?v=mwsft876); }
-.key.on.ph::before { background-image: url(img/key-on-ph.png?v=mwsft876); }
-.key.sel::before { background-image: url(img/key-sel.png?v=mwsft876); }
-.key.sel.ph::before { background-image: url(img/key-sel-ph.png?v=mwsft876); }
+.key::before { content: ''; position: absolute; z-index: 0; inset: -11.1% -8.3%; pointer-events: none; background: url(img/key-off.png?v=mwv8azz3) center / 100% 100% no-repeat; transition: filter 80ms; }
+.key.ph::before { background-image: url(img/key-off-ph.png?v=mwv8azz3); }
+.key.on::before { background-image: url(img/key-on.png?v=mwv8azz3); }
+.key.on.ph::before { background-image: url(img/key-on-ph.png?v=mwv8azz3); }
+.key.sel::before { background-image: url(img/key-sel.png?v=mwv8azz3); }
+.key.sel.ph::before { background-image: url(img/key-sel-ph.png?v=mwv8azz3); }
 .key:hover:not(.nosample)::before { filter: brightness(1.18); }
 .row.muted .key.on::before { filter: saturate(.3) brightness(.7); }
 .key .kl { color: rgba(226, 240, 244, .82); margin-top: 14%; text-shadow: 0 1px 2px rgba(0, 0, 0, .6); }
@@ -730,7 +730,7 @@ main { grid-template-columns: minmax(0, 100%); justify-items: center; } /* never
 .key.open { outline: none; }
 /* Load every state up front, so the playhead never flickers on its first pass. */
 body::after { content: ''; position: absolute; width: 0; height: 0; overflow: hidden; pointer-events: none;
-  background: url(img/key-off-ph.png?v=mwsft876), url(img/key-on.png?v=mwsft876), url(img/key-on-ph.png?v=mwsft876), url(img/key-sel.png?v=mwsft876), url(img/key-sel-ph.png?v=mwsft876); }
+  background: url(img/key-off-ph.png?v=mwv8azz3), url(img/key-on.png?v=mwv8azz3), url(img/key-on-ph.png?v=mwv8azz3), url(img/key-sel.png?v=mwv8azz3), url(img/key-sel-ph.png?v=mwv8azz3); }
 
 /* Per-track key colour (tester's pick: a hue blend). A layer of the track colour (.ktint), blended
    with `hue` and masked to the key art, so the grey body stays grey and only the cyan rim and glow
@@ -739,10 +739,10 @@ body::after { content: ''; position: absolute; width: 0; height: 0; overflow: hi
 .key .ktint { display: none; }
 .keytint .key .ktint { display: block; position: absolute; z-index: 1; inset: -11.1% -8.3%; pointer-events: none;
   background: var(--tc); mix-blend-mode: hue;
-  -webkit-mask: url(img/key-off.png?v=mwsft876) center / 100% 100% no-repeat; mask: url(img/key-off.png?v=mwsft876) center / 100% 100% no-repeat; }
-.keytint .key.ph .ktint { -webkit-mask-image: url(img/key-off-ph.png?v=mwsft876); mask-image: url(img/key-off-ph.png?v=mwsft876); }
-.keytint .key.on .ktint { -webkit-mask-image: url(img/key-on.png?v=mwsft876); mask-image: url(img/key-on.png?v=mwsft876); }
-.keytint .key.on.ph .ktint { -webkit-mask-image: url(img/key-on-ph.png?v=mwsft876); mask-image: url(img/key-on-ph.png?v=mwsft876); }
+  -webkit-mask: url(img/key-off.png?v=mwv8azz3) center / 100% 100% no-repeat; mask: url(img/key-off.png?v=mwv8azz3) center / 100% 100% no-repeat; }
+.keytint .key.ph .ktint { -webkit-mask-image: url(img/key-off-ph.png?v=mwv8azz3); mask-image: url(img/key-off-ph.png?v=mwv8azz3); }
+.keytint .key.on .ktint { -webkit-mask-image: url(img/key-on.png?v=mwv8azz3); mask-image: url(img/key-on.png?v=mwv8azz3); }
+.keytint .key.on.ph .ktint { -webkit-mask-image: url(img/key-on-ph.png?v=mwv8azz3); mask-image: url(img/key-on-ph.png?v=mwv8azz3); }
 .keytint .key.sel .ktint { display: none; }
 .keytint .row.muted .key .ktint { opacity: .3; }
 
@@ -796,8 +796,8 @@ body::after { content: ''; position: absolute; width: 0; height: 0; overflow: hi
 /* Riff triggers (a step playing one of its riffs) wear the selected key's fuchsia, not the track
    colour, on the grid and in the lane. A selected riff key also gets a thin white ring, so "selected"
    and "riff" stay tellable apart. */
-.key.on.riff::before { background-image: url(img/key-sel.png?v=mwsft876); }
-.key.on.riff.ph::before { background-image: url(img/key-sel-ph.png?v=mwsft876); }
+.key.on.riff::before { background-image: url(img/key-sel.png?v=mwv8azz3); }
+.key.on.riff.ph::before { background-image: url(img/key-sel-ph.png?v=mwv8azz3); }
 .keytint .key.riff .ktint { display: none; }
 .key.riff .kl { color: rgba(250, 226, 252, .92); }
 .key.riff .ktick { background: #e455f0; }
@@ -909,7 +909,7 @@ body::after { content: ''; position: absolute; width: 0; height: 0; overflow: hi
 .kn2.empty .kbody { opacity: .5; } .kn2.empty .kptr { opacity: .35; }
 /* The 3D knob (tester, 2026-11-10; knobs.ts): the rendered sprite (.k3) and the arc floating at its cap (.k3a) take the
    flat art's place. Looks that draw the dial as a flat ring and needle hide them again and bring the flat parts back. */
-.kdial .k3 { position: absolute; pointer-events: none; background: url(img/knob/knob3d.webp?v=mwsft876) no-repeat; transition: filter 120ms, opacity 120ms; }
+.kdial .k3 { position: absolute; pointer-events: none; background: url(img/knob/knob3d.webp?v=mwv8azz3) no-repeat; transition: filter 120ms, opacity 120ms; }
 .kdial:has(.k3) > :is(.kbz, .kbody, .kptr, svg:not(.k3a)) { display: none; }
 .kdial .k3a path { stroke-linejoin: round; }
 .kn2:hover .k3, .kn2:focus-visible .k3, .kn2.turning .k3, .mdial:hover .k3, .mdial:focus-visible .k3, .enc:hover .k3, .enc.turning .k3 { filter: brightness(1.15); }
@@ -920,8 +920,8 @@ body::after { content: ''; position: absolute; width: 0; height: 0; overflow: hi
 .rowbtn .mdial .kdial { width: 100%; height: 100%; }
 #grid.compact .rowbtn .mdial { width: 20px; height: 20px; }
 /* The fly-out menu's LFO knobs (menus.ts): the same body and indicator art. */
-.knob { background: url(img/knob/body.png?v=mwsft876) center / 86% no-repeat, radial-gradient(circle at 50% 40%, #33322f, #1e1d1b 86%, #161514); box-shadow: 0 0 0 2px var(--off), 0 4px 8px rgba(0,0,0,.6); }
-.knob i { inset: 7%; left: 7%; top: 7%; width: 86%; height: 86%; margin: 0; border-radius: 0; background: url(img/knob/pointer.png?v=mwsft876) center / 100% no-repeat; transform-origin: 50% 50%; }
+.knob { background: url(img/knob/body.png?v=mwv8azz3) center / 86% no-repeat, radial-gradient(circle at 50% 40%, #33322f, #1e1d1b 86%, #161514); box-shadow: 0 0 0 2px var(--off), 0 4px 8px rgba(0,0,0,.6); }
+.knob i { inset: 7%; left: 7%; top: 7%; width: 86%; height: 86%; margin: 0; border-radius: 0; background: url(img/knob/pointer.png?v=mwv8azz3) center / 100% no-repeat; transform-origin: 50% 50%; }
 
 /* ==== Track button (tester's mockup): "1 Key Press" in the track colour; volume dial, S, M as key caps.
    Off: a dark cap with a dark green S / dark red M. On: the cap lights up green / red and glows. ==== */
@@ -952,13 +952,13 @@ body::after { content: ''; position: absolute; width: 0; height: 0; overflow: hi
 #grid.compact .rowbtn .mdial { width: 22px; height: 22px; }
 #grid.compact .rowbtn .rc button.cap { width: 22px; height: 19px; font-size: 10.5px; border-radius: 4px; }
 /* S / M caps: the tester's art (img/caps/*.png); the letters stay text. */
-.rowbtn .rc button.cap, .rowbtn .rc button.cap:hover { width: 28px; height: 28px; border-radius: 6px; box-shadow: none; background: url(img/caps/off.png?v=mwsft876) center / 100% 100% no-repeat; }
+.rowbtn .rc button.cap, .rowbtn .rc button.cap:hover { width: 28px; height: 28px; border-radius: 6px; box-shadow: none; background: url(img/caps/off.png?v=mwv8azz3) center / 100% 100% no-repeat; }
 .rowbtn .rc button.cap:hover { filter: brightness(1.15); }
-.rowbtn .rc button.cap.solo.on { background: url(img/caps/solo-on.png?v=mwsft876) center / 100% 100% no-repeat; box-shadow: none; filter: drop-shadow(0 0 6px rgba(70, 220, 110, .5)); }
-.rowbtn .rc button.cap.mute.on { background: url(img/caps/mute-on.png?v=mwsft876) center / 100% 100% no-repeat; box-shadow: none; filter: drop-shadow(0 0 6px rgba(230, 60, 70, .5)); }
+.rowbtn .rc button.cap.solo.on { background: url(img/caps/solo-on.png?v=mwv8azz3) center / 100% 100% no-repeat; box-shadow: none; filter: drop-shadow(0 0 6px rgba(70, 220, 110, .5)); }
+.rowbtn .rc button.cap.mute.on { background: url(img/caps/mute-on.png?v=mwv8azz3) center / 100% 100% no-repeat; box-shadow: none; filter: drop-shadow(0 0 6px rgba(230, 60, 70, .5)); }
 #grid.compact .rowbtn .rc button.cap { width: 22px; height: 22px; }
 /* Load both lit caps up front so the first S / M press doesn't flash. */
-.rowbtn::before { content: ''; position: absolute; width: 0; height: 0; overflow: hidden; background: url(img/caps/solo-on.png?v=mwsft876), url(img/caps/mute-on.png?v=mwsft876); }
+.rowbtn::before { content: ''; position: absolute; width: 0; height: 0; overflow: hidden; background: url(img/caps/solo-on.png?v=mwv8azz3), url(img/caps/mute-on.png?v=mwv8azz3); }
 /* No added glow: the cap art carries its own. */
 .rowbtn .rc button.cap.solo.on, .rowbtn .rc button.cap.mute.on { filter: none; text-shadow: none; }
 
@@ -1087,15 +1087,15 @@ header > * { min-width: 0; }
 /* Transport: Stop and Play as the shop's key caps, dead centre. Play lights green while LUNA plays. */
 header .transport { display: flex; gap: 12px; justify-self: center; padding: 0; border: 0; background: none; }
 header .transport .tkey { all: unset; box-sizing: border-box; width: 44px; height: 44px; display: grid; place-items: center; cursor: pointer; color: #0c0b0a;
-  background: url(img/caps/off.png?v=mwsft876) center / 100% 100% no-repeat; transition: filter 120ms, transform 60ms; }
+  background: url(img/caps/off.png?v=mwv8azz3) center / 100% 100% no-repeat; transition: filter 120ms, transform 60ms; }
 header .transport .tkey svg { width: 17px; height: 17px; fill: currentColor; }
 header .transport .tkey:hover { filter: brightness(1.15); }
 header .transport .tkey:active { transform: translateY(1px); }
 header .transport .tkey:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 8px; }
-header .transport #play.on { background: url(img/caps/solo-on.png?v=mwsft876) center / 100% 100% no-repeat; color: #eaffef; border: 0; }
+header .transport #play.on { background: url(img/caps/solo-on.png?v=mwv8azz3) center / 100% 100% no-repeat; color: #eaffef; border: 0; }
 /* The dice: Generate chop, an icon on a cap. */
 header .hd-dice { all: unset; box-sizing: border-box; width: 32px; height: 32px; display: grid; place-items: center; cursor: pointer; color: #c4c8ce;
-  background: url(img/caps/off.png?v=mwsft876) center / 100% 100% no-repeat; }
+  background: url(img/caps/off.png?v=mwv8azz3) center / 100% 100% no-repeat; }
 header .hd-dice svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.6; }
 header .hd-dice svg circle { fill: currentColor; stroke: none; }
 header .hd-dice:hover { color: #fff; filter: brightness(1.15); }
@@ -1106,7 +1106,7 @@ header .field.bpm input { width: 56px; text-align: center; }
 /* The floating pads' name. */
 .pf-name { font: 700 8.5px -apple-system, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: #c4c8ce; white-space: nowrap; }
 /* Header fixes: the old Generate / transport styles out of the way; no fuchsia (selection only). */
-header #gen.hd-dice, header #gen.hd-dice:hover { background: url(img/caps/off.png?v=mwsft876) center / 100% 100% no-repeat; border: 0; box-shadow: none; padding: 0; }
+header #gen.hd-dice, header #gen.hd-dice:hover { background: url(img/caps/off.png?v=mwv8azz3) center / 100% 100% no-repeat; border: 0; box-shadow: none; padding: 0; }
 header .transport [hidden] { display: none !important; } /* #tostart is the ⏮ key now (2026-10-22) */
 header .transport .tkey { border: 0; box-shadow: none; margin: 0; }
 header .field.bpm input { width: 68px; }
@@ -1165,10 +1165,10 @@ header .transport { box-shadow: none; }
 .tier .kgroups .eqcurve canvas { width: 100%; height: 100%; }
 .tier-sm { display: flex; align-items: center; gap: 6px; }
 .tier-sm .cap { all: unset; box-sizing: border-box; cursor: pointer; width: 20px; height: 20px; display: grid; place-items: center; border-radius: 4px;
-  font: 800 9.5px/1 -apple-system, sans-serif; color: #000; background: url(img/caps/off.png?v=mwsft876) center / 100% 100% no-repeat; }
+  font: 800 9.5px/1 -apple-system, sans-serif; color: #000; background: url(img/caps/off.png?v=mwv8azz3) center / 100% 100% no-repeat; }
 .tier-sm .cap:hover { filter: brightness(1.15); }
-.tier-sm .cap.solo.on { background-image: url(img/caps/solo-on.png?v=mwsft876); color: #eaffef; }
-.tier-sm .cap.mute.on { background-image: url(img/caps/mute-on.png?v=mwsft876); color: #ffe6ea; }
+.tier-sm .cap.solo.on { background-image: url(img/caps/solo-on.png?v=mwv8azz3); color: #eaffef; }
+.tier-sm .cap.mute.on { background-image: url(img/caps/mute-on.png?v=mwv8azz3); color: #ffe6ea; }
 .tier-sm .cap:disabled { opacity: .35; cursor: default; filter: none; }
 .tier-sm .trackfx { margin-left: auto; }
 .tier-btns { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; }
@@ -1179,7 +1179,7 @@ header .transport { box-shadow: none; }
 /* Takes (1, 2, 3 …) and the dice (Chop Shop) as key caps. */
 .takes { display: flex; gap: 4px; }
 .takes button, .dicecap { all: unset; box-sizing: border-box; cursor: pointer; width: 28px; height: 28px; display: grid; place-items: center; border-radius: 6px;
-  font: 800 12px/1 -apple-system, sans-serif; color: #c4c8ce; background: url(img/caps/off.png?v=mwsft876) center / 100% 100% no-repeat; transition: filter 120ms; }
+  font: 800 12px/1 -apple-system, sans-serif; color: #c4c8ce; background: url(img/caps/off.png?v=mwv8azz3) center / 100% 100% no-repeat; transition: filter 120ms; }
 .takes button:hover, .dicecap:hover { filter: brightness(1.18); color: #fff; }
 .takes button.on { color: #fff; box-shadow: 0 0 0 1.5px #e455f0; } /* the take in use: selection fuchsia */
 .dicecap svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.6; } .dicecap svg circle { fill: currentColor; stroke: none; }
@@ -1817,11 +1817,11 @@ header .transport #recbtn.on { color: #ff4d58; filter: drop-shadow(0 0 5px rgba(
 /* The editors' transport: the header's keycaps (■ ▶), smaller, plus a Solo | Mix switch. */
 .pv-transport { display: flex; align-items: center; gap: 8px; margin-right: 10px; }
 .pv-transport .tkey { all: unset; box-sizing: border-box; width: 36px; height: 36px; display: grid; place-items: center; cursor: pointer; color: #0c0b0a;
-  background: url(img/caps/off.png?v=mwsft876) center / 100% 100% no-repeat; transition: filter 120ms, transform 60ms; }
+  background: url(img/caps/off.png?v=mwv8azz3) center / 100% 100% no-repeat; transition: filter 120ms, transform 60ms; }
 .pv-transport .tkey svg { width: 14px; height: 14px; fill: currentColor; }
 .pv-transport .tkey:hover { filter: brightness(1.15); }
 .pv-transport .tkey:active { transform: translateY(1px); }
-.pv-transport .tkey.on[data-pv="play"] { background-image: url(img/caps/solo-on.png?v=mwsft876); color: #eaffef; }
+.pv-transport .tkey.on[data-pv="play"] { background-image: url(img/caps/solo-on.png?v=mwv8azz3); color: #eaffef; }
 .pv-transport .tkey:focus-visible { outline: 2px solid var(--accent, #22e6ff); outline-offset: 2px; border-radius: 8px; }
 .pv-mode { display: inline-flex; padding: 2px; border-radius: 8px; background: #161514; box-shadow: inset 0 0 0 1px #2e2d2a; margin-left: 4px; }
 .pv-mode button { all: unset; cursor: pointer; padding: 5px 11px; border-radius: 6px; font: 500 12px -apple-system, sans-serif; color: #8d939b; transition: background 140ms, color 140ms; }
@@ -1855,7 +1855,7 @@ header { align-items: start; }
 header .hd-center { padding-top: 11px; }
 #gundo, header #close { display: none !important; }
 header #gen, header #padsbtn { all: unset; box-sizing: border-box; width: 44px; height: 44px; display: grid; place-items: center; cursor: pointer; color: #c4c8ce;
-  background: url(img/caps/off.png?v=mwsft876) center / 100% 100% no-repeat; transition: filter 120ms, transform 60ms; }
+  background: url(img/caps/off.png?v=mwv8azz3) center / 100% 100% no-repeat; transition: filter 120ms, transform 60ms; }
 header #gen svg, header #padsbtn svg { width: 18px; height: 18px; }
 header #gen:hover, header #padsbtn:hover { filter: brightness(1.15); }
 header #gen:active, header #padsbtn:active { transform: translateY(1px); }
@@ -1899,9 +1899,9 @@ header #padsbtn.on { color: var(--accent, #22e6ff); filter: drop-shadow(0 0 4px 
 #modwin .mgrp .kn2 .kl { display: block; opacity: .55; font-size: 10px; }
 #modwin .mgrp .kn2:hover .kl, #modwin .mgrp .kn2.turning .kl { opacity: 1; }
 /* The transport inside the window keeps its keycaps (the window's generic button style is stronger). */
-#modwin .pv-transport .tkey { all: unset; box-sizing: border-box; width: 36px; height: 36px; display: grid; place-items: center; cursor: pointer; color: #0c0b0a; background: url(img/caps/off.png?v=mwsft876) center / 100% 100% no-repeat; }
+#modwin .pv-transport .tkey { all: unset; box-sizing: border-box; width: 36px; height: 36px; display: grid; place-items: center; cursor: pointer; color: #0c0b0a; background: url(img/caps/off.png?v=mwv8azz3) center / 100% 100% no-repeat; }
 #modwin .pv-transport .tkey svg { width: 14px; height: 14px; fill: currentColor; }
-#modwin .pv-transport .tkey.on[data-pv="play"] { background-image: url(img/caps/solo-on.png?v=mwsft876); color: #eaffef; }
+#modwin .pv-transport .tkey.on[data-pv="play"] { background-image: url(img/caps/solo-on.png?v=mwv8azz3); color: #eaffef; }
 #modwin .pv-mode button { all: unset; cursor: pointer; padding: 5px 11px; border-radius: 6px; font: 500 12px -apple-system, sans-serif; color: #8d939b; }
 #modwin .pv-mode button.on { background: #2d2c2a; color: #fff; box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--tc, #22e6ff) 55%, transparent); }
 /* The Chop it row: a chip per modulation; the ＋ menu's destination picker. */
@@ -1922,7 +1922,7 @@ header #padsbtn.on { color: var(--accent, #22e6ff); filter: drop-shadow(0 0 4px 
 .lv-hub .ci-orig { height: 34px; padding: 0 14px; font-size: 12.5px; }
 .lv-hub .takes button { min-width: 34px; height: 34px; }
 .lv-hub .ci-dice { all: unset; box-sizing: border-box; width: 42px; height: 42px; display: grid; place-items: center; cursor: pointer; color: var(--tc, #22e6ff);
-  background: url(img/caps/off.png?v=mwsft876) center / 100% 100% no-repeat; filter: drop-shadow(0 0 6px color-mix(in srgb, var(--tc, #22e6ff) 35%, transparent)); transition: filter 140ms, transform 60ms; }
+  background: url(img/caps/off.png?v=mwv8azz3) center / 100% 100% no-repeat; filter: drop-shadow(0 0 6px color-mix(in srgb, var(--tc, #22e6ff) 35%, transparent)); transition: filter 140ms, transform 60ms; }
 .lv-hub .ci-dice svg { width: 20px; height: 20px; }
 .lv-hub .ci-dice:hover { filter: brightness(1.15) drop-shadow(0 0 9px color-mix(in srgb, var(--tc, #22e6ff) 60%, transparent)); }
 .lv-hub .ci-dice:active { transform: translateY(1px); }
@@ -1957,9 +1957,9 @@ header #padsbtn.on { color: var(--accent, #22e6ff); filter: drop-shadow(0 0 4px 
 #fxwin .capbtn { all: unset; box-sizing: border-box; display: inline-flex; align-items: center; justify-content: center; min-width: 40px; height: 36px; padding: 0 6px; border-radius: 8px; cursor: pointer; color: #9aa0a8; font: 600 10px -apple-system, sans-serif;
   background: linear-gradient(180deg, #3d3c39 0%, #2e2d2b 48%, #262523 100%); box-shadow: inset 0 1px 0 rgba(255,255,255,.12), inset 0 -2px 0 rgba(0,0,0,.35), 0 2px 0 #0d0c0b, 0 3px 6px rgba(0,0,0,.45); }
 #fxwin .capbtn.on { color: var(--tc); filter: drop-shadow(0 0 5px color-mix(in srgb, var(--tc) 55%, transparent)); }
-#fxwin .pv-transport .tkey { all: unset; box-sizing: border-box; width: 36px; height: 36px; display: grid; place-items: center; cursor: pointer; color: #0c0b0a; background: url(img/caps/off.png?v=mwsft876) center / 100% 100% no-repeat; }
+#fxwin .pv-transport .tkey { all: unset; box-sizing: border-box; width: 36px; height: 36px; display: grid; place-items: center; cursor: pointer; color: #0c0b0a; background: url(img/caps/off.png?v=mwv8azz3) center / 100% 100% no-repeat; }
 #fxwin .pv-transport .tkey svg { width: 14px; height: 14px; fill: currentColor; }
-#fxwin .pv-transport .tkey.on[data-pv="play"] { background-image: url(img/caps/solo-on.png?v=mwsft876); color: #eaffef; }
+#fxwin .pv-transport .tkey.on[data-pv="play"] { background-image: url(img/caps/solo-on.png?v=mwv8azz3); color: #eaffef; }
 .lv-hub .fxchip { cursor: pointer; }
 .lv-hub .fxchip:hover { box-shadow: inset 0 0 0 1px var(--tc, #22e6ff) !important; }
 
@@ -1998,14 +1998,14 @@ header .hd-sec { margin-top: -2px; }
 header .hd-center { display: flex; align-items: center; gap: 22px; padding-top: 0 !important; }
 header .transport { gap: 10px !important; }
 header .transport .tkey, header .secnav .tkey { all: unset; box-sizing: border-box; width: 46px; height: 46px; display: grid; place-items: center; cursor: pointer;
-  background: url(img/caps/off.png?v=mwsft876) center / 100% 100% no-repeat; transition: filter 120ms, transform 60ms; }
+  background: url(img/caps/off.png?v=mwv8azz3) center / 100% 100% no-repeat; transition: filter 120ms, transform 60ms; }
 header .transport .tkey svg, header .secnav .tkey svg { width: 18px; height: 18px; fill: currentColor; }
 header .transport .tkey:hover:not(:disabled), header .secnav .tkey:hover:not(:disabled) { filter: brightness(1.15); }
 header .transport .tkey:active:not(:disabled), header .secnav .tkey:active:not(:disabled) { transform: translateY(1px); }
 header .transport .tkey:disabled, header .secnav .tkey:disabled { opacity: .4; cursor: default; }
 header .transport .tkey:focus-visible, header .secnav .tkey:focus-visible { outline: 2px solid var(--accent, #22e6ff); outline-offset: 2px; border-radius: 8px; }
 header .t-start { color: #0e0d0c; }
-header .t-play { color: #1f9e33; } header #play.t-play.on { background-image: url(img/caps/off.png?v=mwsft876); color: #ff4a4a; }
+header .t-play { color: #1f9e33; } header #play.t-play.on { background-image: url(img/caps/off.png?v=mwv8azz3); color: #ff4a4a; }
 header .t-rec { color: #a01414; } header #recbtn.t-rec.on { color: #ff3b3b; filter: drop-shadow(0 0 6px rgba(255,59,59,.7)); animation: rec-pulse 1.2s ease-in-out infinite; }
 header .t-loop { color: #514f4c; } header #loopbtn.t-loop.on { color: #2ee6ff; filter: drop-shadow(0 0 5px rgba(46,230,255,.6)); }
 header .t-loop svg { fill: none !important; }
@@ -2052,7 +2052,7 @@ header .secnav .tkey.secarrow { color: #d4d7dc; }
 header .secnav .tkey.t-add { color: #f064a8; }
 header .transport #recbtn.t-rec { color: #b01818; } header .transport #recbtn.t-rec.on { color: #ff3b3b; }
 header .transport #loopbtn.t-loop { color: #514f4c; } header .transport #loopbtn.t-loop.on { color: #2ee6ff; }
-header .transport #play.t-play { color: #1f9e33; background-image: url(img/caps/off.png?v=mwsft876); } header .transport #play.t-play.on { color: #ff4a4a; }
+header .transport #play.t-play { color: #1f9e33; background-image: url(img/caps/off.png?v=mwv8azz3); } header .transport #play.t-play.on { color: #ff4a4a; }
 /* The strip sits inside the box's 2 px border (it drew over it), with rounded corners; the add keys are grey for now. */
 header .secview canvas { position: absolute; inset: 2px; width: calc(100% - 4px) !important; height: calc(100% - 4px) !important; border-radius: 6px; }
 header .secnav .tkey.t-add { color: #c4c8ce; }
@@ -2176,20 +2176,20 @@ html, body, main, .gscroll, #dock { scrollbar-width: thin; scrollbar-color: rgba
    chopping: the lit cap, a little dimmed, with a ring of light running round it, and "Chopping…".
    The art's cyan takes the track's colour (a hue layer masked to the art, like the step keys). ==== */
 .lv-hub .bigcap { width: 64px !important; height: 47px !important; gap: 1px !important; border-radius: 7px !important; overflow: visible;
-  background: url(img/caps/big-up.png?v=mwsft876) center / 100% 100% no-repeat !important; box-shadow: 0 3px 8px rgba(0,0,0,.45) !important;
+  background: url(img/caps/big-up.png?v=mwv8azz3) center / 100% 100% no-repeat !important; box-shadow: 0 3px 8px rgba(0,0,0,.45) !important;
   font: 600 10.5px/1 -apple-system, sans-serif !important; color: #eceef1 !important; text-shadow: 0 1px 2px rgba(0,0,0,.6); }
 .lv-hub .bigcap .bc-ic, .lv-hub .bigcap .bc-ic svg { width: 16px !important; height: 16px !important; }
 .lv-hub .bigcap > span { white-space: nowrap; position: relative; z-index: 2; }
 .lv-hub .bigcap .bc-ic { position: relative; z-index: 2; }
-.lv-hub .bigcap.press, .lv-hub .bigcap.on, .lv-hub .bigcap:active { background-image: url(img/caps/big-down.png?v=mwsft876) !important;
+.lv-hub .bigcap.press, .lv-hub .bigcap.on, .lv-hub .bigcap:active { background-image: url(img/caps/big-down.png?v=mwv8azz3) !important;
   box-shadow: 0 0 10px color-mix(in srgb, var(--tc, #22e6ff) 65%, transparent), 0 0 22px color-mix(in srgb, var(--tc, #22e6ff) 30%, transparent) !important; }
-.lv-hub .bigcap.chopping { background-image: url(img/caps/big-glow.png?v=mwsft876) !important; filter: brightness(.82) saturate(.9);
+.lv-hub .bigcap.chopping { background-image: url(img/caps/big-glow.png?v=mwv8azz3) !important; filter: brightness(.82) saturate(.9);
   color: #181816 !important; text-shadow: 0 1px 0 rgba(255,255,255,.35); box-shadow: 0 0 8px color-mix(in srgb, var(--tc, #22e6ff) 45%, transparent) !important; }
 /* The track's colour on the glowing art (the up cap stays neutral). */
 .lv-hub .bigcap::after { content: ''; position: absolute; inset: 0; z-index: 1; border-radius: inherit; pointer-events: none; display: none;
   background: var(--tc, #22e6ff); mix-blend-mode: hue; }
-.lv-hub .bigcap.press::after, .lv-hub .bigcap.on::after { display: block; -webkit-mask: url(img/caps/big-down.png?v=mwsft876) center / 100% 100% no-repeat; mask: url(img/caps/big-down.png?v=mwsft876) center / 100% 100% no-repeat; }
-.lv-hub .bigcap.chopping::after { display: block; -webkit-mask: url(img/caps/big-glow.png?v=mwsft876) center / 100% 100% no-repeat; mask: url(img/caps/big-glow.png?v=mwsft876) center / 100% 100% no-repeat; }
+.lv-hub .bigcap.press::after, .lv-hub .bigcap.on::after { display: block; -webkit-mask: url(img/caps/big-down.png?v=mwv8azz3) center / 100% 100% no-repeat; mask: url(img/caps/big-down.png?v=mwv8azz3) center / 100% 100% no-repeat; }
+.lv-hub .bigcap.chopping::after { display: block; -webkit-mask: url(img/caps/big-glow.png?v=mwv8azz3) center / 100% 100% no-repeat; mask: url(img/caps/big-glow.png?v=mwv8azz3) center / 100% 100% no-repeat; }
 /* The running ring: a bright arc travelling round the rim while chopping. */
 @property --ring { syntax: '<angle>'; inherits: false; initial-value: 0deg; }
 .lv-hub .bigcap.chopping::before { content: ''; position: absolute; inset: -3px; z-index: 3; border-radius: 9px; pointer-events: none; padding: 2px;
@@ -2234,9 +2234,9 @@ html, body, main, .gscroll, #dock { scrollbar-width: thin; scrollbar-color: rgba
 .lv-track > .lv-chop .view-tools { background: none !important; box-shadow: none !important; padding: 0 !important; gap: 4px !important; align-items: center; }
 .lv-track > .lv-chop .view-tools .takes { display: flex; gap: 4px; }
 .lv-track > .lv-chop .view-tools button { all: unset; box-sizing: border-box; width: 40px; height: 40px; display: grid; place-items: center; cursor: pointer; flex: none;
-  background: url(img/key-off.png?v=mwsft876) center / 117% 122% no-repeat; font: 700 11px/1 -apple-system, sans-serif; color: rgba(226,240,244,.75); text-shadow: 0 1px 2px rgba(0,0,0,.6); }
+  background: url(img/key-off.png?v=mwv8azz3) center / 117% 122% no-repeat; font: 700 11px/1 -apple-system, sans-serif; color: rgba(226,240,244,.75); text-shadow: 0 1px 2px rgba(0,0,0,.6); }
 .lv-track > .lv-chop .view-tools button svg { width: 16px; height: 16px; }
-.lv-track > .lv-chop .view-tools button.on { background-image: url(img/key-on.png?v=mwsft876); color: #f2fbfc; }
+.lv-track > .lv-chop .view-tools button.on { background-image: url(img/key-on.png?v=mwv8azz3); color: #f2fbfc; }
 .lv-track > .lv-chop .view-tools button:hover { filter: brightness(1.15); }
 .lv-track > .lv-chop .view-tools button:disabled { opacity: .4; cursor: default; }
 .lv-track > .lv-chop .view-tools .tonebtn { width: 52px; font-size: 11px; }
@@ -2830,8 +2830,8 @@ body.splitting #dock .flane, body.splitting #dock .pvl-r { background: #141312 !
    (prototypes/keyart): a grey frosted cap in its recess (off), the same cap lit from inside (on). The lit cap takes the
    track's colour with a `color` blend (its glow and brightness stay, the warm white becomes the track's hue). The
    number sits top-right, a small lamp bottom-left on lit keys. */
-.keys-frost .key::before { inset: -6.5% -5.5%; border-radius: 13%; background: url(img/frost-off.png?v=mwsft876) center / 100% 100% no-repeat !important; }
-.keys-frost .key.on::before, .keys-frost .key.sel.on::before, .keys-frost .key.on.riff::before { background-image: url(img/frost-on.png?v=mwsft876) !important; }
+.keys-frost .key::before { inset: -6.5% -5.5%; border-radius: 13%; background: url(img/frost-off.png?v=mwv8azz3) center / 100% 100% no-repeat !important; }
+.keys-frost .key.on::before, .keys-frost .key.sel.on::before, .keys-frost .key.on.riff::before { background-image: url(img/frost-on.png?v=mwv8azz3) !important; }
 .keys-frost .key.ph::before { filter: brightness(1.35); }
 .keys-frost .key.on.ph::before { filter: brightness(1.2) saturate(1.1); }
 .keys-frost .key:hover:not(.nosample)::before { filter: brightness(1.15); }
@@ -2973,7 +2973,7 @@ header .hd-logo, header #home .hd-start { display: none; }
    (img/start-bg.jpg; dark until then). It covers everything under the header; the header stays, dimmed, its
    transport off (body.starting). ---- */
 #splash.start { display: grid !important; place-items: center; position: fixed; left: 0; right: 0; bottom: 0; top: var(--start-top, 0px); z-index: 100; overflow: auto; color: #e8eaec;
-  background: radial-gradient(120% 90% at 50% 30%, rgba(31, 30, 29, .55), rgba(9, 8, 7, .9)), url(img/start-bg.jpg?v=mwsft876) center / cover no-repeat, #0d0c0b !important; -webkit-backdrop-filter: none; backdrop-filter: none; }
+  background: radial-gradient(120% 90% at 50% 30%, rgba(31, 30, 29, .55), rgba(9, 8, 7, .9)), url(img/start-bg.jpg?v=mwv8azz3) center / cover no-repeat, #0d0c0b !important; -webkit-backdrop-filter: none; backdrop-filter: none; }
 #splash.start[hidden] { display: none !important; }
 #splash.start .sp-stage { position: static !important; width: auto !important; aspect-ratio: auto !important; container-type: normal; border-radius: 0; box-shadow: none; overflow: visible; background: none; }
 #splash.start .sp-panel { position: static !important; width: auto !important; display: grid; justify-items: center; gap: 0; opacity: 1 !important; transform: none !important; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
@@ -3789,10 +3789,10 @@ html body #splash.start .sp-key.capbtn svg { width: 14px !important; height: 14p
 #splash.touring > .sp-retour { opacity: 0; pointer-events: none; }
 /* Half-lit, in each key look: frosted and keycaps the lit face; flat (and LUNA) a lighter key; neon a soft ring; plain a
    lighter fill. Generate stays an unlit key until there's a genre to make. */
-html body.skin-lcd:not(.keys-flat, .keys-neon) :is(#splash.start .sp-key, #genwin .gw-go, #sbwin .gw-go, #packwin .gw-go, .fxrack .fxr-load).capbtn.wide:not(:disabled) { border-image: url(img/btn/w2-on.png?v=mwsft876) 40 fill / 8px stretch !important;
+html body.skin-lcd:not(.keys-flat, .keys-neon) :is(#splash.start .sp-key, #genwin .gw-go, #sbwin .gw-go, #packwin .gw-go, .fxrack .fxr-load).capbtn.wide:not(:disabled) { border-image: url(img/btn/w2-on.png?v=mwv8azz3) 40 fill / 8px stretch !important;
   filter: brightness(.86) !important; color: #141312 !important; text-shadow: 0 .5px 0 rgba(255, 255, 255, .35) !important; }
 html body.skin-lcd:not(.keys-flat, .keys-neon) :is(#splash.start .sp-key, #genwin .gw-go, #sbwin .gw-go, #packwin .gw-go, .fxrack .fxr-load).capbtn.wide:not(:disabled):hover { filter: brightness(.95) !important; }
-html body.skin-lcd:not(.keys-flat, .keys-neon) :is(#splash.start .sp-key, #genwin .gw-go, #sbwin .gw-go, #packwin .gw-go, .fxrack .fxr-load).capbtn.wide:not(:disabled):active { border-image-source: url(img/btn/w2-press.png?v=mwsft876) !important; }
+html body.skin-lcd:not(.keys-flat, .keys-neon) :is(#splash.start .sp-key, #genwin .gw-go, #sbwin .gw-go, #packwin .gw-go, .fxrack .fxr-load).capbtn.wide:not(:disabled):active { border-image-source: url(img/btn/w2-press.png?v=mwv8azz3) !important; }
 html body.skin-lcd.keys-flat :is(#splash.start .sp-key, body:not(.theme-luna) #genwin .gw-go, body:not(.theme-luna) #sbwin .gw-go, body:not(.theme-luna) #packwin .gw-go, .fxrack .fxr-load).capbtn.wide:not(:disabled) { background: #3e3d3a !important; color: #f4f5f7 !important; text-shadow: none !important;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, .14), inset 0 0 0 1px rgba(255, 255, 255, .16) !important; }
 html body.skin-lcd.keys-flat :is(#splash.start .sp-key, body:not(.theme-luna) #genwin .gw-go, body:not(.theme-luna) #sbwin .gw-go, body:not(.theme-luna) #packwin .gw-go, .fxrack .fxr-load).capbtn.wide:not(:disabled):hover { background: #484744 !important; }
@@ -4226,10 +4226,10 @@ html body .pv .pvl-vox .vox-styles .vs-br { display: none; }
 /* ==== Generate track and Blank track in bright gold (tester, 2026-11-05: "button needs to be gold. Bright gold. So
    everyone could see it. Same thing with new track … the same color as Chop"): the CHOP neon's gold, in every look.
    The keycap look keeps its keycap, tinted; the flat and LUNA looks get a gold face, the neon look a gold tube. ==== */
-html body.skin-lcd:not(.keys-flat, .keys-neon) #splash.start :is(#sp-gen, #sp-cnew, #sp-getpack).capbtn.wide { border-image: url(img/btn/w2-on.png?v=mwsft876) 40 fill / 8px stretch !important;
+html body.skin-lcd:not(.keys-flat, .keys-neon) #splash.start :is(#sp-gen, #sp-cnew, #sp-getpack).capbtn.wide { border-image: url(img/btn/w2-on.png?v=mwv8azz3) 40 fill / 8px stretch !important;
   filter: sepia(1) saturate(4.6) hue-rotate(8deg) brightness(1.2) drop-shadow(0 0 10px rgba(255, 168, 40, .5)) !important; color: #241200 !important; text-shadow: 0 .5px 0 rgba(255, 240, 200, .5) !important; }
 html body.skin-lcd:not(.keys-flat, .keys-neon) #splash.start :is(#sp-gen, #sp-cnew, #sp-getpack).capbtn.wide:not(:disabled):hover { filter: sepia(1) saturate(4.6) hue-rotate(8deg) brightness(1.32) drop-shadow(0 0 14px rgba(255, 168, 40, .7)) !important; }
-html body.skin-lcd:not(.keys-flat, .keys-neon) #splash.start :is(#sp-gen, #sp-cnew, #sp-getpack).capbtn.wide:not(:disabled):active { border-image-source: url(img/btn/w2-press.png?v=mwsft876) !important; }
+html body.skin-lcd:not(.keys-flat, .keys-neon) #splash.start :is(#sp-gen, #sp-cnew, #sp-getpack).capbtn.wide:not(:disabled):active { border-image-source: url(img/btn/w2-press.png?v=mwv8azz3) !important; }
 html body:is(.keys-flat, :not(.skin-lcd)) #splash.start :is(#sp-gen, #sp-cnew, #sp-getpack).capbtn.wide { background: linear-gradient(180deg, #ffe27a, #ffbb2e) !important; color: #241200 !important; text-shadow: none !important;
   box-shadow: inset 0 1px 0 rgba(255, 246, 214, .6), 0 0 0 1px #c97a12, 0 0 14px rgba(255, 168, 40, .45) !important; border: 0 !important; }
 html body:is(.keys-flat, :not(.skin-lcd)) #splash.start :is(#sp-gen, #sp-cnew, #sp-getpack).capbtn.wide:not(:disabled):hover { background: linear-gradient(180deg, #ffea98, #ffc548) !important; }
@@ -4985,9 +4985,9 @@ body > .len-pop .lp-spd small { margin-left: auto; padding-left: 6px; white-spac
    lit render per track colour (--pad-on, main.ts padOn), so each colour has its own light instead of the photo washed in
    a colour. The renders carry their colour, so the grid's pads get no tint layer and no dimming over them; keys without a
    track colour (the pads popup's) keep the lit photo and its tint. The riff's keys are fuchsia (its colour, 14). */
-.keys-frost .key::before { background-image: url(img/pads/off.png?v=mwsft876) !important; }
-.keys-frost .key.riff { --pad-on: url(img/pads/on-14.png?v=mwsft876); }
-.keys-frost :is(.key.on, .key.sel.on, .key.on.riff)::before { background-image: var(--pad-on, url(img/frost-on.png?v=mwsft876)) !important; }
+.keys-frost .key::before { background-image: url(img/pads/off.png?v=mwv8azz3) !important; }
+.keys-frost .key.riff { --pad-on: url(img/pads/on-14.png?v=mwv8azz3); }
+.keys-frost :is(.key.on, .key.sel.on, .key.on.riff)::before { background-image: var(--pad-on, url(img/frost-on.png?v=mwv8azz3)) !important; }
 body.keys-frost #grid .key.on::before { filter: none !important; }
 body.keys-frost #grid .key.on.ph::before { filter: brightness(1.15) !important; }
 body.keys-frost #grid .key.on:hover:not(.nosample)::before { filter: brightness(1.08) !important; }
@@ -5723,7 +5723,7 @@ html body.theme-luna #grid .row.rowsel .rowbtn { background: color-mix(in srgb, 
   /* Moulded plastic, not cloth (tester, 2026-11-11: "looks like a felty … should be very sort of plastic textury … very
      fine"): a spark-eroded stipple with a few glints (prototypes/panels/plastic.py), one texel to a retina pixel. The
      woven grain.png is kept to go back to. */
-  --grain-fine: url(img/panel/plastic.png?v=mwsft876) 0 0 / 128px 128px;
+  --grain-fine: url(img/panel/plastic.png?v=mwv8azz3) 0 0 / 128px 128px;
   --plate-base: #282725;
   --plate-light: radial-gradient(120% 64px at 22% 0, rgba(255, 255, 255, .035), rgba(255, 255, 255, 0)), linear-gradient(180deg, #2e2d2b 0, var(--plate-base) 56px);
   --plate: var(--grain-fine), var(--plate-light), var(--plate-base);
@@ -6304,8 +6304,8 @@ body.skin-lcd::before { box-shadow: inset 0 0 0 2px #000 !important; border-radi
 .skin-lcd > header::before { grid-column: 2 / 4 !important; margin-left: 12px !important; border-radius: 3px !important; background: radial-gradient(120% 300% at 47% 140%, #181716 0%, #0d0c0b 50%, #010101 100%) !important; box-shadow: inset 0 0 0 1px #252422 !important; }
 .skin-lcd > header .transport { margin-right: 6px !important; gap: 8px !important; }
 .skin-lcd > header .tkey, .skin-lcd > header .hd-right #padsbtn { width: 40px !important; height: 40px !important; border-radius: 6px !important; box-shadow: none !important;
-  background: url(img/btn/sq-off.png?v=mwsft876) center / 100% 100% no-repeat !important; filter: none !important; }
-.skin-lcd > header .tkey:active, .skin-lcd > header .hd-right #padsbtn:active { background-image: url(img/btn/sq-click.png?v=mwsft876) !important; transform: none; }
+  background: url(img/btn/sq-off.png?v=mwv8azz3) center / 100% 100% no-repeat !important; filter: none !important; }
+.skin-lcd > header .tkey:active, .skin-lcd > header .hd-right #padsbtn:active { background-image: url(img/btn/sq-click.png?v=mwv8azz3) !important; transform: none; }
 .skin-lcd > header .tkey svg { width: 13px !important; height: 13px !important; fill: #11100f !important; }
 .skin-lcd > header .tkey.t-play svg { fill: #2fd05a !important; filter: drop-shadow(0 0 3px rgba(47, 208, 90, .5)); }
 .skin-lcd > header .hd-right { grid-area: 1 / 4 / 2 / 5 !important; margin: 0 0 0 12px !important; }
@@ -6351,23 +6351,23 @@ body.skin-lcd::before { box-shadow: inset 0 0 0 2px #000 !important; border-radi
 .skin-lcd .pv .pv-mini .pv-mode button, .skin-lcd .pv .pv-mini .tkey, .skin-lcd .pv .pv-tcell .tbtns button {
   all: unset; box-sizing: border-box; position: relative; cursor: pointer; width: 100% !important; height: auto !important; aspect-ratio: 85 / 27; min-height: 0; display: flex; align-items: center; justify-content: center; overflow: hidden;
   padding: 0 4px !important; border-radius: 4px; font: 500 9.5px -apple-system, sans-serif !important; color: #c7c9cd !important; text-shadow: 0 1px 0 rgba(0, 0, 0, .7);
-  border: 6px solid transparent; border-image: url(img/btn/w-off.png?v=mwsft876) 40 fill / 6px stretch; background: none !important; box-shadow: none !important; filter: none !important; transform: none; white-space: nowrap; }
+  border: 6px solid transparent; border-image: url(img/btn/w-off.png?v=mwv8azz3) 40 fill / 6px stretch; background: none !important; box-shadow: none !important; filter: none !important; transform: none; white-space: nowrap; }
 .skin-lcd .pv .pv-mini .pv-mode button:hover, .skin-lcd .pv .pv-mini .tkey:hover, .skin-lcd .pv .pv-tcell .tbtns button:hover { filter: brightness(1.12) !important; }
-.skin-lcd .pv .pv-mini .pv-mode button.on, .skin-lcd .pv .pv-mini .tkey.on, .skin-lcd .pv .pv-tcell .tbtns button.on { border-image-source: url(img/btn/w-on.png?v=mwsft876); color: #1b1a19 !important; text-shadow: 0 1px 0 rgba(255, 255, 255, .35); }
-.skin-lcd .pv .pv-mini .pv-mode button:active, .skin-lcd .pv .pv-mini .tkey:active, .skin-lcd .pv .pv-tcell .tbtns button:active { border-image-source: url(img/btn/w-click.png?v=mwsft876); color: #111 !important; text-shadow: none; }
+.skin-lcd .pv .pv-mini .pv-mode button.on, .skin-lcd .pv .pv-mini .tkey.on, .skin-lcd .pv .pv-tcell .tbtns button.on { border-image-source: url(img/btn/w-on.png?v=mwv8azz3); color: #1b1a19 !important; text-shadow: 0 1px 0 rgba(255, 255, 255, .35); }
+.skin-lcd .pv .pv-mini .pv-mode button:active, .skin-lcd .pv .pv-mini .tkey:active, .skin-lcd .pv .pv-tcell .tbtns button:active { border-image-source: url(img/btn/w-click.png?v=mwv8azz3); color: #111 !important; text-shadow: none; }
 /* A lit wide key takes the track's colour (the art is warm white). */
 .skin-lcd .pv .pv-mini .pv-mode button.on::after, .skin-lcd .pv .pv-mini .tkey.on::after, .skin-lcd .pv .pv-tcell .tbtns button.on::after { content: ''; position: absolute; inset: -6px; border-radius: 4px; background: var(--tc, #22e6ff); mix-blend-mode: color; opacity: .6; pointer-events: none; }
 .skin-lcd .pv .pv-tcell .tbtns button.arm { color: #e58a85 !important; }
-.skin-lcd .pv .pv-tcell .tbtns button.arm.armed { border-image-source: url(img/btn/w-on.png?v=mwsft876); color: #5a0f0b !important; }
+.skin-lcd .pv .pv-tcell .tbtns button.arm.armed { border-image-source: url(img/btn/w-on.png?v=mwv8azz3); color: #5a0f0b !important; }
 .skin-lcd .pv .pv-tcell .tbtns button.arm.armed::after { content: ''; position: absolute; inset: -6px; background: #e5484d; mix-blend-mode: color; opacity: .7; }
 .skin-lcd .pv .pv-mini .tkey span { pointer-events: none; }
 /* Mods: square keys, fixed size; lit = the on art in the track's colour; pressed = the click art. */
 .skin-lcd .pv .mods-grid { grid-template-columns: repeat(3, 58px) !important; grid-auto-rows: 58px !important; justify-content: center; align-content: start; gap: 6px !important; padding: 26px 8px 8px !important; }
-.skin-lcd .pv .mods-grid .mg-btn { border-radius: 7px !important; padding: 7px 8px !important; background: url(img/btn/sq-off.png?v=mwsft876) center / 100% 100% no-repeat !important; box-shadow: none !important; overflow: hidden; }
-.skin-lcd .pv .mods-grid .mg-btn:hover:not(.dis):not(.on) { background-image: url(img/btn/sq-off.png?v=mwsft876) !important; filter: brightness(1.15); }
-.skin-lcd .pv .mods-grid .mg-btn.on { background-image: url(img/btn/sq-on.png?v=mwsft876) !important; }
+.skin-lcd .pv .mods-grid .mg-btn { border-radius: 7px !important; padding: 7px 8px !important; background: url(img/btn/sq-off.png?v=mwv8azz3) center / 100% 100% no-repeat !important; box-shadow: none !important; overflow: hidden; }
+.skin-lcd .pv .mods-grid .mg-btn:hover:not(.dis):not(.on) { background-image: url(img/btn/sq-off.png?v=mwv8azz3) !important; filter: brightness(1.15); }
+.skin-lcd .pv .mods-grid .mg-btn.on { background-image: url(img/btn/sq-on.png?v=mwv8azz3) !important; }
 .skin-lcd .pv .mods-grid .mg-btn.on::after { content: ''; position: absolute; inset: 0; border-radius: 7px; background: var(--tc, #24edff); mix-blend-mode: multiply; opacity: .85; pointer-events: none; }
-.skin-lcd .pv .mods-grid .mg-btn:active:not(.dis) { background-image: url(img/btn/sq-click.png?v=mwsft876) !important; filter: none; }
+.skin-lcd .pv .mods-grid .mg-btn:active:not(.dis) { background-image: url(img/btn/sq-click.png?v=mwv8azz3) !important; filter: none; }
 .skin-lcd .pv .mods-grid .mg-btn:active:not(.dis)::after { opacity: .35; }
 .skin-lcd .pv .mods-grid .mg-n { position: relative; z-index: 1; font: 400 8.5px -apple-system, sans-serif !important; color: rgba(255, 255, 255, .58) !important; }
 .skin-lcd .pv .mods-grid .mg-ic { position: relative; z-index: 1; color: #24edff !important; color: var(--tc, #24edff) !important; }
@@ -6438,10 +6438,10 @@ body.skin-lcd::before { box-shadow: inset 0 0 0 2px #000 !important; border-radi
   all: unset; box-sizing: border-box; position: relative; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px; overflow: hidden; white-space: nowrap;
   width: 100% !important; height: auto !important; aspect-ratio: 85 / 27; min-height: 0; padding: 0 4px !important; border-radius: 5px;
   font: 500 10.5px -apple-system, sans-serif !important; color: #c7c9cd !important; text-shadow: 0 1px 0 rgba(0, 0, 0, .7);
-  border: 0 !important; border-image: url(img/btn/w-off.png?v=mwsft876) 40 fill / 8px stretch !important; background: none !important; box-shadow: none !important; filter: none !important; transform: none; }
+  border: 0 !important; border-image: url(img/btn/w-off.png?v=mwv8azz3) 40 fill / 8px stretch !important; background: none !important; box-shadow: none !important; filter: none !important; transform: none; }
 .skin-lcd .pv .pv-mini .pv-tog:hover, .skin-lcd .pv .pv-mini .tkey:hover, .skin-lcd .pv .pv-tcell .tbtns button:hover { filter: brightness(1.12) !important; }
-.skin-lcd .pv .pv-mini .pv-tog.on, .skin-lcd .pv .pv-mini .tkey.on, .skin-lcd .pv .pv-tcell .tbtns button.on, .skin-lcd .pv .pv-tcell .tbtns button.arm.armed { border-image-source: url(img/btn/w-on.png?v=mwsft876) !important; color: #1b1a19 !important; text-shadow: 0 1px 0 rgba(255, 255, 255, .35); }
-.skin-lcd .pv .pv-mini .pv-tog:active, .skin-lcd .pv .pv-mini .tkey:active, .skin-lcd .pv .pv-tcell .tbtns button:active { border-image-source: url(img/btn/w-click.png?v=mwsft876) !important; color: #111 !important; text-shadow: none; }
+.skin-lcd .pv .pv-mini .pv-tog.on, .skin-lcd .pv .pv-mini .tkey.on, .skin-lcd .pv .pv-tcell .tbtns button.on, .skin-lcd .pv .pv-tcell .tbtns button.arm.armed { border-image-source: url(img/btn/w-on.png?v=mwv8azz3) !important; color: #1b1a19 !important; text-shadow: 0 1px 0 rgba(255, 255, 255, .35); }
+.skin-lcd .pv .pv-mini .pv-tog:active, .skin-lcd .pv .pv-mini .tkey:active, .skin-lcd .pv .pv-tcell .tbtns button:active { border-image-source: url(img/btn/w-click.png?v=mwv8azz3) !important; color: #111 !important; text-shadow: none; }
 .skin-lcd .pv .pv-mini .pv-tog.on::after, .skin-lcd .pv .pv-mini .tkey.on::after, .skin-lcd .pv .pv-tcell .tbtns button.on::after { content: ''; position: absolute; inset: 0; border-radius: inherit; background: var(--tc, #22e6ff); mix-blend-mode: color; opacity: .6; pointer-events: none; }
 .skin-lcd .pv .pv-tcell .tbtns button.arm.armed::after { inset: 0 !important; border-radius: inherit; }
 /* Solo ⇄ Mix one key (column 1); Preview a play key over columns 2–3 (tester, 2026-10-26). */
@@ -6456,7 +6456,7 @@ body.skin-lcd::before { box-shadow: inset 0 0 0 2px #000 !important; border-radi
    than lit (not the white photo). */
 .skin-lcd .pv .mods-grid .mg-btn.on .mg-n { color: #050505 !important; text-shadow: 0 .5px 0 rgba(255, 255, 255, .25); font-weight: 600 !important; }
 .skin-lcd .pv .mods-grid .mg-btn.on .mg-ic { color: #050505 !important; filter: none !important; }
-.skin-lcd .pv .mods-grid .mg-btn:active:not(.dis) { background-image: url(img/btn/sq-on.png?v=mwsft876) !important; filter: brightness(1.4) saturate(1.15) !important; }
+.skin-lcd .pv .mods-grid .mg-btn:active:not(.dis) { background-image: url(img/btn/sq-on.png?v=mwv8azz3) !important; filter: brightness(1.4) saturate(1.15) !important; }
 .skin-lcd .pv .mods-grid .mg-btn:active:not(.dis)::after { content: ''; position: absolute; inset: 0; border-radius: 7px; background: var(--tc, #24edff); mix-blend-mode: multiply; opacity: .85 !important; pointer-events: none; }
 .skin-lcd .pv .mods-grid .mg-btn:active:not(.dis) .mg-n, .skin-lcd .pv .mods-grid .mg-btn:active:not(.dis) .mg-ic { color: #050505 !important; filter: none !important; }
 
@@ -6523,9 +6523,9 @@ body.skin-lcd::before { box-shadow: inset 0 0 0 2px #000 !important; border-radi
    then ⏮ ■ ▶: four keys of the same photo. ---- */
 .skin-lcd > header .hd-logo { display: block; position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 74px; height: auto; pointer-events: none; filter: drop-shadow(0 0 6px rgba(255, 140, 40, .25)); }
 .skin-lcd > header #home.brand { left: 92px !important; top: 50% !important; bottom: auto !important; transform: translateY(-50%); width: 40px !important; height: 40px !important; border-radius: 6px !important; display: grid !important; place-items: center;
-  background: url(img/btn/sq-off.png?v=mwsft876) center / 100% 100% no-repeat !important; box-shadow: none !important; }
+  background: url(img/btn/sq-off.png?v=mwv8azz3) center / 100% 100% no-repeat !important; box-shadow: none !important; }
 .skin-lcd > header #home.brand:hover { filter: brightness(1.12); background-color: transparent !important; }
-.skin-lcd > header #home.brand:active { background-image: url(img/btn/sq-click.png?v=mwsft876) !important; }
+.skin-lcd > header #home.brand:active { background-image: url(img/btn/sq-click.png?v=mwv8azz3) !important; }
 .skin-lcd > header #home .hd-start { display: grid; width: 14px; height: 14px; }
 .skin-lcd > header #home .hd-start svg { width: 14px; height: 14px; fill: none; stroke: #11100f; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
 /* 2 px between every panel and around them (tester, 2026-10-26), header and panel alike. */
@@ -6542,20 +6542,20 @@ body.skin-lcd::before { box-shadow: inset 0 0 0 2px #000 !important; border-radi
 .skin-lcd .pv .pv-mini .pv-loop {
   all: unset; box-sizing: border-box; position: relative; cursor: pointer; display: flex; align-items: center; justify-content: center; overflow: hidden; white-space: nowrap; width: 100%;
   font: 500 10.5px -apple-system, sans-serif !important; color: #c7c9cd !important; text-shadow: 0 1px 0 rgba(0, 0, 0, .7); border-radius: 5px;
-  border-image: url(img/btn/w-off.png?v=mwsft876) 40 fill / 9px stretch !important; }
+  border-image: url(img/btn/w-off.png?v=mwv8azz3) 40 fill / 9px stretch !important; }
 .skin-lcd .pv .pv-mini .pv-loop:hover { filter: brightness(1.12); }
-.skin-lcd .pv .pv-mini .pv-loop.on { border-image-source: url(img/btn/w-on.png?v=mwsft876) !important; color: #1b1a19 !important; text-shadow: 0 1px 0 rgba(255, 255, 255, .35); }
+.skin-lcd .pv .pv-mini .pv-loop.on { border-image-source: url(img/btn/w-on.png?v=mwv8azz3) !important; color: #1b1a19 !important; text-shadow: 0 1px 0 rgba(255, 255, 255, .35); }
 .skin-lcd .pv .pv-mini .pv-loop.on::after { content: ''; position: absolute; inset: 0; border-radius: inherit; background: var(--tc, #22e6ff); mix-blend-mode: color; opacity: .6; pointer-events: none; }
-.skin-lcd .pv .pv-mini .pv-loop:active { border-image-source: url(img/btn/w-click.png?v=mwsft876) !important; }
+.skin-lcd .pv .pv-mini .pv-loop:active { border-image-source: url(img/btn/w-click.png?v=mwv8azz3) !important; }
 .skin-lcd .pv .pv-tcell .tbtns button.warn { color: #e58a85 !important; }
 .skin-lcd .pv .pv-tcell .tbtns button .chev { width: 10px; height: 10px; margin-left: 2px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 /* Mods keys as wide as the keys above (one column, 84 px), 64 tall: the square photo as a 9-slice so it widens cleanly. */
 .skin-lcd .pv .mods-grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; grid-auto-rows: 64px !important; column-gap: 6px !important; row-gap: 6px !important; }
 .skin-lcd .pv .mods-grid .mg-btn { width: 100% !important; height: 64px !important; border: 0 !important; border-radius: 7px !important;
-  background: none !important; border-image: url(img/btn/sq-off.png?v=mwsft876) 40 fill / 13px stretch !important; }
+  background: none !important; border-image: url(img/btn/sq-off.png?v=mwv8azz3) 40 fill / 13px stretch !important; }
 .skin-lcd .pv .mods-grid .mg-btn:hover:not(.dis) { background-image: none !important; }
-.skin-lcd .pv .mods-grid .mg-btn.on { background-image: none !important; border-image-source: url(img/btn/sq-on.png?v=mwsft876) !important; }
-.skin-lcd .pv .mods-grid .mg-btn:active:not(.dis) { background-image: none !important; border-image-source: url(img/btn/sq-on.png?v=mwsft876) !important; }
+.skin-lcd .pv .mods-grid .mg-btn.on { background-image: none !important; border-image-source: url(img/btn/sq-on.png?v=mwv8azz3) !important; }
+.skin-lcd .pv .mods-grid .mg-btn:active:not(.dis) { background-image: none !important; border-image-source: url(img/btn/sq-on.png?v=mwv8azz3) !important; }
 
 /* ---- The sub-panels under the waveform (tester, 2026-10-26): the same photographed keys as the panel, smaller; no
    transport of their own (Solo · Preview · Loop are in the panel). The panel's knob-label rules no longer push the
@@ -6566,24 +6566,24 @@ body.skin-lcd::before { box-shadow: inset 0 0 0 2px #000 !important; border-radi
 .skin-lcd #dock .pv-editor .mgrp em  {  display: none !important;  }
 .skin-lcd :is(#dock :is(.pv-editor, .bld), #splash, #genpop, .rpop, #genwin, #sbwin, #packwin, .fxrack, .pwin, .rack-fly) .capbtn  { all: unset !important; box-sizing: border-box !important; position: relative !important; cursor: pointer !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; gap: 6px !important; flex: none !important;
   width: 34px !important; height: 34px !important; border-radius: 6px !important; color: #c7c9cd !important; font: 500 11px -apple-system, sans-serif !important; text-shadow: 0 1px 0 rgba(0, 0, 0, .7) !important;
-  border-image: url(img/btn/sq-off.png?v=mwsft876) 40 fill / 9px stretch !important; }
+  border-image: url(img/btn/sq-off.png?v=mwv8azz3) 40 fill / 9px stretch !important; }
 .skin-lcd :is(#dock :is(.pv-editor, .bld), #splash, #genpop, .rpop, #genwin, #sbwin, #packwin, .fxrack, .pwin, .rack-fly) .capbtn::before  { content: none !important; }
 .skin-lcd :is(#dock :is(.pv-editor, .bld), #splash, #genpop, .rpop, #genwin, #sbwin, #packwin, .fxrack, .pwin, .rack-fly) .capbtn svg  { width: 15px !important; height: 15px !important; }
-.skin-lcd #dock .pv-editor .mtabs .cap, .skin-lcd #dock .pv-editor .os button  { width: auto !important; height: 30px !important; padding: 0 12px !important; border-image-source: url(img/btn/w-off.png?v=mwsft876) !important; border-image-width: 8px !important; }
+.skin-lcd #dock .pv-editor .mtabs .cap, .skin-lcd #dock .pv-editor .os button  { width: auto !important; height: 30px !important; padding: 0 12px !important; border-image-source: url(img/btn/w-off.png?v=mwv8azz3) !important; border-image-width: 8px !important; }
 .skin-lcd :is(#dock :is(.pv-editor, .bld), #splash, #genpop, .rpop, #genwin, #sbwin, #packwin, .fxrack, .pwin, .rack-fly) .capbtn:hover  { filter: brightness(1.12) !important; }
-.skin-lcd :is(#dock :is(.pv-editor, .bld), #splash, #genpop, .rpop, #genwin, #sbwin, #packwin, .fxrack, .pwin, .rack-fly) .capbtn.on  { border-image-source: url(img/btn/sq-on.png?v=mwsft876) !important; color: #111 !important; text-shadow: 0 1px 0 rgba(255, 255, 255, .35) !important; box-shadow: none !important; }
-.skin-lcd #dock .pv-editor .mtabs .cap.on  { border-image-source: url(img/btn/w-on.png?v=mwsft876) !important; }
+.skin-lcd :is(#dock :is(.pv-editor, .bld), #splash, #genpop, .rpop, #genwin, #sbwin, #packwin, .fxrack, .pwin, .rack-fly) .capbtn.on  { border-image-source: url(img/btn/sq-on.png?v=mwv8azz3) !important; color: #111 !important; text-shadow: 0 1px 0 rgba(255, 255, 255, .35) !important; box-shadow: none !important; }
+.skin-lcd #dock .pv-editor .mtabs .cap.on  { border-image-source: url(img/btn/w-on.png?v=mwv8azz3) !important; }
 .skin-lcd :is(#dock :is(.pv-editor, .bld), #splash, #genpop, .rpop, #genwin, #sbwin, #packwin, .fxrack, .pwin, .rack-fly) .capbtn.on::after  { content: '' !important; position: absolute !important; inset: 0 !important; border-radius: inherit !important; background: var(--tc, #22e6ff) !important; mix-blend-mode: color !important; opacity: .6 !important; pointer-events: none !important; width: auto !important; height: auto !important; top: 0 !important; right: 0 !important; box-shadow: none !important; }
-.skin-lcd :is(#dock :is(.pv-editor, .bld), #splash, #genpop, .rpop, #genwin, #sbwin, #packwin, .fxrack, .pwin, .rack-fly) .capbtn:active  { border-image-source: url(img/btn/sq-click.png?v=mwsft876) !important; }
-.skin-lcd #dock .pv-editor .mtabs .cap:active  { border-image-source: url(img/btn/w-click.png?v=mwsft876) !important; }
+.skin-lcd :is(#dock :is(.pv-editor, .bld), #splash, #genpop, .rpop, #genwin, #sbwin, #packwin, .fxrack, .pwin, .rack-fly) .capbtn:active  { border-image-source: url(img/btn/sq-click.png?v=mwv8azz3) !important; }
+.skin-lcd #dock .pv-editor .mtabs .cap:active  { border-image-source: url(img/btn/w-click.png?v=mwv8azz3) !important; }
 .skin-lcd #dock .pv-editor .mtabs  {  gap: 6px !important;  }
 .skin-lcd #dock .pv-editor .mctl  {  gap: 10px !important;  }
 .skin-lcd #dock .pv-editor .mgrp  {  padding: 6px 8px !important; gap: 6px !important;  }
 .skin-lcd :is(#dock :is(.pv-editor, .bld), #splash, #genpop, .rpop, #genwin, #sbwin, #packwin, .fxrack, .pwin, .rack-fly) .capbtn.wide { width: max-content !important; min-width: max-content !important; height: 30px !important; padding: 0 12px 0 10px !important; flex: none !important; overflow: visible !important;
-  border-image-source: url(img/btn/w-off.png?v=mwsft876) !important; border-image-width: 8px !important; }
+  border-image-source: url(img/btn/w-off.png?v=mwv8azz3) !important; border-image-width: 8px !important; }
 .skin-lcd :is(#dock :is(.pv-editor, .bld), #splash, #genpop, .rpop, #genwin, #sbwin, #packwin, .fxrack, .pwin, .rack-fly) .capbtn.wide svg { position: static !important; width: 14px !important; height: 14px !important; }
-.skin-lcd :is(#dock :is(.pv-editor, .bld), #splash, #genpop, .rpop, #genwin, #sbwin, #packwin, .fxrack, .pwin, .rack-fly) .capbtn.wide.on { border-image-source: url(img/btn/w-on.png?v=mwsft876) !important; }
-.skin-lcd :is(#dock :is(.pv-editor, .bld), #splash, #genpop, .rpop, #genwin, #sbwin, #packwin, .fxrack, .pwin, .rack-fly) .capbtn.wide:active { border-image-source: url(img/btn/w-click.png?v=mwsft876) !important; }
+.skin-lcd :is(#dock :is(.pv-editor, .bld), #splash, #genpop, .rpop, #genwin, #sbwin, #packwin, .fxrack, .pwin, .rack-fly) .capbtn.wide.on { border-image-source: url(img/btn/w-on.png?v=mwv8azz3) !important; }
+.skin-lcd :is(#dock :is(.pv-editor, .bld), #splash, #genpop, .rpop, #genwin, #sbwin, #packwin, .fxrack, .pwin, .rack-fly) .capbtn.wide:active { border-image-source: url(img/btn/w-click.png?v=mwv8azz3) !important; }
 .skin-lcd #dock .pv-editor .mtabs { display: flex !important; flex-wrap: wrap; }
 
 /* ---- Track label modes (the grid's cog, tester 2026-10-26): Mods (above), Sound, Readouts, Meter. All read-only. ---- */
@@ -6613,33 +6613,33 @@ body.skin-lcd::before { box-shadow: inset 0 0 0 2px #000 !important; border-radi
    ⏮ ■ ▶ and the Chop Pads key use the grid's keycap art (img/key-*.png) instead of the frosted photos. Lit: the
    keycap's glowing rim, tinted to the track's colour. The 210 × 220 art is a 9-slice for the Mods keys' 84 × 64. ---- */
 body.skin-lcd:not(.keys-frost) > header .tkey, body.skin-lcd:not(.keys-frost) > header #home.brand, body.skin-lcd:not(.keys-frost) > header .hd-right #padsbtn {
-  background: url(img/key-off.png?v=mwsft876) center / 100% 100% no-repeat !important; border-radius: 8px !important; }
-body.skin-lcd:not(.keys-frost) > header .tkey:active, body.skin-lcd:not(.keys-frost) > header #home.brand:active, body.skin-lcd:not(.keys-frost) > header .hd-right #padsbtn:active { background-image: url(img/key-off.png?v=mwsft876) !important; filter: brightness(.82) !important; transform: translateY(1px) !important; }
+  background: url(img/key-off.png?v=mwv8azz3) center / 100% 100% no-repeat !important; border-radius: 8px !important; }
+body.skin-lcd:not(.keys-frost) > header .tkey:active, body.skin-lcd:not(.keys-frost) > header #home.brand:active, body.skin-lcd:not(.keys-frost) > header .hd-right #padsbtn:active { background-image: url(img/key-off.png?v=mwv8azz3) !important; filter: brightness(.82) !important; transform: translateY(1px) !important; }
 body.skin-lcd:not(.keys-frost) > header .tkey svg { fill: #c9cbd0 !important; color: #c9cbd0; filter: none !important; transform: translateY(1px); }
 body.skin-lcd:not(.keys-frost) > header .tkey.t-play svg { fill: #2fd05a !important; filter: drop-shadow(0 0 3px rgba(47, 208, 90, .5)) !important; }
 body.skin-lcd:not(.keys-frost) > header #home .hd-start svg { stroke: #c9cbd0 !important; transform: translateY(1px); }
 body.skin-lcd:not(.keys-frost) > header .hd-right #padsbtn svg { color: #c9cbd0 !important; }
-body.skin-lcd:not(.keys-frost) .pv .mods-grid .mg-btn { border-image: url(img/key-off.png?v=mwsft876) 56 fill / 16px stretch !important; }
-body.skin-lcd:not(.keys-frost) .pv .mods-grid .mg-btn.on, body.skin-lcd:not(.keys-frost) .pv .mods-grid .mg-btn:active:not(.dis) { border-image-source: url(img/key-on.png?v=mwsft876) !important; }
+body.skin-lcd:not(.keys-frost) .pv .mods-grid .mg-btn { border-image: url(img/key-off.png?v=mwv8azz3) 56 fill / 16px stretch !important; }
+body.skin-lcd:not(.keys-frost) .pv .mods-grid .mg-btn.on, body.skin-lcd:not(.keys-frost) .pv .mods-grid .mg-btn:active:not(.dis) { border-image-source: url(img/key-on.png?v=mwv8azz3) !important; }
 body.skin-lcd:not(.keys-frost) .pv .mods-grid .mg-btn:active:not(.dis) { filter: brightness(1.25) saturate(1.1) !important; }
 body.skin-lcd:not(.keys-frost) .pv .mods-grid .mg-btn.on::after, body.skin-lcd:not(.keys-frost) .pv .mods-grid .mg-btn:active:not(.dis)::after { mix-blend-mode: color !important; opacity: .9 !important; }
 body.skin-lcd:not(.keys-frost) .pv .mods-grid .mg-btn .mg-n { color: rgba(220, 222, 226, .7) !important; }
 body.skin-lcd:not(.keys-frost) .pv .mods-grid .mg-btn.on .mg-n, body.skin-lcd:not(.keys-frost) .pv .mods-grid .mg-btn:active:not(.dis) .mg-n { color: #f2f4f6 !important; text-shadow: 0 0 6px color-mix(in srgb, var(--tc, #22e6ff) 60%, transparent) !important; font-weight: 600 !important; }
 body.skin-lcd:not(.keys-frost) .pv .mods-grid .mg-btn.on .mg-ic, body.skin-lcd:not(.keys-frost) .pv .mods-grid .mg-btn:active:not(.dis) .mg-ic { color: var(--tc, #22e6ff) !important; filter: drop-shadow(0 0 4px var(--tc, #22e6ff)) !important; }
 body.skin-lcd:not(.keys-frost) .pv .mods-grid .mg-btn.on::after, body.skin-lcd:not(.keys-frost) .pv .mods-grid .mg-btn:active:not(.dis)::after {
-  border-radius: 0 !important; -webkit-mask-box-image: url(img/key-on.png?v=mwsft876) 56 / 16px stretch; mask-border: url(img/key-on.png?v=mwsft876) 56 / 16px stretch; }
+  border-radius: 0 !important; -webkit-mask-box-image: url(img/key-on.png?v=mwv8azz3) 56 / 16px stretch; mask-border: url(img/key-on.png?v=mwv8azz3) 56 / 16px stretch; }
 body.skin-lcd:not(.keys-frost) .pv .mods-grid .mg-btn { padding: 6px 4px 14px !important; gap: 5px !important; }
 body.skin-lcd:not(.keys-frost) .pv .mods-grid .mg-led { top: 8px !important; right: 10px !important; }
 /* Build's moves are keycaps too, like the Mods keys (tester, 2026-11-01: "when I switch to keycaps … the moves don't
    change, so those are supposed to be keycaps as well"). Lit: the keycap's glowing rim in Build's amber. */
-body.skin-lcd:not(.keys-frost, .keys-flat, .keys-neon) #dock .bld .bl-tiles .capbtn.bl-tile { border-image: url(img/key-off.png?v=mwsft876) 56 fill / 14px stretch !important; clip-path: none !important;
+body.skin-lcd:not(.keys-frost, .keys-flat, .keys-neon) #dock .bld .bl-tiles .capbtn.bl-tile { border-image: url(img/key-off.png?v=mwv8azz3) 56 fill / 14px stretch !important; clip-path: none !important;
   padding-top: 6px !important; color: rgba(220, 222, 226, .72) !important; text-shadow: none !important; }
-body.skin-lcd:not(.keys-frost, .keys-flat, .keys-neon) #dock .bld .bl-tiles .capbtn.bl-tile:active { border-image-source: url(img/key-off.png?v=mwsft876) !important; filter: brightness(.82) !important; }
-body.skin-lcd:not(.keys-frost, .keys-flat, .keys-neon) #dock .bld .bl-tiles .capbtn.bl-tile.on { border-image-source: url(img/key-on.png?v=mwsft876) !important; color: #f2f4f6 !important; font-weight: 600 !important;
+body.skin-lcd:not(.keys-frost, .keys-flat, .keys-neon) #dock .bld .bl-tiles .capbtn.bl-tile:active { border-image-source: url(img/key-off.png?v=mwv8azz3) !important; filter: brightness(.82) !important; }
+body.skin-lcd:not(.keys-frost, .keys-flat, .keys-neon) #dock .bld .bl-tiles .capbtn.bl-tile.on { border-image-source: url(img/key-on.png?v=mwv8azz3) !important; color: #f2f4f6 !important; font-weight: 600 !important;
   text-shadow: 0 0 6px color-mix(in srgb, var(--tc) 60%, transparent) !important; }
 /* The grid's tint: a hue blend, so the grey face stays grey and only the cyan rim and glow turn amber. */
 body.skin-lcd:not(.keys-frost, .keys-flat, .keys-neon) #dock .bld .bl-tiles .capbtn.bl-tile.on::after { border-radius: 0 !important; mix-blend-mode: hue !important; opacity: 1 !important;
-  -webkit-mask-box-image: url(img/key-on.png?v=mwsft876) 56 / 14px stretch; mask-border: url(img/key-on.png?v=mwsft876) 56 / 14px stretch; }
+  -webkit-mask-box-image: url(img/key-on.png?v=mwv8azz3) 56 / 14px stretch; mask-border: url(img/key-on.png?v=mwv8azz3) 56 / 14px stretch; }
 body.skin-lcd:not(.keys-frost, .keys-flat, .keys-neon) #dock .bld .bl-tiles .capbtn.bl-tile.on svg { color: var(--tc); filter: drop-shadow(0 0 4px var(--tc)); }
 /* The header's keys as big as the grid's keycaps (44 px, tester 2026-10-27); the logo a touch smaller to make room. */
 .skin-lcd > header .tkey, .skin-lcd > header .hd-right #padsbtn, .skin-lcd > header #home.brand { width: 44px !important; height: 44px !important; }
@@ -6661,13 +6661,13 @@ body.skin-lcd:not(.keys-frost, .keys-flat, .keys-neon) #dock .bld .bl-tiles .cap
 .skin-lcd .pv .pv-l .lv-ctl.k3d .tdials > .dirkeys { order: 0; }
 .skin-lcd .pv .dirkeys .dk-row { display: flex; gap: 3px; height: 46px; align-items: center; }
 .skin-lcd .pv .dirkeys button { all: unset; box-sizing: border-box; position: relative; cursor: pointer; display: grid; place-items: center; width: 34px; height: 32px; border-radius: 5px; color: #9a9da3;
-  border-image: url(img/btn/sq-off.png?v=mwsft876) 40 fill / 8px stretch; }
+  border-image: url(img/btn/sq-off.png?v=mwv8azz3) 40 fill / 8px stretch; }
 /* The square art, not the wide one (tester, 2026-10-29: "more of a vertical glow … should have a center glow"):
    the wide key's middle squeezed into a 30 px key became a vertical streak; the square one stays round. */
 .skin-lcd .pv .dirkeys button svg { width: 12px; height: 12px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; position: relative; z-index: 1; }
 .skin-lcd .pv .dirkeys button:hover { filter: brightness(1.12); }
-.skin-lcd .pv .dirkeys button:active { border-image-source: url(img/btn/sq-click.png?v=mwsft876); }
-.skin-lcd .pv .dirkeys button.on { border-image-source: url(img/btn/sq-on.png?v=mwsft876); color: #111; }
+.skin-lcd .pv .dirkeys button:active { border-image-source: url(img/btn/sq-click.png?v=mwv8azz3); }
+.skin-lcd .pv .dirkeys button.on { border-image-source: url(img/btn/sq-on.png?v=mwv8azz3); color: #111; }
 .skin-lcd .pv .dirkeys button.on::after { content: ''; position: absolute; inset: 0; border-radius: inherit; background: var(--tc, #22e6ff); mix-blend-mode: color; opacity: .6; pointer-events: none; }
 .skin-lcd .pv .dirkeys .kl { font: 500 10px -apple-system, sans-serif; color: #615f5b; margin-top: 5px; }
 .skin-lcd .pv .dirkeys .kl { margin-top: -2px; }
@@ -6690,9 +6690,9 @@ body.skin-lcd:not(.keys-frost) .pv .mods-grid .mg-n { font-size: 8.5px !importan
 .skin-lcd > header .hd-logo { left: 8px; width: calc(290px - 4px - 3 * var(--hk-w) - var(--hk-gap) - var(--hk-sep) - 20px); }
 /* The EQ's preset keys: the whole wide key (a 9-slice, filled), not just its corners. */
 .skin-lcd #dock .pv-editor .os button { all: unset; box-sizing: border-box; cursor: pointer; display: inline-flex !important; align-items: center; justify-content: center; height: 28px !important; padding: 0 12px !important;
-  font: 500 11px -apple-system, sans-serif; color: #c7c9cd; text-shadow: 0 1px 0 rgba(0, 0, 0, .7); border-image: url(img/btn/w-off.png?v=mwsft876) 40 fill / 8px stretch !important; }
-.skin-lcd #dock .pv-editor .os button.on { border-image-source: url(img/btn/w-on.png?v=mwsft876) !important; color: #111; text-shadow: 0 1px 0 rgba(255, 255, 255, .35); }
-.skin-lcd #dock .pv-editor .os button:active { border-image-source: url(img/btn/w-click.png?v=mwsft876) !important; }
+  font: 500 11px -apple-system, sans-serif; color: #c7c9cd; text-shadow: 0 1px 0 rgba(0, 0, 0, .7); border-image: url(img/btn/w-off.png?v=mwv8azz3) 40 fill / 8px stretch !important; }
+.skin-lcd #dock .pv-editor .os button.on { border-image-source: url(img/btn/w-on.png?v=mwv8azz3) !important; color: #111; text-shadow: 0 1px 0 rgba(255, 255, 255, .35); }
+.skin-lcd #dock .pv-editor .os button:active { border-image-source: url(img/btn/w-click.png?v=mwv8azz3) !important; }
 :is(body.keys-flat, body.keys-neon).skin-lcd #dock .pv-editor .os button { border-image: none !important; background: #181716; box-shadow: inset 0 0 0 1px #3d3c39; border-radius: 7px; text-shadow: none; }
 
 /* ---- The plugin sub-panel (tester, 2026-10-27): no well or outline behind the controls, no header band; its dials
@@ -6715,10 +6715,10 @@ body.skin-lcd:not(.keys-frost) .pv .mods-grid .mg-n { font-size: 8.5px !importan
    per-curve power key isn't needed beside it. ---- */
 .skin-lcd .pv .pv-editor .ed-h { gap: 8px !important; padding-left: 8px !important; }
 .skin-lcd .pv .pv-editor .ed-pow { all: unset; box-sizing: border-box; cursor: pointer; flex: none; display: grid; place-items: center; width: 24px; height: 22px; border-radius: 5px; color: #8a8d93;
-  border-image: url(img/btn/sq-off.png?v=mwsft876) 40 fill / 6px stretch; clip-path: inset(0 round 5px); }
+  border-image: url(img/btn/sq-off.png?v=mwv8azz3) 40 fill / 6px stretch; clip-path: inset(0 round 5px); }
 .skin-lcd .pv .pv-editor .ed-pow svg { width: 12px; height: 12px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; }
 .skin-lcd .pv .pv-editor .ed-pow:hover { filter: brightness(1.15); }
-.skin-lcd .pv .pv-editor .ed-pow.on { color: #fff; border-image-source: url(img/btn/sq-on.png?v=mwsft876); }
+.skin-lcd .pv .pv-editor .ed-pow.on { color: #fff; border-image-source: url(img/btn/sq-on.png?v=mwv8azz3); }
 .skin-lcd .pv .pv-editor .ed-pow.on::after { content: ''; position: absolute; inset: 0; background: var(--tc, #22e6ff); mix-blend-mode: multiply; opacity: .85; pointer-events: none; }
 .skin-lcd .pv .pv-editor .ed-pow { position: relative; }
 .skin-lcd .pv .pv-editor .ed-pow svg { position: relative; z-index: 1; }
@@ -6759,10 +6759,10 @@ body.skin-lcd:not(.keys-frost) .pv .mods-grid .mg-n { font-size: 8.5px !importan
 .skin-lcd .pv .lane-tab .lt-ic svg, .skin-lcd .pv .pv-editor .ed-collapse .lt-ic svg { width: 14px !important; height: 14px !important; stroke: currentColor; fill: none; }
 .skin-lcd .pv .sec-n, .skin-lcd .pv .pv-editor .ed-collapse .ed-title { font: 600 12px -apple-system, sans-serif !important; color: inherit; letter-spacing: .01em; }
 .skin-lcd .pv .sec-pow { all: unset; box-sizing: border-box; position: relative; cursor: pointer; flex: none; display: grid; place-items: center; width: 22px !important; height: 20px !important; border-radius: 5px;
-  color: #82807a; border-image: url(img/btn/sq-off.png?v=mwsft876) 40 fill / 6px stretch; clip-path: inset(0 round 5px); }
+  color: #82807a; border-image: url(img/btn/sq-off.png?v=mwv8azz3) 40 fill / 6px stretch; clip-path: inset(0 round 5px); }
 .skin-lcd .pv .sec-pow svg { position: relative; z-index: 1; width: 11px; height: 11px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; }
 .skin-lcd .pv .sec-pow:hover { filter: brightness(1.2); }
-.skin-lcd .pv .sec-pow.on { color: #fff; border-image-source: url(img/btn/sq-on.png?v=mwsft876); }
+.skin-lcd .pv .sec-pow.on { color: #fff; border-image-source: url(img/btn/sq-on.png?v=mwv8azz3); }
 .skin-lcd .pv .sec-pow.on::after { content: ''; position: absolute; inset: 0; background: var(--tc, #22e6ff); mix-blend-mode: multiply; opacity: .85; }
 :is(body.keys-flat, body.keys-neon).skin-lcd .pv .sec-pow { border-image: none; background: #181716; box-shadow: inset 0 0 0 1px #3d3c39; }
 :is(body.keys-flat, body.keys-neon).skin-lcd .pv .sec-pow.on { color: var(--tc, #22e6ff); box-shadow: inset 0 0 0 1.5px var(--tc, #22e6ff); }
@@ -6854,15 +6854,15 @@ body.skin-lcd:is(.mk-1, .mk-2) #dock .pv .mods-grid .mg-n { font: 550 10.5px/13p
 body.skin-lcd:is(.mk-1, .mk-2) #dock .pv .mods-grid .mg-led { top: 9px !important; right: 11px !important; }
 body.skin-lcd:is(.mk-1, .mk-2) #dock .pv .mods-grid .mg-btn.dis { opacity: .45 !important; }
 /* Set 1, frosted glass: a light grey key; lit, its centre glows almost white, so the lit name and icon are dark. */
-body.mk-1 { --mk-off: url(img/modkeys/set1-off.png?v=mwsft876); --mk-on: url(img/modkeys/set1-on.png?v=mwsft876); --mk-press: url(img/modkeys/set1-press.png?v=mwsft876);
-  --mk-on-light: url(img/modkeys/set1-on-light.png?v=mwsft876); --mk-press-light: url(img/modkeys/set1-press-light.png?v=mwsft876); }
+body.mk-1 { --mk-off: url(img/modkeys/set1-off.png?v=mwv8azz3); --mk-on: url(img/modkeys/set1-on.png?v=mwv8azz3); --mk-press: url(img/modkeys/set1-press.png?v=mwv8azz3);
+  --mk-on-light: url(img/modkeys/set1-on-light.png?v=mwv8azz3); --mk-press-light: url(img/modkeys/set1-press-light.png?v=mwv8azz3); }
 body.skin-lcd.mk-1 #dock .pv .mods-grid .mg-n { color: rgba(236, 238, 241, .78) !important; text-shadow: 0 1px 1px rgba(0, 0, 0, .45) !important; font-weight: 550 !important; }
 body.skin-lcd.mk-1 #dock .pv .mods-grid .mg-ic { color: #c3c6cb !important; filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .4)) !important; }
 body.skin-lcd.mk-1 #dock .pv .mods-grid .mg-btn:is(.on, :active:not(.dis)) .mg-n { color: #11110f !important; text-shadow: 0 .5px 0 rgba(255, 255, 255, .3) !important; font-weight: 550 !important; }
 body.skin-lcd.mk-1 #dock .pv .mods-grid .mg-btn:is(.on, :active:not(.dis)) .mg-ic { color: #11110f !important; filter: none !important; }
 /* Set 2, soft pads: a dark slate key; lit, a deeper glow, so the lit name and icon stay light. */
-body.mk-2 { --mk-off: url(img/modkeys/set2-off.png?v=mwsft876); --mk-on: url(img/modkeys/set2-on.png?v=mwsft876); --mk-press: url(img/modkeys/set2-press.png?v=mwsft876);
-  --mk-on-light: url(img/modkeys/set2-on-light.png?v=mwsft876); --mk-press-light: url(img/modkeys/set2-press-light.png?v=mwsft876); }
+body.mk-2 { --mk-off: url(img/modkeys/set2-off.png?v=mwv8azz3); --mk-on: url(img/modkeys/set2-on.png?v=mwv8azz3); --mk-press: url(img/modkeys/set2-press.png?v=mwv8azz3);
+  --mk-on-light: url(img/modkeys/set2-on-light.png?v=mwv8azz3); --mk-press-light: url(img/modkeys/set2-press-light.png?v=mwv8azz3); }
 body.skin-lcd.mk-2 #dock .pv .mods-grid .mg-n { color: rgba(214, 218, 222, .7) !important; text-shadow: none !important; font-weight: 550 !important; }
 body.skin-lcd.mk-2 #dock .pv .mods-grid .mg-ic { color: #8f959b !important; filter: none !important; }
 body.skin-lcd.mk-2 #dock .pv .mods-grid .mg-btn:is(.on, :active:not(.dis)) .mg-n { color: #f4f7f8 !important; text-shadow: 0 0 6px color-mix(in srgb, var(--tc, #22e6ff) 70%, transparent) !important; font-weight: 550 !important; }
@@ -6873,21 +6873,21 @@ body.skin-lcd.mk-2 #dock .pv .mods-grid .mg-btn:is(.on, :active:not(.dis)) .mg-i
    9-slice way), as the Mods keys. Hover only when off. The name: the size it had, a weight between it and the Mods
    keys' (tester: "the size of the ones on the top … a weight in between the two"). Flat and neon keep their own. ---- */
 body.skin-lcd:not(.keys-flat, .keys-neon) .pv :is(.pv-mini .pv-tog, .pv-mini .tkey, .pv-mini .pv-loop, .pv-tcell .tbtns button) {
-  border-image: url(img/btn/w2-off.png?v=mwsft876) 40 fill / 7px stretch !important; filter: none !important; clip-path: inset(0 round 6px) !important;
+  border-image: url(img/btn/w2-off.png?v=mwv8azz3) 40 fill / 7px stretch !important; filter: none !important; clip-path: inset(0 round 6px) !important;
   font: 550 10.5px -apple-system, sans-serif !important; color: rgba(236, 238, 241, .82) !important; text-shadow: 0 1px 1px rgba(0, 0, 0, .5) !important; }
 body.skin-lcd:not(.keys-flat, .keys-neon) .pv :is(.pv-mini .pv-tog, .pv-mini .tkey, .pv-mini .pv-loop, .pv-tcell .tbtns button):hover:not(.on, .armed, :disabled) { filter: brightness(1.1) !important; }
 body.skin-lcd:not(.keys-flat, .keys-neon) .pv :is(.pv-mini .pv-tog, .pv-mini .tkey, .pv-mini .pv-loop, .pv-tcell .tbtns button):is(.on, .armed) {
-  border-image-source: url(img/btn/w2-on.png?v=mwsft876) !important; filter: none !important; color: #11110f !important; text-shadow: 0 .5px 0 rgba(255, 255, 255, .3) !important; }
+  border-image-source: url(img/btn/w2-on.png?v=mwv8azz3) !important; filter: none !important; color: #11110f !important; text-shadow: 0 .5px 0 rgba(255, 255, 255, .3) !important; }
 body.skin-lcd:not(.keys-flat, .keys-neon) .pv :is(.pv-mini .pv-tog, .pv-mini .tkey, .pv-mini .pv-loop, .pv-tcell .tbtns button):active:not(:disabled) {
-  border-image-source: url(img/btn/w2-press.png?v=mwsft876) !important; filter: none !important; color: #11110f !important; text-shadow: 0 .5px 0 rgba(255, 255, 255, .3) !important; }
+  border-image-source: url(img/btn/w2-press.png?v=mwv8azz3) !important; filter: none !important; color: #11110f !important; text-shadow: 0 .5px 0 rgba(255, 255, 255, .3) !important; }
 body.skin-lcd:not(.keys-flat, .keys-neon) .pv :is(.pv-mini .pv-tog, .pv-mini .tkey, .pv-mini .pv-loop, .pv-tcell .tbtns button)::after { content: none !important; }
 body.skin-lcd:not(.keys-flat, .keys-neon) .pv :is(.pv-mini .pv-tog, .pv-mini .tkey, .pv-mini .pv-loop, .pv-tcell .tbtns button):is(.on, .armed, :active:not(:disabled))::after {
   content: '' !important; position: absolute !important; inset: 0 !important; border-radius: 0 !important; pointer-events: none;
   background: var(--tc, #22e6ff) !important; mix-blend-mode: color !important; opacity: 1 !important;
   -webkit-mask: none !important; mask: none !important;
-  -webkit-mask-box-image: url(img/btn/w2-on-light.png?v=mwsft876) 40 fill / 7px stretch !important; mask-border: url(img/btn/w2-on-light.png?v=mwsft876) 40 fill / 7px stretch !important; }
+  -webkit-mask-box-image: url(img/btn/w2-on-light.png?v=mwv8azz3) 40 fill / 7px stretch !important; mask-border: url(img/btn/w2-on-light.png?v=mwv8azz3) 40 fill / 7px stretch !important; }
 body.skin-lcd:not(.keys-flat, .keys-neon) .pv :is(.pv-mini .pv-tog, .pv-mini .tkey, .pv-mini .pv-loop, .pv-tcell .tbtns button):active:not(:disabled)::after {
-  -webkit-mask-box-image-source: url(img/btn/w2-press-light.png?v=mwsft876) !important; mask-border-source: url(img/btn/w2-press-light.png?v=mwsft876) !important; }
+  -webkit-mask-box-image-source: url(img/btn/w2-press-light.png?v=mwv8azz3) !important; mask-border-source: url(img/btn/w2-press-light.png?v=mwv8azz3) !important; }
 body.skin-lcd:not(.keys-flat, .keys-neon) .pv .pv-tcell .tbtns button.warn:not(.armed, :active) { color: #f0928c !important; }
 body.skin-lcd:not(.keys-flat, .keys-neon) .pv .pv-tcell .tbtns button.armed::after { background: #e5484d !important; }
 /* ---- The two left panels (the track's, the Mods keys') on the panel material (--plate: one grain tile, a top light and
@@ -7093,7 +7093,7 @@ html body.skin-lcd .pv .pv-tcell .pv-mini .pv-sq svg { width: 15px !important; h
 .skin-lcd .pv .pv-tcell .pv-s { --tc: #34d35f; }
 .skin-lcd .pv .pv-tcell .pv-m { --tc: #ffb547; }
 .skin-lcd .pv .pv-tcell .pv-mini .ps .ps-play { fill: #2fd05a; filter: drop-shadow(0 0 3px rgba(47, 208, 90, .5)); }
-html body.skin-lcd .pv .pv-tcell .pv-mini .tkey.ps.on { border-image-source: url(img/btn/w2-off.png?v=mwsft876) !important; background-color: transparent !important; box-shadow: none !important; color: #ff4a4a !important; }
+html body.skin-lcd .pv .pv-tcell .pv-mini .tkey.ps.on { border-image-source: url(img/btn/w2-off.png?v=mwv8azz3) !important; background-color: transparent !important; box-shadow: none !important; color: #ff4a4a !important; }
 html body.skin-lcd .pv .pv-tcell .pv-mini .tkey.ps.on::after { content: none !important; }
 html body.skin-lcd .pv .pv-tcell .tbtns .pv-sample { grid-column: 1 / -1 !important; width: 100% !important; height: 30px !important; aspect-ratio: auto !important; display: flex !important; align-items: center !important;
   justify-content: flex-start !important; gap: 5px !important; padding: 0 10px 0 11px !important; text-align: left; }
@@ -7165,7 +7165,7 @@ body.theme-luna.keys-flat.skin-lcd > header :is(.tkey, #home.brand, .hd-right #p
 body.theme-luna.keys-flat.skin-lcd :is(.pv .pv-mini .pv-tog, .pv .pv-mini .tkey, .pv .pv-mini .pv-loop, .pv .pv-tcell .tbtns button, .pv .dirkeys button, .pv .mods-grid .mg-btn, :is(#dock :is(.pv-editor, .bld), #genpop, .rpop, #genwin, #sbwin, #packwin, .fxrack, .pwin, .rack-fly) .capbtn),
 body.theme-luna.skin-lcd .pv :is(.hubkey, .key.hubkey, .pvl-addfx),
 body.theme-luna :is(#grid, .pv) .sm-stack .cap {
-  background: var(--l-key) !important; border: 0 solid transparent !important; border-image: url(img/luna/btn.png?v=mwsft876) 12 fill / 6px stretch !important;
+  background: var(--l-key) !important; border: 0 solid transparent !important; border-image: url(img/luna/btn.png?v=mwv8azz3) 12 fill / 6px stretch !important;
   box-shadow: none !important; border-radius: 1px !important; color: var(--l-ink) !important; text-shadow: none !important; filter: none !important;
   font-family: var(--lf) !important; font-weight: 700 !important; text-transform: uppercase; }
 body.theme-luna.skin-lcd .pv :is(.hubkey, .key.hubkey)::before, body.theme-luna.skin-lcd .pv :is(.hubkey, .key.hubkey)::after,
@@ -7178,7 +7178,7 @@ body.theme-luna.skin-lcd .pv :is(.hubkey, .key.hubkey, .pvl-addfx):hover, body.t
 body.theme-luna.keys-flat.skin-lcd > header .tkey.on:not(.t-play),
 body.theme-luna.keys-flat.skin-lcd :is(.pv .pv-mini .pv-tog.on, .pv .pv-mini .tkey.on, .pv .pv-mini .pv-loop.on, .pv .pv-tcell .tbtns button.on, .pv .dirkeys button.on, .pv .mods-grid .mg-btn.on, :is(#dock :is(.pv-editor, .bld), #genpop, .rpop, #genwin, #sbwin, #packwin, .fxrack, .pwin, .rack-fly) .capbtn.on),
 body.theme-luna.skin-lcd .pv :is(.hubkey.on, .key.hubkey.on),
-body.theme-luna :is(#grid, .pv) .sm-stack .cap.solo:is(.on, [aria-pressed="true"]) { border-image: url(img/luna/btn-on.png?v=mwsft876) 12 fill / 6px stretch !important; background: linear-gradient(180deg, #e9a21a, #b77806) !important; color: var(--l-ink) !important; box-shadow: none !important; }
+body.theme-luna :is(#grid, .pv) .sm-stack .cap.solo:is(.on, [aria-pressed="true"]) { border-image: url(img/luna/btn-on.png?v=mwv8azz3) 12 fill / 6px stretch !important; background: linear-gradient(180deg, #e9a21a, #b77806) !important; color: var(--l-ink) !important; box-shadow: none !important; }
 body.theme-luna :is(#grid, .pv) .sm-stack .cap.mute:is(.on, [aria-pressed="true"]) { border-image: none !important; background: linear-gradient(180deg, #5cc6f5, #1e8fc4) !important; box-shadow: inset 0 0 0 1px var(--l-line) !important; color: #fff !important; }
 body.theme-luna.keys-flat.skin-lcd .pv .mods-grid .mg-btn.dis { opacity: .45; }
 /* Their icons and names, dark on the grey face. */
@@ -7216,7 +7216,7 @@ body.theme-luna.skin-lcd .pv .mg-led.on { background: var(--l-orange) !important
 /* ---- Knobs: LUNA's black pan knob (its white line baked in), turned as Chop Shop turns its pointer; no arcs. ---- */
 body.theme-luna .kdial svg, body.theme-luna .kdial .kbz, body.theme-luna .kdial .kbody { display: none !important; }
 body.theme-luna .kdial > :is(.k3, .k3a) { display: none !important; }
-body.theme-luna .kdial .kptr { display: block !important; content: url(img/luna/knob.png?v=mwsft876); filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .6)) !important; }
+body.theme-luna .kdial .kptr { display: block !important; content: url(img/luna/knob.png?v=mwv8azz3); filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .6)) !important; }
 body.theme-luna .kn2 .kl { color: var(--l-dim) !important; font-family: var(--lf) !important; font-weight: 700 !important; text-transform: uppercase; text-shadow: none !important; }
 body.theme-luna .kn2 .kv { color: var(--l-text) !important; font-family: var(--lf) !important; text-shadow: none !important; }
 
@@ -7565,10 +7565,10 @@ html body.lay-acc #dock .acc-hit .dirkeys.swk .dk-row { height: 36px !important;
 html body.lay-acc #dock .acc-hit .dirkeys.swk .kl { text-transform: none !important; letter-spacing: .01em !important; font: 500 9.5px -apple-system, sans-serif !important; color: #9a9a9a !important; margin-top: 5px !important; }
 html body.lay-acc #dock .acc-hit .dirkeys.swk button { width: 36px !important; height: 34px !important; }
 html body.lay-acc.skin-lcd:not(.keys-flat, .keys-neon, .theme-luna) #dock .acc-hit .dirkeys.swk button {
-  border-image: url(img/btn/sq-off.png?v=mwsft876) 40 fill / 8px stretch !important; background: none !important; box-shadow: none !important; color: #9a9da3 !important; border-radius: 5px !important; }
+  border-image: url(img/btn/sq-off.png?v=mwv8azz3) 40 fill / 8px stretch !important; background: none !important; box-shadow: none !important; color: #9a9da3 !important; border-radius: 5px !important; }
 html body.lay-acc.skin-lcd:not(.keys-flat, .keys-neon, .theme-luna) #dock .acc-hit .dirkeys.swk button:hover:not(.on) { filter: brightness(1.12) !important; background: none !important; box-shadow: none !important; }
-html body.lay-acc.skin-lcd:not(.keys-flat, .keys-neon, .theme-luna) #dock .acc-hit .dirkeys.swk button:active { border-image-source: url(img/btn/sq-click.png?v=mwsft876) !important; }
-html body.lay-acc.skin-lcd:not(.keys-flat, .keys-neon, .theme-luna) #dock .acc-hit .dirkeys.swk button.on { border-image-source: url(img/btn/sq-on.png?v=mwsft876) !important; color: #111 !important; background: none !important; box-shadow: none !important; }
+html body.lay-acc.skin-lcd:not(.keys-flat, .keys-neon, .theme-luna) #dock .acc-hit .dirkeys.swk button:active { border-image-source: url(img/btn/sq-click.png?v=mwv8azz3) !important; }
+html body.lay-acc.skin-lcd:not(.keys-flat, .keys-neon, .theme-luna) #dock .acc-hit .dirkeys.swk button.on { border-image-source: url(img/btn/sq-on.png?v=mwv8azz3) !important; color: #111 !important; background: none !important; box-shadow: none !important; }
 html body.lay-acc.skin-lcd:not(.keys-flat, .keys-neon, .theme-luna) #dock .acc-hit .dirkeys.swk button.on::after { display: block !important; content: ''; position: absolute; inset: 0; border-radius: inherit; background: var(--tc, #22e6ff); mix-blend-mode: color; opacity: .6; pointer-events: none; }
 /* The hit's title row: the chop it plays (its picker) and ‹ › to step through the hits' chops. */
 html body.lay-acc #dock .acc-hit .chopkeys .kl { display: none !important; }
@@ -7726,10 +7726,10 @@ html body.lay-acc #arrhost > .acc-buildcol #secdup svg { width: 20px; height: 20
 html body.lay-acc #arrhost > .acc-buildcol #secdup { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; }
 html body.lay-acc #arrhost > .acc-buildcol #secdup .sd-l { display: block; font: 700 8.5px/1 -apple-system, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: #c9a46a; }
 html body.lay-acc #arrhost > .acc-buildcol #secdup .sd-k { display: grid; place-items: center; box-sizing: border-box; width: 32px; height: 32px; border: 7px solid transparent;
-  border-image: url(img/caps/build-gold.png?v=mwsft876) 66 fill / 7px stretch; color: #2a1700; filter: drop-shadow(0 0 6px rgba(255, 160, 50, .4)); }
+  border-image: url(img/caps/build-gold.png?v=mwv8azz3) 66 fill / 7px stretch; color: #2a1700; filter: drop-shadow(0 0 6px rgba(255, 160, 50, .4)); }
 html body.lay-acc #arrhost > .acc-buildcol #secdup .sd-k svg { width: 15px; height: 15px; }
 html body.lay-acc #arrhost > .acc-buildcol #secdup:hover .sd-k { filter: drop-shadow(0 0 9px rgba(255, 160, 50, .6)) brightness(1.06); }
-html body.lay-acc #arrhost > .acc-buildcol #secdup:active .sd-k { border-image-source: url(img/caps/build-gold-down.png?v=mwsft876); }
+html body.lay-acc #arrhost > .acc-buildcol #secdup:active .sd-k { border-image-source: url(img/caps/build-gold-down.png?v=mwv8azz3); }
 html body.lay-acc #arrhost > .acc-buildcol #secdup:hover .sd-l { color: #f2c84b; }
 html body.lay-acc #arrhost > .acc-buildcol #secdup:disabled .sd-k { filter: grayscale(1) brightness(.6); }
 html body.lay-acc #arrhost > .acc-buildcol #secdup:disabled { opacity: .35; cursor: default; }
@@ -7763,18 +7763,18 @@ html body.lay-acc #arrhost .arr-lane .arr-pick { display: none; }
    icons with the current ones … and the current colors"): menu and back-to-start on the darker cap, play on the
    lighter gray one, each pressed onto its "down" cap; playing, play is the gray cap held down with its red stop.
    The caps are the 3D key now (tester, 2026-11-10; prototypes/transport-key/key.py --caps → img/caps/key3d-*.png). */
-html body.lay-acc > header :is(#home, #tostart, #play) { background: url(img/caps/key3d-dark-up.png?v=mwsft876) center / 100% 100% no-repeat !important; border: 0 !important; border-image: none !important; box-shadow: none !important; filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .45)) !important; color: #151413 !important; }
+html body.lay-acc > header :is(#home, #tostart, #play) { background: url(img/caps/key3d-dark-up.png?v=mwv8azz3) center / 100% 100% no-repeat !important; border: 0 !important; border-image: none !important; box-shadow: none !important; filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .45)) !important; color: #151413 !important; }
 html body.lay-acc > header :is(#home, #tostart) :is(svg, img) { filter: drop-shadow(0 1px 0 rgba(255, 255, 255, .07)); }
-html body.lay-acc > header #tostart:active { background-image: url(img/caps/key3d-dark-down.png?v=mwsft876) !important; transform: translateY(1px); }
-html body.lay-acc > header #home:active { background-image: url(img/caps/key3d-dark-down.png?v=mwsft876) !important; translate: 0 1px; }
+html body.lay-acc > header #tostart:active { background-image: url(img/caps/key3d-dark-down.png?v=mwv8azz3) !important; transform: translateY(1px); }
+html body.lay-acc > header #home:active { background-image: url(img/caps/key3d-dark-down.png?v=mwv8azz3) !important; translate: 0 1px; }
 html body.lay-acc > header :is(#home, #tostart):hover { color: #2b2a28 !important; }
-html body.lay-acc > header #play { background-image: url(img/caps/key3d-lit-up.png?v=mwsft876) !important; color: #3bdc62 !important; }
+html body.lay-acc > header #play { background-image: url(img/caps/key3d-lit-up.png?v=mwv8azz3) !important; color: #3bdc62 !important; }
 html body.lay-acc > header #play :is(svg) { filter: drop-shadow(0 0 4px rgba(59, 220, 98, .65)); }
-html body.lay-acc > header #play:active, html body.lay-acc > header #play.on { background-image: url(img/caps/key3d-lit-down.png?v=mwsft876) !important; }
+html body.lay-acc > header #play:active, html body.lay-acc > header #play.on { background-image: url(img/caps/key3d-lit-down.png?v=mwv8azz3) !important; }
 html body.lay-acc > header #play.on { color: #ff4a4a !important; }
 html body.lay-acc > header #play.on :is(svg) { filter: drop-shadow(0 0 4px rgba(255, 74, 74, .65)); }
-html body.lay-acc.skin-lcd > header #home.brand { background: url(img/caps/key3d-dark-up.png?v=mwsft876) center / 100% 100% no-repeat !important; border-image: none !important; box-shadow: none !important; filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .45)) !important; }
-html body.lay-acc.skin-lcd > header #home.brand:active { background-image: url(img/caps/key3d-dark-down.png?v=mwsft876) !important; translate: 0 1px; } /* (it's centred by translateY(-50%): a plain 1 px nudge dropped it half its height) */
+html body.lay-acc.skin-lcd > header #home.brand { background: url(img/caps/key3d-dark-up.png?v=mwv8azz3) center / 100% 100% no-repeat !important; border-image: none !important; box-shadow: none !important; filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .45)) !important; }
+html body.lay-acc.skin-lcd > header #home.brand:active { background-image: url(img/caps/key3d-dark-down.png?v=mwv8azz3) !important; translate: 0 1px; } /* (it's centred by translateY(-50%): a plain 1 px nudge dropped it half its height) */
 html body.lay-acc.skin-lcd > header #home .hd-start svg { stroke: #151413 !important; filter: drop-shadow(0 1px 0 rgba(255, 255, 255, .07)); }
 html body.lay-acc.skin-lcd > header, html body.lay-acc.skin-lcd > header .hd-left { --hk-sep: var(--hk-gap, 5px) !important; } /* (the menu key the same gap from ⏮ as the others) */
 
@@ -7794,8 +7794,8 @@ html body.lay-acc .acc-arrhead { padding: 0 8px 0 14px; gap: 10px; }
 html body.lay-acc .acc-arrhead .acc-t { font: 800 12.5px/1 -apple-system, sans-serif; letter-spacing: .06em; color: #f0a24a !important; }
 /* The loop key: the dark device key, the word in use lit amber (only that one). */
 html body.lay-acc .acc-arrhead .accloop { border: 0 !important; background: none !important; box-shadow: none !important; filter: none !important;
-  border-image: url(img/caps/flat3d-dark-up.png?v=mwsft876) 56 fill / 10px stretch !important; height: 32px !important; padding: 0 12px 0 10px !important; }
-html body.lay-acc .acc-arrhead .accloop:active { border-image-source: url(img/caps/flat3d-dark-down.png?v=mwsft876) !important; }
+  border-image: url(img/caps/flat3d-dark-up.png?v=mwv8azz3) 56 fill / 10px stretch !important; height: 32px !important; padding: 0 12px 0 10px !important; }
+html body.lay-acc .acc-arrhead .accloop:active { border-image-source: url(img/caps/flat3d-dark-down.png?v=mwv8azz3) !important; }
 html body.lay-acc .acc-arrhead .accloop svg { color: #f0a24a; }
 html body.lay-acc .accloop .two span { color: #6d6a66; text-shadow: none; }
 html body.lay-acc .accloop .two span.on { color: #ffb347; text-shadow: 0 0 6px rgba(255, 170, 60, .55); }
@@ -7813,8 +7813,8 @@ html body.lay-acc #arrhost .arr-bus .arr-tn { color: #f0a24a !important; }
 html body.lay-acc #arrhost .arr-bus .arr-name { gap: 6px; }
 html body.lay-acc #arrhost .arr-bus .arr-bn { color: #b89a6a; font: 500 10.5px -apple-system, sans-serif; margin-right: 2px; }
 .dv-btn { all: unset; box-sizing: border-box; flex: none; height: 24px; min-width: 50px; padding: 0 11px; display: inline-grid; place-items: center; cursor: pointer;
-  font: 600 11.5px/1 -apple-system, sans-serif; color: #c9c4bd; border-image: url(img/dev/btn-dark.png?v=mwsft876) 26 fill / 8px stretch; }
-.dv-btn.gold { color: #2a1700; border-image-source: url(img/dev/btn-gold.png?v=mwsft876); filter: drop-shadow(0 0 6px rgba(255, 170, 60, .45)); }
+  font: 600 11.5px/1 -apple-system, sans-serif; color: #c9c4bd; border-image: url(img/dev/btn-dark.png?v=mwv8azz3) 26 fill / 8px stretch; }
+.dv-btn.gold { color: #2a1700; border-image-source: url(img/dev/btn-gold.png?v=mwv8azz3); filter: drop-shadow(0 0 6px rgba(255, 170, 60, .45)); }
 .dv-btn:hover { filter: brightness(1.12); } .dv-btn.gold:hover { filter: brightness(1.06) drop-shadow(0 0 8px rgba(255, 170, 60, .6)); }
 .dv-btn:active { transform: translateY(1px); }
 .dv-btn:focus-visible { outline: 1.5px solid #ffb347; outline-offset: 2px; }
@@ -7835,17 +7835,17 @@ html body.lay-acc #arrhost .bld.in-arr .bl-takes .bl-tk { color: #f0a24a !import
 html body.lay-acc #arrhost .bld.in-arr .bl-tks { grid-template-columns: repeat(6, minmax(0, 1fr)) !important; gap: 4px !important; }
 html body.lay-acc #arrhost .bld.in-arr :is(.bl-takes .capbtn.bl-take, .bl-slot) { aspect-ratio: 1 !important; height: auto !important; width: 100% !important; min-width: 0 !important; padding: 0 !important;
   border: 0 !important; background: none !important; box-shadow: none !important; filter: none !important;
-  border-image: url(img/caps/build-dark-up.png?v=mwsft876) 66 fill / 8px stretch !important; color: #c9c4bd !important; font: 600 12px -apple-system, sans-serif !important; display: grid; place-items: center; }
-html body.lay-acc #arrhost .bld.in-arr .bl-takes .capbtn.bl-take:active { border-image-source: url(img/caps/build-dark-down.png?v=mwsft876) !important; }
+  border-image: url(img/caps/build-dark-up.png?v=mwv8azz3) 66 fill / 8px stretch !important; color: #c9c4bd !important; font: 600 12px -apple-system, sans-serif !important; display: grid; place-items: center; }
+html body.lay-acc #arrhost .bld.in-arr .bl-takes .capbtn.bl-take:active { border-image-source: url(img/caps/build-dark-down.png?v=mwv8azz3) !important; }
 html body.lay-acc #arrhost .bld.in-arr .bl-slot { opacity: .45; }
-html body.lay-acc #arrhost .bld.in-arr .bl-takes .capbtn.bl-take.on { border-image-source: url(img/caps/build-gold.png?v=mwsft876) !important; color: #2a1700 !important; filter: drop-shadow(0 0 6px rgba(255, 170, 60, .5)) !important; }
+html body.lay-acc #arrhost .bld.in-arr .bl-takes .capbtn.bl-take.on { border-image-source: url(img/caps/build-gold.png?v=mwv8azz3) !important; color: #2a1700 !important; filter: drop-shadow(0 0 6px rgba(255, 170, 60, .5)) !important; }
 html body.lay-acc #arrhost .bld.in-arr .bl-fam > span { color: #a88358 !important; font: 600 9.5px -apple-system, sans-serif !important; letter-spacing: .1em !important; }
 html body.lay-acc #arrhost .bld.in-arr .bl-tiles .capbtn.bl-tile { border: 0 !important; background: none !important; box-shadow: none !important; filter: none !important; color: #bdb8b1 !important;
-  border-image: url(img/caps/build-dark-up.png?v=mwsft876) 66 fill / 10px stretch !important; font-size: 10.5px !important; } /* Build's own key (prototypes/build-key/key.py, lit from the top left) */
-html body.lay-acc #arrhost .bld.in-arr .bl-tiles .capbtn.bl-tile:active { border-image-source: url(img/caps/build-dark-down.png?v=mwsft876) !important; }
-html body.lay-acc #arrhost .bld.in-arr .bl-tiles .capbtn.bl-tile.on { border-image-source: url(img/caps/build-gold.png?v=mwsft876) !important; color: #2a1700 !important; filter: drop-shadow(0 0 7px rgba(255, 170, 60, .5)) !important; }
+  border-image: url(img/caps/build-dark-up.png?v=mwv8azz3) 66 fill / 10px stretch !important; font-size: 10.5px !important; } /* Build's own key (prototypes/build-key/key.py, lit from the top left) */
+html body.lay-acc #arrhost .bld.in-arr .bl-tiles .capbtn.bl-tile:active { border-image-source: url(img/caps/build-dark-down.png?v=mwv8azz3) !important; }
+html body.lay-acc #arrhost .bld.in-arr .bl-tiles .capbtn.bl-tile.on { border-image-source: url(img/caps/build-gold.png?v=mwv8azz3) !important; color: #2a1700 !important; filter: drop-shadow(0 0 7px rgba(255, 170, 60, .5)) !important; }
 html body.lay-acc #arrhost .bld.in-arr .bl-act .capbtn.wide.bl-go { border: 0 !important; background: none !important; box-shadow: none !important; filter: drop-shadow(0 0 8px rgba(255, 160, 50, .35)) !important;
-  border-image: url(img/dev/bar-gold.png?v=mwsft876) 30 fill / 10px stretch !important; color: #2a1700 !important; height: 38px !important; font: 700 13.5px -apple-system, sans-serif !important; text-shadow: 0 1px 0 rgba(255, 235, 200, .4) !important; }
+  border-image: url(img/dev/bar-gold.png?v=mwv8azz3) 30 fill / 10px stretch !important; color: #2a1700 !important; height: 38px !important; font: 700 13.5px -apple-system, sans-serif !important; text-shadow: 0 1px 0 rgba(255, 235, 200, .4) !important; }
 html body.lay-acc #arrhost .bld.in-arr .bl-act .capbtn.wide.bl-go:disabled { filter: grayscale(.7) brightness(.7) !important; }
 html body.lay-acc #arrhost .bld.in-arr .bl-cancel { color: #8f8a84 !important; }
 /* Folded, the rows' gaps showed the screen through the left column: the plate runs under the whole column. */
@@ -7856,12 +7856,12 @@ html body.lay-acc #arrhost.arr-mini .arr-row, html body.lay-acc #arrhost.arr-min
    lit lens and a glow in the track's colour. Replaces the CSS-drawn dots. */
 html body.lay-acc #arrhost .arr-dot, html body.lay-acc #arrhost .arr-row.sel .arr-dot, html body.lay-acc #arrhost .arr-bus.open .arr-dot {
   width: 18px; height: 18px; border-radius: 50%; isolation: isolate; position: relative; background: var(--tc) !important; box-shadow: 0 1px 2px rgba(0, 0, 0, .6) !important; }
-html body.lay-acc #arrhost .arr-dot::before, html body.lay-acc #arrhost .arr-dot::after { content: ''; position: absolute; inset: 0; border-radius: 50%; background: url(img/dev/led-off-lens.png?v=mwsft876) center / 100% 100% no-repeat; }
+html body.lay-acc #arrhost .arr-dot::before, html body.lay-acc #arrhost .arr-dot::after { content: ''; position: absolute; inset: 0; border-radius: 50%; background: url(img/dev/led-off-lens.png?v=mwv8azz3) center / 100% 100% no-repeat; }
 html body.lay-acc #arrhost .arr-dot::before { mix-blend-mode: luminosity; }
-html body.lay-acc #arrhost .arr-dot::after { background-image: url(img/dev/led-off-ring.png?v=mwsft876); }
+html body.lay-acc #arrhost .arr-dot::after { background-image: url(img/dev/led-off-ring.png?v=mwv8azz3); }
 html body.lay-acc #arrhost :is(.arr-row.sel, .arr-bus.open) .arr-dot { box-shadow: 0 0 10px 2px color-mix(in srgb, var(--tc) 55%, transparent), 0 1px 2px rgba(0, 0, 0, .6) !important; }
-html body.lay-acc #arrhost :is(.arr-row.sel, .arr-bus.open) .arr-dot::before { background-image: url(img/dev/led-lit-lens.png?v=mwsft876); }
-html body.lay-acc #arrhost :is(.arr-row.sel, .arr-bus.open) .arr-dot::after { background-image: url(img/dev/led-lit-ring.png?v=mwsft876); }
+html body.lay-acc #arrhost :is(.arr-row.sel, .arr-bus.open) .arr-dot::before { background-image: url(img/dev/led-lit-lens.png?v=mwv8azz3); }
+html body.lay-acc #arrhost :is(.arr-row.sel, .arr-bus.open) .arr-dot::after { background-image: url(img/dev/led-lit-ring.png?v=mwv8azz3); }
 /* The lit LED's halo, as the sheet's (tester: "what about the outer glow"): the name's button no longer clips it (its
    name still ellipsises), and the glow is two soft rings in the track's colour. */
 html body.lay-acc #arrhost .arr-row .arr-tn { overflow: visible !important; }
@@ -7876,7 +7876,7 @@ html body.lay-acc #arrhost .arr-dot, html body.lay-acc #arrhost :is(.arr-row.sel
 html body.lay-acc #arrhost .arr-dot::before { content: none !important; }
 /* Unlit, every LED is the same dark lens, no colour (tester, 2026-11-10: "These off states seem too bright. It's hard to
    discern them … kind of this by default. So it looks … more illuminated when they're lit"); only a lit LED shows its colour. */
-html body.lay-acc #arrhost .arr-dot::after { inset: 0; border-radius: 0; background: url(img/leds/off.png?v=mwsft876) center / 100% 100% no-repeat !important; filter: drop-shadow(0 1px 1.5px rgba(0, 0, 0, .6)); }
+html body.lay-acc #arrhost .arr-dot::after { inset: 0; border-radius: 0; background: url(img/leds/off.png?v=mwv8azz3) center / 100% 100% no-repeat !important; filter: drop-shadow(0 1px 1.5px rgba(0, 0, 0, .6)); }
 html body.lay-acc #arrhost :is(.arr-row.sel, .arr-bus.open) .arr-dot::after { inset: -4.5px; background-image: var(--led-on) !important; filter: none; }
 /* The track-in-section outline: thin, no glow (tester: "It's too intense"). */
 html body.lay-acc #arrhost .arr-curbox { box-shadow: 0 0 0 1.5px rgba(242, 200, 75, .85) !important; border-radius: 3px; }
@@ -8022,7 +8022,7 @@ html body.lay-acc #arrhost .bld.in-arr .bl-back { display: inline-flex; align-it
 html body.lay-acc #arrhost .bld.in-arr .bl-back svg { width: 13px; height: 13px; }
 html body.lay-acc #arrhost .bld.in-arr .bl-back:hover { color: #f0a24a; background: rgba(255, 255, 255, .04); }
 html body.lay-acc #arrhost .bld.in-arr .bl-s2h .capbtn.bl-tile.bl-cur { flex: none; width: var(--mv-w, 46px); height: var(--mv-h, 44px); border: 0 !important; background: none !important; box-shadow: none !important;
-  border-image: url(img/caps/build-gold.png?v=mwsft876) 66 fill / 10px stretch !important; color: #2a1700 !important; filter: drop-shadow(0 0 7px rgba(255, 170, 60, .5)) !important; font-size: 10.5px !important; }
+  border-image: url(img/caps/build-gold.png?v=mwv8azz3) 66 fill / 10px stretch !important; color: #2a1700 !important; filter: drop-shadow(0 0 7px rgba(255, 170, 60, .5)) !important; font-size: 10.5px !important; }
 html body.lay-acc #arrhost .bld.in-arr .bl-does { font: 400 12px/1.35 -apple-system, sans-serif; color: #c9c4bd; margin-top: -2px; }
 html body.lay-acc #arrhost .bld.in-arr .bl-does small { display: block; margin-top: 3px; font-size: 10.5px; color: #8b8680; }
 /* The move's settings, one under the other in the column (they were a strip over the editor). */
@@ -8038,7 +8038,7 @@ html body.lay-acc #arrhost .bld.in-arr .bl-s2 .bl-opts .bl-gen .kn2 { --kw: 50px
 html body.lay-acc #arrhost .bld.in-arr .bl-s2 .bl-opts .bl-none { max-width: none; }
 html body.lay-acc #arrhost .bld.in-arr .bl-s2 .bl-act { display: flex; flex-direction: column; gap: 6px; }
 html body.lay-acc #arrhost .bld.in-arr .bl-s2 .bl-act .capbtn.wide.bl-hear { width: 100% !important; height: 32px !important; margin: 0 !important; justify-content: center; gap: 7px !important; font-size: 12px !important;
-  border: 0 !important; background: none !important; box-shadow: none !important; border-image: url(img/caps/build-dark-up.png?v=mwsft876) 66 fill / 8px stretch !important; color: #c9c4bd !important; }
+  border: 0 !important; background: none !important; box-shadow: none !important; border-image: url(img/caps/build-dark-up.png?v=mwv8azz3) 66 fill / 8px stretch !important; color: #c9c4bd !important; }
 html body.lay-acc #arrhost .bld.in-arr .bl-s2 .bl-act .capbtn.wide.bl-hear svg { width: 9px !important; height: 9px !important; }
 html body.lay-acc #arrhost .bld.in-arr .bl-s2 .bl-act .capbtn.wide.bl-hear.on { color: #ffd9a0 !important; }
 html body.lay-acc #arrhost .bld.in-arr .bl-main { padding-top: 6px !important; }
@@ -8048,7 +8048,7 @@ html body.lay-acc #arrhost .bld.in-arr .bl-s2 { gap: 8px !important; padding-top
 html body.lay-acc #arrhost .bld.in-arr .bl-s2 .bl-takes { display: grid !important; grid-template-columns: 1fr auto; align-items: center; row-gap: 6px; }
 html body.lay-acc #arrhost .bld.in-arr .bl-s2 .bl-takes .bl-tks { grid-column: 1 / -1; }
 html body.lay-acc #arrhost .bld.in-arr .bl-s2 .bl-takes .capbtn.wide.bl-hear3 { height: 24px !important; padding: 0 10px 0 8px !important; gap: 6px !important; font-size: 11px !important; margin: 0 !important;
-  border: 0 !important; background: none !important; box-shadow: none !important; border-image: url(img/caps/build-dark-up.png?v=mwsft876) 66 fill / 7px stretch !important; color: #c9c4bd !important; }
+  border: 0 !important; background: none !important; box-shadow: none !important; border-image: url(img/caps/build-dark-up.png?v=mwv8azz3) 66 fill / 7px stretch !important; color: #c9c4bd !important; }
 html body.lay-acc #arrhost .bld.in-arr .bl-s2 .bl-takes .capbtn.wide.bl-hear3 svg { width: 8px !important; height: 8px !important; }
 html body.lay-acc #arrhost .bld.in-arr .bl-s2 .bl-takes .capbtn.wide.bl-hear3.on { color: #ffd9a0 !important; }
 html body.lay-acc #arrhost .bld.in-arr .bl-s2 .bl-act { gap: 2px !important; }
@@ -8073,22 +8073,22 @@ html body.lay-acc #dock .pv :is(.acc-takes .at-grid, .acc-edcard .ec-vt) > .take
 html body.lay-acc #dock .pv :is(.acc-takes .at-grid, .acc-edcard .ec-vt) > .takes:empty::before { content: none !important; }
 html body.lay-acc #dock .pv :is(.acc-takes .at-grid, .acc-edcard .ec-vt) :is(.key, .at-slot, .ec-slot) { aspect-ratio: 1; width: 100% !important; height: auto !important; min-width: 0 !important; margin: 0 !important; padding: 0 !important;
   border: 0 !important; background: none !important; box-shadow: none !important; filter: none !important; border-radius: 0 !important;
-  border-image: url(img/caps/build-dark-up.png?v=mwsft876) 66 fill / 8px stretch !important; color: #c9c4bd !important; display: grid !important; place-items: center; font: 600 12px -apple-system, sans-serif !important; }
+  border-image: url(img/caps/build-dark-up.png?v=mwv8azz3) 66 fill / 8px stretch !important; color: #c9c4bd !important; display: grid !important; place-items: center; font: 600 12px -apple-system, sans-serif !important; }
 html body.lay-acc #dock .pv :is(.acc-takes .at-grid, .acc-edcard .ec-vt) .key::before, html body.lay-acc #dock .pv :is(.acc-takes .at-grid, .acc-edcard .ec-vt) .key .ktint { display: none !important; }
 html body.lay-acc #dock .pv :is(.acc-takes .at-grid, .acc-edcard .ec-vt) .key .kl { position: static !important; transform: none !important; color: inherit !important; font: inherit !important; }
 html body.lay-acc #dock .pv :is(.acc-takes .at-grid, .acc-edcard .ec-vt) .key .kl svg { width: 15px; height: 15px; }
-html body.lay-acc #dock .pv :is(.acc-takes .at-grid, .acc-edcard .ec-vt) .key:active { border-image-source: url(img/caps/build-dark-down.png?v=mwsft876) !important; }
+html body.lay-acc #dock .pv :is(.acc-takes .at-grid, .acc-edcard .ec-vt) .key:active { border-image-source: url(img/caps/build-dark-down.png?v=mwv8azz3) !important; }
 html body.lay-acc #dock .pv :is(.acc-takes .at-grid, .acc-edcard .ec-vt) .key:disabled { opacity: .45; }
 html body.lay-acc #dock .pv :is(.acc-takes .at-slot, .acc-edcard .ec-slot) { opacity: .45; }
 /* The lit take: the gold key, as Build's lit take (one colour for "this is the take you hear"). */
-html body.lay-acc #dock .pv :is(.acc-takes .at-grid, .acc-edcard .ec-vt) .key.on { border-image-source: url(img/caps/build-gold.png?v=mwsft876) !important; color: #2a1700 !important; filter: drop-shadow(0 0 6px rgba(255, 170, 60, .5)) !important; }
+html body.lay-acc #dock .pv :is(.acc-takes .at-grid, .acc-edcard .ec-vt) .key.on { border-image-source: url(img/caps/build-gold.png?v=mwv8azz3) !important; color: #2a1700 !important; filter: drop-shadow(0 0 6px rgba(255, 170, 60, .5)) !important; }
 /* ▶ and Solo | Mix on the box's head: small flat keys; Solo | Mix shows the mode it's in, a click flips it. */
 html body.lay-acc #dock .pv .acc-takes .at-keys > :is(.pv-cprev, .pv-cmode) { position: static !important; width: auto !important; height: 24px !important; min-width: 28px; margin: 0 !important; padding: 0 8px !important;
   border: 0 !important; background: none !important; box-shadow: none !important; filter: none !important; border-radius: 0 !important;
-  border-image: url(img/caps/flat3d-dark-up.png?v=mwsft876) 56 fill / 7px stretch !important; color: #c9c4bd !important; display: inline-flex !important; align-items: center; justify-content: center; cursor: pointer; }
+  border-image: url(img/caps/flat3d-dark-up.png?v=mwv8azz3) 56 fill / 7px stretch !important; color: #c9c4bd !important; display: inline-flex !important; align-items: center; justify-content: center; cursor: pointer; }
 html body.lay-acc #dock .pv .acc-takes .at-keys > :is(.pv-cprev, .pv-cmode, .pv-sample) { position: static !important; width: auto !important; height: 24px !important; min-width: 28px; margin: 0 !important; padding: 0 8px !important;
   border: 0 !important; background: none !important; box-shadow: none !important; filter: none !important; border-radius: 0 !important;
-  border-image: url(img/caps/flat3d-dark-up.png?v=mwsft876) 56 fill / 7px stretch !important; color: #c9c4bd !important; display: inline-flex !important; align-items: center; justify-content: center; cursor: pointer; }
+  border-image: url(img/caps/flat3d-dark-up.png?v=mwv8azz3) 56 fill / 7px stretch !important; color: #c9c4bd !important; display: inline-flex !important; align-items: center; justify-content: center; cursor: pointer; }
 html body.lay-acc #dock .pv .acc-takes .at-keys > .pv-cprev svg { width: 11px !important; height: 11px !important; fill: currentColor; }
 /* The sample's key: a folder, its name in the tooltip (the menu is the same). Elsewhere the folder doesn't show. */
 .pv-sample .pv-fold { display: none; }
@@ -8102,9 +8102,9 @@ html body.lay-acc #dock .pv .acc-takes .at-keys > .pv-cprev.on { color: var(--tc
    gold (as a track's Solo); a press on either flips it (main.ts chopPlay). M (the mix) at every start. */
 html body.lay-acc #dock .pv :is(.acc-takes .at-keys > .pv-cmode, .acc-edcard .ec-tr .pv-mode) { width: auto !important; min-width: 0; padding: 0 !important; gap: 4px; border-image: none !important; background: none !important; }
 html body.lay-acc #dock .pv :is(.acc-takes .at-keys > .pv-cmode, .acc-edcard .ec-tr .pv-mode) > button { all: unset; cursor: pointer; box-sizing: border-box; display: grid !important; place-items: center; width: 26px; height: 24px;
-  border-image: url(img/caps/flat3d-dark-up.png?v=mwsft876) 56 fill / 7px stretch !important; font: 700 11px/1 -apple-system, sans-serif !important; color: #c9c4bd !important; padding: 0 !important; }
+  border-image: url(img/caps/flat3d-dark-up.png?v=mwv8azz3) 56 fill / 7px stretch !important; font: 700 11px/1 -apple-system, sans-serif !important; color: #c9c4bd !important; padding: 0 !important; }
 html body.lay-acc #dock .pv :is(.acc-takes .at-keys > .pv-cmode, .acc-edcard .ec-tr .pv-mode) > button:hover { filter: brightness(1.12); }
-html body.lay-acc #dock .pv :is(.acc-takes .at-keys > .pv-cmode, .acc-edcard .ec-tr .pv-mode) > button.on { border-image-source: url(img/caps/flat3d-gold.png?v=mwsft876) !important; color: #2a1700 !important; }
+html body.lay-acc #dock .pv :is(.acc-takes .at-keys > .pv-cmode, .acc-edcard .ec-tr .pv-mode) > button.on { border-image-source: url(img/caps/flat3d-gold.png?v=mwv8azz3) !important; color: #2a1700 !important; }
 html body.lay-acc #dock .pv .acc-takes .at-keys > .pv-cmode::after { content: none !important; }
 html body.theme-luna.lay-acc #dock .pv :is(.acc-takes .at-keys > .pv-cmode, .acc-edcard .ec-tr .pv-mode) > button { border-image: none !important; background: var(--lk) !important; border: 1px solid var(--lk-edge) !important; border-radius: 3px; }
 html body.theme-luna.lay-acc #dock .pv :is(.acc-takes .at-keys > .pv-cmode, .acc-edcard .ec-tr .pv-mode) > button.on { background: var(--lk-on) !important; color: var(--lk-on-ink) !important; }
@@ -8145,12 +8145,12 @@ html body.lay-acc.skin-lcd #grid .row .rowbtn .rgain .mdial { width: 26px; heigh
 html body.lay-acc.skin-lcd #grid .row .rowbtn .sm-stack { grid-auto-flow: column; grid-auto-columns: 26px; width: auto; gap: 4px !important; align-content: center !important; }
 html body.lay-acc.skin-lcd:not(.theme-luna) #grid .row .rowbtn .rc button.cap {
   all: unset; box-sizing: border-box; cursor: pointer; width: 26px !important; height: 24px !important; display: grid; place-items: center;
-  border-image: url(img/caps/flat3d-dark-up.png?v=mwsft876) 56 fill / 7px stretch !important; background: none !important; box-shadow: none !important; filter: none !important;
+  border-image: url(img/caps/flat3d-dark-up.png?v=mwv8azz3) 56 fill / 7px stretch !important; background: none !important; box-shadow: none !important; filter: none !important;
   font: 700 11px/1 -apple-system, sans-serif !important; color: #c9c4bd !important; text-shadow: none !important; }
 html body.lay-acc.skin-lcd:not(.theme-luna) #grid .row .rowbtn .rc button.cap:hover { filter: brightness(1.12) !important; }
-html body.lay-acc.skin-lcd:not(.theme-luna) #grid .row .rowbtn .rc button.cap:active { border-image-source: url(img/caps/flat3d-dark-down.png?v=mwsft876) !important; }
-html body.lay-acc.skin-lcd:not(.theme-luna) #grid .row .rowbtn .rc button.cap.solo.on { border-image-source: url(img/caps/flat3d-gold.png?v=mwsft876) !important; color: #2a1700 !important; filter: drop-shadow(0 0 5px rgba(255, 170, 60, .45)) !important; }
-html body.lay-acc.skin-lcd:not(.theme-luna) #grid .row .rowbtn .rc button.cap.mute.on { border-image-source: url(img/caps/flat3d-dark-down.png?v=mwsft876) !important; color: #ff6b6f !important; text-shadow: 0 0 6px rgba(255, 80, 90, .6) !important; }
+html body.lay-acc.skin-lcd:not(.theme-luna) #grid .row .rowbtn .rc button.cap:active { border-image-source: url(img/caps/flat3d-dark-down.png?v=mwv8azz3) !important; }
+html body.lay-acc.skin-lcd:not(.theme-luna) #grid .row .rowbtn .rc button.cap.solo.on { border-image-source: url(img/caps/flat3d-gold.png?v=mwv8azz3) !important; color: #2a1700 !important; filter: drop-shadow(0 0 5px rgba(255, 170, 60, .45)) !important; }
+html body.lay-acc.skin-lcd:not(.theme-luna) #grid .row .rowbtn .rc button.cap.mute.on { border-image-source: url(img/caps/flat3d-dark-down.png?v=mwv8azz3) !important; color: #ff6b6f !important; text-shadow: 0 0 6px rgba(255, 80, 90, .6) !important; }
 html body.lay-acc.skin-lcd.theme-luna #grid .row .rowbtn .rc button.cap { width: 26px !important; height: 24px !important; font-size: 10px !important; }
 /* The empty "Load a sample…" row: its name only (its mini dials peeked out under the slim strip). */
 html body.lay-acc #grid .ghost-track :is(.mdial, .kdial, .mdials, .rdials) { display: none !important; }
@@ -8172,22 +8172,22 @@ html body.lay-acc #genpop { background: var(--grain-fine), #252422 !important; b
   box-shadow: 0 0 0 1px #050506, inset 0 1px 0 rgba(255, 255, 255, .06), 0 22px 60px rgba(0, 0, 0, .6) !important; }
 html body.lay-acc #genpop .gp-h { font: 800 15px/1 -apple-system, sans-serif !important; color: #f0a24a !important; }
 html body.lay-acc #genpop .gp-src { display: grid !important; grid-template-columns: repeat(3, 1fr); gap: 4px; padding: 0 !important; background: none !important; box-shadow: none !important; border: 0 !important; }
-html body.lay-acc #genpop .gp-src button { all: unset; cursor: pointer; display: grid; place-items: center; height: 30px; border-image: url(img/caps/flat3d-dark-up.png?v=mwsft876) 56 fill / 8px stretch; color: #c9c4bd; font: 600 12px -apple-system, sans-serif; }
+html body.lay-acc #genpop .gp-src button { all: unset; cursor: pointer; display: grid; place-items: center; height: 30px; border-image: url(img/caps/flat3d-dark-up.png?v=mwv8azz3) 56 fill / 8px stretch; color: #c9c4bd; font: 600 12px -apple-system, sans-serif; }
 html body.lay-acc #genpop .gp-src button b { font-weight: 600; }
-html body.lay-acc #genpop .gp-src button:active { border-image-source: url(img/caps/flat3d-dark-down.png?v=mwsft876); }
-html body.lay-acc #genpop .gp-src button.on { border-image-source: url(img/caps/flat3d-gold.png?v=mwsft876); color: #2a1700; filter: drop-shadow(0 0 6px rgba(255, 170, 60, .45)); }
+html body.lay-acc #genpop .gp-src button:active { border-image-source: url(img/caps/flat3d-dark-down.png?v=mwv8azz3); }
+html body.lay-acc #genpop .gp-src button.on { border-image-source: url(img/caps/flat3d-gold.png?v=mwv8azz3); color: #2a1700; filter: drop-shadow(0 0 6px rgba(255, 170, 60, .45)); }
 html body.lay-acc #genpop .gp-styles { gap: 4px !important; padding: 8px !important; border-radius: 8px !important; background: #191817 !important;
   box-shadow: inset 0 2px 5px rgba(0, 0, 0, .65), inset 0 0 0 1px #100f0e, 0 1px 0 rgba(255, 255, 255, .04) !important; }
-html body.lay-acc #genpop .gp-styles button { border-image: url(img/caps/flat3d-dark-up.png?v=mwsft876) 56 fill / 8px stretch !important; border-radius: 0 !important; padding: 7px 10px !important; color: #c9c4bd; background: none !important; box-shadow: none !important; }
+html body.lay-acc #genpop .gp-styles button { border-image: url(img/caps/flat3d-dark-up.png?v=mwv8azz3) 56 fill / 8px stretch !important; border-radius: 0 !important; padding: 7px 10px !important; color: #c9c4bd; background: none !important; box-shadow: none !important; }
 html body.lay-acc #genpop .gp-styles button:hover { filter: brightness(1.1); }
-html body.lay-acc #genpop .gp-styles button.on { border-image-source: url(img/caps/flat3d-gold.png?v=mwsft876) !important; color: #2a1700 !important; }
+html body.lay-acc #genpop .gp-styles button.on { border-image-source: url(img/caps/flat3d-gold.png?v=mwv8azz3) !important; color: #2a1700 !important; }
 html body.lay-acc #genpop .gp-styles button.on :is(.bpm, .ds) { color: #5a3a10 !important; }
 html body.lay-acc #genpop .gp-styles .ds { display: none; }
 html body.lay-acc #genpop :is(input[type=range], input[type=checkbox]) { accent-color: #f0a24a !important; }
 html body.lay-acc #genpop select { background: #0c0b0a !important; color: #e9e6ef !important; border: 0 !important; border-radius: 6px !important; padding: 4px 8px !important; box-shadow: inset 0 1px 3px rgba(0, 0, 0, .7), 0 0 0 1px #2c2b29 !important; }
 html body.lay-acc #genpop .field { color: #c9c4bd !important; }
 html body.lay-acc #genpop #gogen.capbtn.wide { all: unset !important; box-sizing: border-box !important; display: flex !important; align-items: center !important; justify-content: center !important; gap: 6px !important; width: 100% !important; height: 38px !important; cursor: pointer !important;
-  border-image: url(img/dev/bar-gold.png?v=mwsft876) 30 fill / 10px stretch !important; color: #2a1700 !important; font: 700 13px -apple-system, sans-serif !important; filter: drop-shadow(0 0 8px rgba(255, 160, 50, .35)) !important; }
+  border-image: url(img/dev/bar-gold.png?v=mwv8azz3) 30 fill / 10px stretch !important; color: #2a1700 !important; font: 700 13px -apple-system, sans-serif !important; filter: drop-shadow(0 0 8px rgba(255, 160, 50, .35)) !important; }
 html body.lay-acc #genpop #gogen.capbtn.wide * { color: #2a1700 !important; }
 html body.lay-acc #genpop #gogen.capbtn.wide::after { content: none !important; }
 /* The Bus's Return as its sends' sliders (a web range in amber before): a 6 px channel tinted amber, the same grey knob. */
@@ -8200,12 +8200,12 @@ html body.lay-acc #arrhost .bb-ret input[type=range]::-moz-range-thumb { width: 
 /* Hits | Sample as one key (a two-way choice is one key): the view showing, on the flat key; a click shows the other. */
 html body.lay-acc #dock .pv .pv-display > .pv-view { display: flex !important; gap: 0 !important; background: none !important; box-shadow: none !important; padding: 0 !important; border: 0 !important; }
 html body.lay-acc #dock .pv .pv-display > .pv-view > button { all: unset; cursor: pointer; box-sizing: border-box; display: inline-flex; align-items: center; gap: 6px; height: 26px; padding: 0 11px 0 9px;
-  border-image: url(img/caps/flat3d-dark-up.png?v=mwsft876) 56 fill / 7px stretch; color: #c9c4bd; font: 600 11.5px -apple-system, sans-serif; }
+  border-image: url(img/caps/flat3d-dark-up.png?v=mwv8azz3) 56 fill / 7px stretch; color: #c9c4bd; font: 600 11.5px -apple-system, sans-serif; }
 html body.lay-acc #dock .pv .pv-display > .pv-view > button:not(.on) { display: none; }
 html body.lay-acc #dock .pv .pv-display > .pv-view > button::before { content: ''; width: 12px; height: 12px; flex: none; background: currentColor; opacity: .7;
   -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 4h7.5M7.5 2l2 2-2 2M10 8H2.5M4.5 6l-2 2 2 2'/%3E%3C/svg%3E") center / contain no-repeat;
   mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 4h7.5M7.5 2l2 2-2 2M10 8H2.5M4.5 6l-2 2 2 2'/%3E%3C/svg%3E") center / contain no-repeat; }
-html body.lay-acc #dock .pv .pv-display > .pv-view > button:active { border-image-source: url(img/caps/flat3d-dark-down.png?v=mwsft876); }
+html body.lay-acc #dock .pv .pv-display > .pv-view > button:active { border-image-source: url(img/caps/flat3d-dark-down.png?v=mwv8azz3); }
 /* ==== The device (tester, 2026-11-11: "all the border radiuses … are different. And they're actually out of alignment …
    everything should have the same gap, everything should have the same radius … a smaller radius is better … the entire
    device … has a sheen, and there's a slight level of intensity per component … in a 3D world, they're actually just
@@ -8295,10 +8295,10 @@ html body #arrhost .arrange.bus-on .arr-trkbox { display: none !important; }
    pixels on the glass (main.ts paintTakeScreen, oled.ts), and Blender's reflection of a soft box over them
    (img/screen/glass.png, sheen.py, stretched: a smooth gradient). ==== */
 html body.lay-acc #dock .pv .acc-takes .at-screen { grid-column: 1 / -1; position: relative; box-sizing: border-box; height: 56px; border: 7px solid transparent;
-  border-image: url(img/screen/bezel.png?v=mwsft876) 41 fill / 7px stretch; overflow: hidden; }
+  border-image: url(img/screen/bezel.png?v=mwv8azz3) 41 fill / 7px stretch; overflow: hidden; }
 html body.lay-acc #dock .pv .acc-takes .at-screen canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; }
 html body.lay-acc #dock .pv .acc-takes .at-screen::after { content: ''; position: absolute; inset: var(--glass-in); border-radius: 3px; pointer-events: none;
-  background: url(img/screen/glass.png?v=mwsft876) 0 0 / 100% 100% no-repeat; }
+  background: url(img/screen/glass.png?v=mwv8azz3) 0 0 / 100% 100% no-repeat; }
 /* The track's title row goes while the Takes screen shows it (tester, 2026-11-12: "remove the top title row when this is
    open"): the screen already says the track's name, so the Takes box moves up to the top of the column. */
 html body.lay-acc #dock .pv .pv-head:has(.acc-takes .at-screen) .ftitle { display: none !important; }
@@ -8313,9 +8313,9 @@ html body.lay-acc #dock .pv .pv-head:has(.acc-takes .at-screen) .pv-takes { padd
    the readout (img/screen/glass.png), the readout in the OLED's colours: white values with a soft glow, dim labels, the
    position in the accent. */
 html body.lay-acc.skin-lcd:not(.theme-luna) .hd-lcd .hl-disp { position: relative; box-sizing: border-box; height: 40px; padding: 0 9px; border: 7px solid transparent;
-  border-image: url(img/screen/bezel.png?v=mwsft876) 41 fill / 7px stretch; border-radius: 0 !important; background: none !important; box-shadow: none !important; }
+  border-image: url(img/screen/bezel.png?v=mwv8azz3) 41 fill / 7px stretch; border-radius: 0 !important; background: none !important; box-shadow: none !important; }
 html body.lay-acc.skin-lcd:not(.theme-luna) .hd-lcd .hl-disp::after { content: ''; position: absolute; inset: var(--glass-in); border-radius: 3px; pointer-events: none; z-index: 3;
-  background: url(img/screen/glass.png?v=mwsft876) 0 0 / 100% 100% no-repeat; }
+  background: url(img/screen/glass.png?v=mwv8azz3) 0 0 / 100% 100% no-repeat; }
 /* The glass reaches past the frame's inner edge to the bezel's lip (bezel.py: the glass starts 18.5 of the slice's 41 px
    in, drawn at 7 px, so 3.2 px in): the sheen and the reflection cover all of it, no black band round them (tester,
    2026-11-13: "too much of a black border … make that gradient and mirroring use all of the space"). */
@@ -8326,7 +8326,7 @@ html body.lay-acc { --glass-in: -3.8px; }
 .hl-refl { display: none; }
 html body.lay-acc.skin-lcd:not(.theme-luna) :is(.hd-lcd .hl-disp, .acc-takes .at-screen) { isolation: isolate; }
 html body.lay-acc.skin-lcd:not(.theme-luna) :is(.hd-lcd .hl-disp, .acc-takes .at-screen) > .hl-refl { display: block; position: absolute; inset: var(--glass-in); border-radius: 3px; overflow: hidden; pointer-events: none; z-index: 2; mix-blend-mode: screen; }
-html body.lay-acc.skin-lcd:not(.theme-luna) :is(.hd-lcd .hl-disp, .acc-takes .at-screen) .hl-refl-i { position: absolute; inset: -20% -10%; background: url(img/screen/room.jpg?v=mwsft876) 30% 40% / auto 420% no-repeat; opacity: .08; }
+html body.lay-acc.skin-lcd:not(.theme-luna) :is(.hd-lcd .hl-disp, .acc-takes .at-screen) .hl-refl-i { position: absolute; inset: -20% -10%; background: url(img/screen/room.jpg?v=mwv8azz3) 30% 40% / auto 420% no-repeat; opacity: .08; }
 html body.lay-acc.skin-lcd:not(.theme-luna) .hd-lcd .hl-disp > :not(.hl-refl) { position: relative; z-index: 1; }
 html body.lay-acc #dock .pv .acc-takes .at-screen::after { z-index: 3; }
 html body.lay-acc.skin-lcd:not(.theme-luna) .hd-lcd :is(.hl-f b, .hl-bpm .bpmtext b) { color: #f2f2ee; text-shadow: 0 0 5px rgba(242, 242, 238, .45); }
@@ -8419,8 +8419,8 @@ html body.lay-acc #dock .pv > .pv-head:has(.acc-takes .at-screen) > .acc-hit .lv
 html body.lay-acc #dock .pv > .pv-head > .acc-hit .lv-ctl { margin-top: 8px !important; }
 /* Step: the chop key (a little sample) in the folder's place; the folder at Track. */
 html body.lay-acc #dock .pv .acc-takes .at-keys > .at-chopkey { all: unset; box-sizing: border-box; cursor: pointer; display: inline-grid; place-items: center; width: 28px; height: 24px;
-  border-image: url(img/caps/flat3d-dark-up.png?v=mwsft876) 56 fill / 7px stretch; color: #c9c4bd; }
-html body.lay-acc #dock .pv .acc-takes .at-keys > .at-chopkey:active { border-image-source: url(img/caps/flat3d-dark-down.png?v=mwsft876); }
+  border-image: url(img/caps/flat3d-dark-up.png?v=mwv8azz3) 56 fill / 7px stretch; color: #c9c4bd; }
+html body.lay-acc #dock .pv .acc-takes .at-keys > .at-chopkey:active { border-image-source: url(img/caps/flat3d-dark-down.png?v=mwv8azz3); }
 html body.lay-acc #dock .pv .acc-takes .at-keys > .at-chopkey:hover { color: #fff; }
 html body.lay-acc #dock .pv .acc-takes .at-keys > .at-chopkey:focus-visible { outline: 1px solid #8a8a90; }
 html body.lay-acc #dock .pv .acc-takes .at-keys > .at-chopkey svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; }
@@ -8570,7 +8570,7 @@ html body.lay-acc #dock .pv > .pv-lanes > .acc-modmicro canvas { position: absol
 html body.lay-acc:not(.acc-modsopen) #dock .pv > .pv-lanes { background: var(--plate) !important; border-radius: var(--plate-r); box-shadow: var(--plate-edge); }
 html body.lay-acc:not(.acc-modsopen) #dock .pv > .pv-lanes > .acc-modmini { background: none !important; box-shadow: none !important; }
 html body.lay-acc #dock .pv > .pv-lanes > .acc-modmicro { top: 5px; bottom: 5px; right: 5px; box-sizing: border-box; border: 7px solid transparent;
-  border-image: url(img/screen/bezel.png?v=mwsft876) 41 fill / 7px stretch; overflow: hidden; isolation: isolate; }
+  border-image: url(img/screen/bezel.png?v=mwv8azz3) 41 fill / 7px stretch; overflow: hidden; isolation: isolate; }
 html body.lay-acc #dock .pv > .pv-lanes > .acc-modmicro canvas { z-index: 1; }
 /* The glass as black as the Takes screen's (tester, 2026-11-15: "should be a black background for that … OLED display,
    just like the top left where it says kick"): the sheen stretched over this long, tall screen greyed it, so it's black
@@ -8578,9 +8578,9 @@ html body.lay-acc #dock .pv > .pv-lanes > .acc-modmicro canvas { z-index: 1; }
    Takes screen's too, scaled to cover this screen (at its size it ended in a dark wedge in the corner). */
 html body.lay-acc #dock .pv > .pv-lanes > .acc-modmicro canvas { background: #000; border-radius: 2px; }
 html body.lay-acc #dock .pv > .pv-lanes > .acc-modmicro::after { content: ''; position: absolute; inset: var(--glass-in); border-radius: 3px; pointer-events: none; z-index: 3;
-  background: url(img/screen/glass.png?v=mwsft876) 0 0 / 100% 56px no-repeat; opacity: .6; }
+  background: url(img/screen/glass.png?v=mwv8azz3) 0 0 / 100% 56px no-repeat; opacity: .6; }
 html body.lay-acc.skin-lcd:not(.theme-luna) #dock .pv > .pv-lanes > .acc-modmicro > .hl-refl { display: block; position: absolute; inset: var(--glass-in); border-radius: 3px; overflow: hidden; pointer-events: none; z-index: 2; mix-blend-mode: screen; }
-html body.lay-acc.skin-lcd:not(.theme-luna) #dock .pv > .pv-lanes > .acc-modmicro .hl-refl-i { position: absolute; inset: -20% -10%; background: url(img/screen/room.jpg?v=mwsft876) 30% 40% / cover no-repeat; opacity: .05; }
+html body.lay-acc.skin-lcd:not(.theme-luna) #dock .pv > .pv-lanes > .acc-modmicro .hl-refl-i { position: absolute; inset: -20% -10%; background: url(img/screen/room.jpg?v=mwv8azz3) 30% 40% / cover no-repeat; opacity: .05; }
 html body.lay-acc #dock .pv > .pv-lanes > .acc-modmicro:hover canvas { filter: brightness(1.35); }
 html body.lay-acc.acc-modsopen #dock .pv > .pv-lanes > .acc-modmicro { display: none !important; }
 html body.lay-acc #dock .pv > .pv-lanes > .acc-modmini { cursor: pointer; }
@@ -8593,14 +8593,14 @@ html body.lay-acc .acc-edcard .ec-gap { flex: 1 1 auto; }
 html body.lay-acc .acc-edcard .ec-tr { display: inline-flex; align-items: center; gap: 4px; }
 html body.lay-acc .acc-edcard .ec-tr:empty { display: none; }
 html body.lay-acc .acc-edcard .ec-scr { position: relative; box-sizing: border-box; height: 56px; margin: 5px 6px; border: 7px solid transparent; border-radius: 5px;
-  border-image: url(img/screen/bezel.png?v=mwsft876) 41 fill / 7px stretch; overflow: hidden;
+  border-image: url(img/screen/bezel.png?v=mwv8azz3) 41 fill / 7px stretch; overflow: hidden;
   box-shadow: 0 0 0 5px rgba(255, 255, 255, .045), 0 0 0 6px rgba(255, 255, 255, .075), 0 7px 2px -6px rgba(0, 0, 0, .35); }
 html body.lay-acc .acc-edcard .ec-scr canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; }
 html body.lay-acc .acc-edcard .ec-scr::after { content: ''; position: absolute; inset: var(--glass-in); border-radius: 3px; pointer-events: none; z-index: 3;
-  background: url(img/screen/glass.png?v=mwsft876) 0 0 / 100% 100% no-repeat; }
+  background: url(img/screen/glass.png?v=mwv8azz3) 0 0 / 100% 100% no-repeat; }
 html body.lay-acc.skin-lcd:not(.theme-luna) .acc-edcard .ec-scr { isolation: isolate; }
 html body.lay-acc.skin-lcd:not(.theme-luna) .acc-edcard .ec-scr > .hl-refl { display: block; position: absolute; inset: var(--glass-in); border-radius: 3px; overflow: hidden; pointer-events: none; z-index: 2; mix-blend-mode: screen; }
-html body.lay-acc.skin-lcd:not(.theme-luna) .acc-edcard .ec-scr .hl-refl-i { position: absolute; inset: -20% -10%; background: url(img/screen/room.jpg?v=mwsft876) 30% 40% / auto 420% no-repeat; opacity: .08; }
+html body.lay-acc.skin-lcd:not(.theme-luna) .acc-edcard .ec-scr .hl-refl-i { position: absolute; inset: -20% -10%; background: url(img/screen/room.jpg?v=mwv8azz3) 30% 40% / auto 420% no-repeat; opacity: .08; }
 .sr-only { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* (The menu key is centred by transform: translateY(-50%). Its press nudge is the separate `translate`, so no press rule
@@ -8680,7 +8680,7 @@ html body.theme-luna.lay-acc :is(header, #luna-k) .hl-disp :is(.bpmtext:hover > 
    one key showing the choice (a press flips it, main.ts chopPlay, Solo at every start); ▶ green, ■ black while it plays. ==== */
 html body.lay-acc:not(.theme-luna) #dock .pv .acc-edcard .ec-tr :is([data-pv="play"]) { position: static !important; width: auto !important; height: 24px !important; min-width: 28px; margin: 0 !important; padding: 0 8px !important;
   border: 0 !important; background: none !important; box-shadow: none !important; filter: none !important; border-radius: 0 !important;
-  border-image: url(img/caps/flat3d-dark-up.png?v=mwsft876) 56 fill / 7px stretch !important; color: #c9c4bd !important; display: inline-flex !important; align-items: center; justify-content: center; cursor: pointer; }
+  border-image: url(img/caps/flat3d-dark-up.png?v=mwv8azz3) 56 fill / 7px stretch !important; color: #c9c4bd !important; display: inline-flex !important; align-items: center; justify-content: center; cursor: pointer; }
 html body.lay-acc #dock .pv .acc-edcard .ec-tr [data-pv="stop"] { display: none !important; }
 
 html body.lay-acc #dock .pv :is(.acc-takes .at-keys > .pv-cprev, .acc-edcard .ec-tr [data-pv="play"]) svg { width: 11px !important; height: 11px !important; }
@@ -8853,7 +8853,7 @@ html body.lay-acc.skin-lcd #grid .row .rowbtn .nm { display: flex; align-items: 
 html body.lay-acc.skin-lcd #grid .row.rowsel .rowbtn .nm { font-weight: 600 !important; color: color-mix(in srgb, var(--tc) 55%, #ffffff) !important; }
 html body.lay-acc #grid .rowbtn .nm .nm-sp { flex: none; font: 700 10.5px/1 -apple-system, sans-serif; font-style: normal; color: var(--tc); opacity: .75; margin-left: -4px; }
 html body.lay-acc #grid .rowbtn .nm .arr-dot { position: relative; flex: none; display: inline-block; border-radius: 50%; }
-html body.lay-acc #grid .rowbtn .nm .arr-dot::after { content: ''; position: absolute; inset: 0; background: url(img/leds/off.png?v=mwsft876) center / 100% 100% no-repeat; filter: drop-shadow(0 1px 1.5px rgba(0, 0, 0, .6)); }
+html body.lay-acc #grid .rowbtn .nm .arr-dot::after { content: ''; position: absolute; inset: 0; background: url(img/leds/off.png?v=mwv8azz3) center / 100% 100% no-repeat; filter: drop-shadow(0 1px 1.5px rgba(0, 0, 0, .6)); }
 html body.lay-acc #grid .row.rowsel .rowbtn .nm .arr-dot::after { inset: -3.5px; background-image: var(--led-on); filter: none; }
 html body.lay-acc #grid .rowbtn .nm { overflow: visible !important; } /* (the lit LED's halo) */
 /* The Tracks header over the track names (tester, 2026-11-14: "I click on the open, and it doesn't really work. It only
@@ -8927,7 +8927,7 @@ html body.lay-acc #dock .pv > .pv-lanes > .acc-modmicro { top: 4px; bottom: 4px;
    slash through it, on the pads' rows too. ==== */
 html body.lay-acc #dock .pv :is(.acc-takes .at-keys > .pv-cmode, .acc-edcard .ec-tr .pv-mode) > button[data-tsm="mute"].on,
 html body.lay-acc:not(.theme-luna) #grid .row .rowbtn .rc button.cap.mute.on {
-  border-image-source: url(img/caps/flat3d-dark-down.png?v=mwsft876) !important; color: #ff6b6f !important; text-shadow: 0 0 6px rgba(255, 80, 90, .55) !important; position: relative; }
+  border-image-source: url(img/caps/flat3d-dark-down.png?v=mwv8azz3) !important; color: #ff6b6f !important; text-shadow: 0 0 6px rgba(255, 80, 90, .55) !important; position: relative; }
 html body.lay-acc #dock .pv :is(.acc-takes .at-keys > .pv-cmode, .acc-edcard .ec-tr .pv-mode) > button[data-tsm="mute"].on::before,
 html body.lay-acc:not(.theme-luna) #grid .row .rowbtn .rc button.cap.mute.on::before {
   content: ''; position: absolute; left: 50%; top: 50%; width: 15px; height: 1.6px; margin: -.8px 0 0 -7.5px; border-radius: 1px; pointer-events: none;

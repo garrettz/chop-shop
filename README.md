@@ -20,7 +20,7 @@
 Chop Shop is a sampler and beat machine that lives inside LUNA. It cuts samples into hits, plays them on a step grid,
 and writes every hit into your session as real tracks and clips.
 
-- **Version 0.4.37**, built on `@uaudio/luna-builder-sdk` 3.1.2.63
+- **Version 0.4.38**, built on `@uaudio/luna-builder-sdk` 3.1.2.63
 - **Needs** LUNA 3.1.1 or later, on macOS
 - **Three example packs** to start, or **bring your own samples**
 
@@ -146,8 +146,8 @@ Play is LUNA's own Play, through LUNA's mixer. Your plugins, faders and bounces 
 
 ## Packs
 
-Each example pack holds a full kit and songs to Generate from. Main Stage comes in the box; Night Drive and Velvet Hours
-download free with one click on their cards.
+Each example pack holds a full kit and songs to Generate from. Main Stage is ready to go (its sounds download as they're first played, then stay on your Mac); Night Drive and
+Velvet Hours download free with one click on their cards.
 
 | | | |
 |---|---|---|
@@ -181,7 +181,7 @@ Glitchy, the shop's robot, walks you through it in the tour. Pick your parts, Ge
 
 ## Install
 
-1. **Get it.** Download `ChopShop-0.4.37.lunaaddon.zip` from the
+1. **Get it.** Download `ChopShop-0.4.38.lunaaddon.zip` from the
    [latest release](https://github.com/garrettz/chop-shop/releases/latest) and unzip it.
 2. **Install it in LUNA.** Save and close any open session first. Then double-click `Chop Shop.lunaaddon`, or drag it
    onto LUNA, and LUNA puts it in its Add Ons.
@@ -200,7 +200,7 @@ Glitchy, the shop's robot, walks you through it in the tour. Pick your parts, Ge
 ### What you need
 
 - **LUNA** 3.1.1 or later, on macOS
-- **Internet** only to download the example packs' songs and unlock skill packs
+- **Internet** the first time you use a pack or take the tour (sounds download once, then stay on your Mac), and to unlock skill packs
 - **AI keys (optional):** your own ElevenLabs, Stable Audio or fal.ai key to generate sounds, and an Anthropic key to
   name tracks. Keys stay on your Mac and go only to their provider. None ships in this repo.
 

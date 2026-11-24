@@ -23,8 +23,9 @@ Start here
 
 Sounds
   Three example packs to play with: Main Stage (EDM), Night Drive (synthwave) and Velvet Hours (neo-soul and R&B).
-  Main Stage comes in the box; Night Drive and Velvet Hours download free from the pack site (lowdownsound.io) with one
-  click on their cards. Open one on the start screen, pick how hard to chop (One shots, Chop, Experimental) and how many
+  Main Stage is ready to go: its sounds (and the tour's) come down from the pack site (lowdownsound.io) as they're first
+  played, once, then stay on this Mac, so the first Generate and the tour need the internet. Night Drive and Velvet
+  Hours download free with one click on their cards. Open one on the start screen, pick how hard to chop (One shots, Chop, Experimental) and how many
   bars, and Generate: Chop Shop makes a fresh LUNA session and sketches a starting point from the pack. Each pack's
   songs come down from the pack site the first time you Generate with it (once; then they stay on this Mac). The other
   packs on the list are coming soon.
